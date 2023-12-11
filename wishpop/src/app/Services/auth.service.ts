@@ -5,17 +5,17 @@ import { ILogin } from '../Models/i-login';
 import { environment } from '../../environments/environment.development';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthService {
+  constructor(private http: HttpClient, private route: Router) {}
 
-  constructor(private http:HttpClient, private route:Router) {
+  loginUrl:string = `${environment.apiUrl}/login`;
+  registerUrl:string = `${environment.apiUrl}/register`;
+
+
+  login(data: ILogin) {
+    this.http.post(`${environment.apiUrl}/login`, data);
   }
-
-login(data:ILogin){
-this.http.post(`${environment.apiUrl}/login`,data)
-}
-
-
 
 }
