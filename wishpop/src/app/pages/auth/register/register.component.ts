@@ -9,6 +9,9 @@ import { Router } from '@angular/router';
   styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
+print() {
+throw new Error('Method not implemented.');
+}
 
   constructor(
     private authSvc:AuthService,
