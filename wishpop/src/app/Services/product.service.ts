@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { iProduct } from '../Models/i-product';
+import { iAddProduct, iProduct } from '../Models/i-product';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
@@ -12,8 +12,12 @@ export class ProductService {
 
 prodArr: iProduct[] = []
 
-addProduct (prod:iProduct){
+addProduct (prod:iAddProduct){
 return this.http.post(`${environment.apiUrl}/products`,prod)
+}
+
+getCategories () {
+  return this.http.get<iProduct[]>(`${environment.apiUrl}/categories`)
 }
 
 }

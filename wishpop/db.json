@@ -7,7 +7,38 @@
       "id": 1
     }
   ],
-  "products":[
-
+  "products": [
+    {
+      "name": "Tobias Zimmerman",
+      "description": "Sequi dolor quibusda",
+      "price": "598",
+      "image": "Labore tempor invent",
+      "categories": "Veniam officiis cum",
+      "conditions": "Laboris illum rerum",
+      "id": 1
+    },
+    {
+      "name": "Rebekah Pugh",
+      "description": "Adipisci qui explica",
+      "price": "898",
+      "image": "In laudantium ratio",
+      "categories": "Recusandae In nemo ",
+      "conditions": "Nulla occaecat eos ",
+      "id": 2
+    }
+  ],
+  "categories":[
+    {
+      "name": "auto",
+      "id": 1
+    },
+    {
+      "name": "vestiti",
+      "id": 2
+    },
+    {
+      "name": "elettronica",
+      "id": 3
+    }
   ]
 }

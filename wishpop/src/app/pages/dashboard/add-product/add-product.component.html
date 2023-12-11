@@ -1,14 +1,19 @@
 <div class="container">
   <form #f="ngForm">
-    <input type="text" placeholder="" name="name" ngModel class="form-control"/>
-    <input type="text" placeholder="" name="description" ngModel class="form-control"/>
-    <input type="text" placeholder="" name="price" ngModel class="form-control"/>
-    <input type="text" placeholder="" name="image" ngModel class="form-control"/>
-    <select name="category" id="category">
-      <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
+    <input type="text" placeholder="" name="name" #name="ngModel" ngModel class="form-control" />
+    <input type="text" placeholder="" name="description" #descrconditionsiption="ngModel" ngModel class="form-control" />
+    <input type="text" placeholder="" name="price" #price="ngModel" ngModel class="form-control" />
+    <input type="text" placeholder="" name="image" #image="ngModel" ngModel class="form-control" />
+    <input type="text" placeholder="" name="categories" #categories="ngModel" ngModel class="form-control" />
+    <input type="text" placeholder="" name="conditions" #conditions="ngModel" ngModel class="form-control" />
+    <select name="categories" #categories="ngModel" ngModel class="form-control">
+      <option *ngFor="let c of categories" value=""></option>
     </select>
-    <select name="conditions" id="conditions">
-      <option *ngFor="let condition of conditions" [value]="condition.id">{{condition.name}}</option>
-    </select>
+    <!--<select name="conditions" id="conditions">
+      <option *ngFor="let condition of conditions" #conditions="ngModel" ngModel [value]="condition">{{condition}}</option>
+    </select> -->
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-info" (click)="add(this.f.value)">Aggiungi</button>
+    </div>
   </form>
 </div>
