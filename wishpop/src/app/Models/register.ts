@@ -1,5 +1,4 @@
-export interface iUser {
-  id:string
+export interface iRegister {
   nome:string
   email:string
   password:string
