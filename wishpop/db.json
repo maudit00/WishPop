@@ -5,6 +5,12 @@
       "password": "$2a$10$cyytXlHZKC041ahxqVR08esLtl5GoQIRUNhbHf.7s1jsNFLkBwLFu",
       "nome": "Reprehenderit sit ",
       "id": 1
+    },
+    {
+      "email": "mesyb@mailinator.com",
+      "password": "$2a$10$UsoL.K4fwRiB.D8tl9d2pORW1JTVxwNkwNfxGh2q7xJOwIEvOuEkC",
+      "nome": "Similique quis qui i",
+      "id": 2
     }
   ],
   "products": [
@@ -25,9 +31,18 @@
       "categories": "Recusandae In nemo ",
       "conditions": "Nulla occaecat eos ",
       "id": 2
+    },
+    {
+      "name": "Shoshana Tyson",
+      "description": "Commodo magnam facil",
+      "price": "901",
+      "image": "Voluptatibus itaque ",
+      "categories": "Nam sit facilis dis",
+      "conditions": "Facere aut magni lau",
+      "id": 3
     }
   ],
-  "categories":[
+  "categories": [
     {
       "name": "auto",
       "id": 1

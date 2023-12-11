@@ -19,7 +19,7 @@ export class AddProductComponent {
 @ViewChild ('f', {static : true})
 
 f!:NgForm;
-categories:string[] = []
+categories:any[] = []
 conditions:string[]= ['A','B','C','D','E','F']
 
 add(prod:iAddProduct){

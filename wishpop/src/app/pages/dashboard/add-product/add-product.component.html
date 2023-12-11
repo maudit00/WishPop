@@ -6,8 +6,8 @@
     <input type="text" placeholder="" name="image" #image="ngModel" ngModel class="form-control" />
     <input type="text" placeholder="" name="categories" #categories="ngModel" ngModel class="form-control" />
     <input type="text" placeholder="" name="conditions" #conditions="ngModel" ngModel class="form-control" />
-    <select name="categories" #categories="ngModel" ngModel class="form-control">
-      <option *ngFor="let c of categories" value=""></option>
+    <select *ngIf="categories" name="categories" #categories="ngModel" ngModel class="form-control">
+      <option  *ngFor="let c of categories" value="">{{c.name}}</option>
     </select>
     <!--<select name="conditions" id="conditions">
       <option *ngFor="let condition of conditions" #conditions="ngModel" ngModel [value]="condition">{{condition}}</option>
