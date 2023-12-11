@@ -1,0 +1,14 @@
+<div class="container">
+  <form #f="ngForm">
+    <input type="text" placeholder="" name="name" ngModel class="form-control"/>
+    <input type="text" placeholder="" name="description" ngModel class="form-control"/>
+    <input type="text" placeholder="" name="price" ngModel class="form-control"/>
+    <input type="text" placeholder="" name="image" ngModel class="form-control"/>
+    <select name="category" id="category">
+      <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
+    </select>
+    <select name="conditions" id="conditions">
+      <option *ngFor="let condition of conditions" [value]="condition.id">{{condition.name}}</option>
+    </select>
+  </form>
+</div>
