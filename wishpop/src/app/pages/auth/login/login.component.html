@@ -3,8 +3,17 @@
     <form #f="ngForm" class="form">
       <label for="email" class="text-center">Inserisci la tua mail</label>
       <input type="email" name="email" ngModel placeholder="email" />
-      <input type="password" name="password" ngModel placeholder="immetti la password" />
-      <button (click)='send()' button="f.dirty && f.invalid" type="button">
+      <label for="password" class="text-center"
+        >Inserisci la tua password</label
+      >
+      <input
+        type="password"
+        name="password"
+        ngModel
+        placeholder="immetti la password"
+      />
+      <hr />
+      <button (click)="send()" [disabled]="f.dirty && f.invalid" type="button">
         Accedi
       </button>
     </form>
