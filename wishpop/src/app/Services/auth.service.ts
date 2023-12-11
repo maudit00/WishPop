@@ -33,7 +33,7 @@ export class AuthService {
 
   //ng g environment
   registerUrl:string = environment.apiUrl + '/register';
-  loginUrl:string = environment.apiUrl + '/login'
+  loginUrl:string = environment.apiUrl + '/login';
 
 
 

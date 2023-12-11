@@ -1,3 +1,10 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "huxagiwy@mailinator.com",
+      "password": "$2a$10$cyytXlHZKC041ahxqVR08esLtl5GoQIRUNhbHf.7s1jsNFLkBwLFu",
+      "nome": "Reprehenderit sit ",
+      "id": 1
+    }
+  ]
 }
