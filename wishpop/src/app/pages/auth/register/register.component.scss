@@ -1,4 +1,4 @@
-label, input{
+label{
   margin-top: 5px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: 500;
@@ -12,6 +12,14 @@ form {
   align-items: center;
   width: 300px;
   margin: auto;
+}
+
+input{
+height: 1.6rem;
+}
+
+button{
+  height: 2rem;
 }
 
 
