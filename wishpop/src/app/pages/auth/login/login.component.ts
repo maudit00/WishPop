@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 export class LoginComponent {
   @ViewChild('f', { static: true })
   f!: NgForm;
-  print(): void {
-    console.log(this.f.value);
+
+  send(){
   }
 }
