@@ -1,12 +1,14 @@
-<form #f="ngForm">
-  <input type="email" name="email" ngModel placeholder="email" />
-  <input
-    type="password"
-    name="password"
-    ngModel
-    placeholder="immetti la password"
-  />
-  <button (click)="print()" [disabled]="f.dirty && f.invalid" type="button">
-    Accedi
-  </button>
-</form>
+<div class="container">
+  <form #f="ngForm" class="form">
+    <input type="email" name="email" ngModel placeholder="email" />
+    <input
+      type="password"
+      name="password"
+      ngModel
+      placeholder="immetti la password"
+    />
+    <button (click)="print()" [disabled]="f.dirty && f.invalid" type="button">
+      Accedi
+    </button>
+  </form>
+</div>

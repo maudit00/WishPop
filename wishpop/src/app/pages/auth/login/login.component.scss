@@ -1,0 +1,17 @@
+.container {
+  background-color: greenyellow;
+  height: 300px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  justify-content: center;
+
+  margin-top: 10px;
+  gap: 20px;
+  button {
+    border: none;
+    box-shadow: 3px 3px;
+  }
+}
