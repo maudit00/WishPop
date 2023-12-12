@@ -12,7 +12,7 @@
   height: 100vh;
 }
 .container {
-  height: 20rem;
+  height: 25rem;
   width: 30rem;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   position: relative;
@@ -43,8 +43,11 @@
   margin-top: 10px;
   gap: 20px;
   input {
+    border: none;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 7px;
+    padding: 8px;
+    border-radius: 10px;
   }
   label {
     margin-top: 5px;
@@ -55,11 +58,13 @@
 
   button {
     border: none;
-
+    border-radius: 8px;
+    padding: 5px;
     width: 50%;
     align-self: center;
   }
   button:hover {
     background-color: rgb(80, 160, 80);
+    color: white;
   }
 }
