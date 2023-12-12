@@ -47,6 +47,7 @@ export class AuthService {
     .pipe(tap(data => {
 
       this.authSubject.next(data)
+      console.log(this.user$)
       localStorage.setItem('accessData',JSON.stringify(data))
 
 

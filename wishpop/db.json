@@ -32,6 +32,12 @@
         "number": "123"
       },
       "favPayMethod": "creditCard"
+    },
+    {
+      "email": "wiponali@mailinator.com",
+      "password": "$2a$10$88nhLha9m5k/Hr.pDjVpfu5Gu6uEVAB2e2ZTIzCzUGfD/3Szgls.O",
+      "firstTime": true,
+      "id": 5
     }
   ],
   "products": [
