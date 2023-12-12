@@ -44,6 +44,21 @@
       "password": "$2a$10$gW5N2YUBykvRHOqzcy9awe4fo6potGVEH2awYVEYLyZVhRTX2lW6S",
       "firstTime": true,
       "id": 6
+    },
+    {
+      "id": 7,
+      "email": "qaxiryni@mailinator.com",
+      "password": "$2a$10$So9njSSdXu0hpP8c2eWpcuhn9AOoi6BCZmXCOQx/axH92JSJOzJYa",
+      "firstTime": false,
+      "adress": {
+        "state": "Quas elit doloribus",
+        "city": "Dolorem labore ratio",
+        "province": "Amet earum id omni",
+        "cap": "Maiores debitis quia",
+        "street": "Nulla nulla magni ei",
+        "number": "9"
+      },
+      "favPayMethod": "creditCard"
     }
   ],
   "products": [
