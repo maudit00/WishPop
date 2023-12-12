@@ -8,6 +8,7 @@ import { iAccessData } from '../Models/i-access-data';
 import { BehaviorSubject, Observable, map, tap, throwError } from 'rxjs';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { environment } from '../../environments/environment';
+import { iAddInfo } from '../Models/i-user';
 
 @Injectable({
   providedIn: 'root'
@@ -34,7 +35,7 @@ export class AuthService {
   //ng g environment
   registerUrl:string = environment.apiUrl + '/register';
   loginUrl:string = environment.apiUrl + '/login';
-
+  userInfoUrl:string = environment.apiUrl + '/users';
 
 
   signUp(data:iRegister):Observable<iAccessData>{
@@ -80,6 +81,11 @@ export class AuthService {
       //se nessun return viene eseguito proseguo
       this.authSubject.next(accessData)//invio i dati dell'utente al behaviorsubject
       this.autoLogout(accessData.accessToken)//riavvio il timer per la scadenza della sessione
+  }
+
+  addInfoToUser(info: iAddInfo){
+    this.userInfoUrl = this.userInfoUrl + '/' + info.id
+    return this.http.put(this.userInfoUrl, info)
   }
 
 }

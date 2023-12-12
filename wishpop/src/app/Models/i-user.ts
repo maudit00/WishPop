@@ -14,6 +14,7 @@ export interface iUser {
 export interface iAddress {
   state:string;
   city:string;
+  province:string;
   cap:number;
   street:string;
   number:number;
@@ -22,4 +23,12 @@ export interface iAddress {
 export interface iTransaction {
   in:number;
   out:number;
+}
+
+export interface iAddInfo {
+  id:string;
+  email:string;
+  password:string;
+  adress:iAddress;
+  favPayMethod:string;
 }
