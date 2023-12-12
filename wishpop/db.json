@@ -67,6 +67,15 @@
       "cat": "",
       "cond": "C",
       "id": 6
+    },
+    {
+      "name": "Accendino",
+      "description": "piccolo e utile",
+      "price": "5",
+      "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+      "cat": "",
+      "cond": "B",
+      "id": 7
     }
   ],
   "categories": [

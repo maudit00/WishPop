@@ -9,15 +9,28 @@ import { environment } from '../../environments/environment';
 export class ProductService {
 
   constructor(private http:HttpClient) { }
-
+// ARRAY DI PRODOTTI LOCALE
 prodArr: iProduct[] = []
+// URL DI JSON SERVER
+prodUrl:string = environment.apiUrl + '/products';
+catUrl:string = environment.apiUrl + '/categories';
 
+
+// METODO PER PRENDERE TUTTI I PRODOTTI
+getProducts(){
+  return this.http.get<iProduct[]>(this.prodUrl)
+}
+
+// METODO PER AGGIUNGERE I PRODOTTI
 addProduct (prod:iAddProduct){
-return this.http.post(`${environment.apiUrl}/products`,prod)
+return this.http.post(this.prodUrl,prod)
 }
 
+// METODO PER PRENDERE LE CATEGORIE
 getCategories () {
-  return this.http.get<iCategory[]>(`${environment.apiUrl}/categories`)
+  return this.http.get<iCategory[]>(this.catUrl)
 }
+
+
 
 }
