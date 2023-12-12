@@ -59,6 +59,23 @@
         "number": "9"
       },
       "favPayMethod": "creditCard"
+    },
+    {
+      "id": 8,
+      "nome": "pippo",
+      "cognome": "pippa",
+      "email": "pippo@123.it",
+      "password": "$2a$10$KXvIXVgo6d7kbEknsM8M6.eokRXkO4cH1xxBYCD3HXN0fV5KnmILq",
+      "firstTime": false,
+      "adress": {
+        "state": "italia",
+        "city": "civt",
+        "province": "mc",
+        "cap": "62014",
+        "street": "iiiiii",
+        "number": "23"
+      },
+      "favPayMethod": "paypal"
     }
   ],
   "products": [
