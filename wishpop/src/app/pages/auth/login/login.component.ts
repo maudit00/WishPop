@@ -15,7 +15,11 @@ export class LoginComponent {
 
   send(){
     this.authService.login(this.f.value).subscribe(res => {
-      this.route.navigate(['/dashboard']);
+      if (res.user.firstTime){
+        this.route.navigate(['/auth/intro']);
+      } else {
+        this.route.navigate(['/dashboard']);
+      }
     })
   }
 }

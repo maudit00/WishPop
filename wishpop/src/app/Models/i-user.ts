@@ -1,6 +1,7 @@
 export interface iUser {
   id:string
   nome:string
+  cognome:string
   email:string
   password:string
   address: iAddress
@@ -9,6 +10,7 @@ export interface iUser {
   level:string;
   transaction:iTransaction
   feedback:number
+  firstTime:boolean;
 }
 
 export interface iAddress {
@@ -27,8 +29,11 @@ export interface iTransaction {
 
 export interface iAddInfo {
   id:string;
+  nome:string;
+  cognome:string;
   email:string;
   password:string;
   adress:iAddress;
   favPayMethod:string;
+  firstTime:boolean;
 }

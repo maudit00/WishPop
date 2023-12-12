@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { iUser, iAddress, iTransaction, iAddInfo } from '../../Models/i-user';
-import { AuthService } from '../../Services/auth.service';
+import { AuthService } from '../../../Services/auth.service';
+import { iAddInfo } from '../../../Models/i-user';
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,8 +13,11 @@ export class IntroComponent {
   [x: string]: any;
   user: iAddInfo = {
     id: '',
+    nome: '',
+    cognome: '',
     email: '',
     password: '',
+    firstTime: true,
     adress: {
       state: '',
       city: '',
@@ -37,7 +40,6 @@ export class IntroComponent {
       user?.user.id;
      this.user.id = user!.user.id;
      this.user.email = user!.user.email;
-     this.user.password = user!.accessToken;
       }
     )
   }
@@ -45,6 +47,8 @@ export class IntroComponent {
   onSubmit(userForm: NgForm) {
     if (userForm.valid) {
 
+      this.user.nome = userForm.value.nome;
+      this.user.cognome = userForm.value.cognome;
       this.user.adress.state = userForm.value.state;
       this.user.adress.city = userForm.value.city;
       this.user.adress.province = userForm.value.province;
@@ -52,9 +56,11 @@ export class IntroComponent {
       this.user.adress.street = userForm.value.street;
       this.user.adress.number = userForm.value.number;
       this.user.favPayMethod = userForm.value.favPayMethod;
+      this.user.password = userForm.value.password;
+      this.user.firstTime = false;
 
       this.authSvc.addInfoToUser(this.user).subscribe(res => {
-        this.router.navigate(['/auth/home'])
+        this.router.navigate(['/dashboard'])
 
       })
 

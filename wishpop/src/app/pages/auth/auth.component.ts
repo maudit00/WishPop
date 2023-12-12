@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './auth.component.scss'
 })
 export class AuthComponent {
+choosen:boolean=false;
+
+choose():boolean{
+  this.choosen=!this.choosen;
+  return this.choosen;
+}
 
 }

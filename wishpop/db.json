@@ -19,10 +19,19 @@
       "id": 3
     },
     {
+      "id": 4,
       "email": "davide1193@gmail.com",
-      "password": "$2a$10$HFh06oEjQY17VFU6dk9bJuTujyY4MOfhyQo9dpR6dorW/IUqCuu/C",
-      "nome": "Davide",
-      "id": 4
+      "password": "$2a$10$6yh1P7eCQB5eVP0cwcR4N.07A8wZwC/bGTSUuFGMW6otQE7zkU91a",
+      "firstTime": false,
+      "adress": {
+        "state": "Italia",
+        "city": "Lanciano",
+        "province": "Chieti",
+        "cap": "66034",
+        "street": "Via Martiri 6 ottobre",
+        "number": "73/c"
+      },
+      "favPayMethod": "creditCard"
     }
   ],
   "products": [
@@ -88,6 +97,24 @@
       "cat": "",
       "cond": "B",
       "id": 7
+    },
+    {
+      "name": "Ferris Espinoza",
+      "description": "Ea recusandae Volup",
+      "price": "859",
+      "image": "Enim atque ipsum arc",
+      "cat": "",
+      "cond": "E",
+      "id": 8
+    },
+    {
+      "name": "Ferris Espinoza",
+      "description": "Ea recusandae Volup",
+      "price": "859",
+      "image": "Enim atque dd arc",
+      "cat": "",
+      "cond": "E",
+      "id": 9
     }
   ],
   "categories": [

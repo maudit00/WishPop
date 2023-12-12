@@ -3,9 +3,28 @@ input, textarea::placeholder{
   text-align: center
 }
 
-input, textarea {
+input, textarea, label{
   text-align: center
 }
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+.wbutton {
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+  width: 50%;
+  align-self: center;
+  transition-delay: 0.2ms;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  &.rosso:hover{
+    background-color: rgb(223, 85, 85);
+    color: rgb(252, 252, 252);
+  }
+  &:hover{
+  background-color: rgb(80, 160, 80);
+  color: white;
+}
+}

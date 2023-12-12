@@ -21,7 +21,7 @@ throw new Error('Method not implemented.');
   registerData:iRegister = {
     email: '',
     password: '',
-    nome: ''
+    firstTime: true,
   }
 
   confirmPassword: string = '';

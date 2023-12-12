@@ -1,8 +1,3 @@
-<a routerLink="/auth/login" class="mx-2">login</a>
-<a [routerLink]="['/auth', 'register']" class="mx-2">register</a>
-<a [routerLink]="['/dashboard', 'addproduct']" class="mx-2">add product</a>
-<a routerLink="/auth/login">login</a>
-<a routerLink="/home">home</a>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">WishPop</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,11 +8,17 @@
       <li class="nav-item active">
         <a class="nav-link" routerLink="/home">Home</a>
       </li>
+      <li class="nav-item" *ngIf="!logged">
+        <a class="nav-link" routerLink="/auth">Accedi</a>
+      </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/auth/login">Accedi</a>
+        <a class="nav-link" routerLink="/dashboard/addproduct">Add Product</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/auth/register">Registrati</a>
+      </li>
+      <li class="nav-item" *ngIf="logged">
+        <a class="nav-link" routerLink="/auth/register">Dashboard</a>
       </li>
 
     </ul>
