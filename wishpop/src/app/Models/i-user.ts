@@ -14,6 +14,7 @@ export interface iUser {
 export interface iAddress {
   state:string;
   city:string;
+  province:string;
   cap:number;
   street:string;
   number:number;
