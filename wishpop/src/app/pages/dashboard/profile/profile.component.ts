@@ -11,6 +11,8 @@ export class ProfileComponent {
   constructor(private authSvc: AuthService) {
     this.authSvc.user$.subscribe((user) => {
       if (!user) return;
+      console.log(user.user);
+
       this.user = user.user;
     });
   }

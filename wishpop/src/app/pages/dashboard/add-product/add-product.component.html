@@ -1,48 +1,16 @@
 <div class="container">
   <form #f="ngForm">
-    <input
-      type="text"
-      placeholder="Titolo del prodotto"
-      name="name"
-      #name="ngModel"
-      ngModel
-      class="form-control"
-    />
-    <textarea
-      type="text-area"
-      placeholder="Inserisci una descrizione"
-      name="description"
-      #descrconditionsiption="ngModel"
-      ngModel
-      class="form-control"
-    ></textarea>
-    <input
-      type="text"
-      placeholder="Inserisci il prezzo"
-      name="price"
-      #price="ngModel"
-      ngModel
-      class="form-control"
-    />
-    <input
-      type="text"
-      placeholder="inserisci l'url per l'immagine"
-      name="image"
-      #image="ngModel"
-      ngModel
-      class="form-control"
-    />
+    <input type="text" placeholder="Titolo del prodotto" name="name" #name="ngModel" ngModel class="form-control" />
+    <textarea type="text-area" placeholder="Inserisci una descrizione" name="description"
+      #descrconditionsiption="ngModel" ngModel class="form-control"></textarea>
+    <input type="text" placeholder="Inserisci il prezzo" name="price" #price="ngModel" ngModel class="form-control" />
+    <input type="text" placeholder="inserisci l'url per l'immagine" name="image" #image="ngModel" ngModel
+      class="form-control" />
     <div class="form-group">
-      <select name="cat" #cat="ngModel" ngModel class="form-control">
+      <select title="ff" name="cat" #cat="ngModel" ngModel class="form-control">
         <option *ngFor="let c of categories" value="">{{ c.name }}</option>
       </select>
-      <select
-        name="cond"
-        #cond="ngModel"
-        ngModel
-        class="form-control"
-        id="conditions"
-      >
+      <select title="ff" name="cond" #cond="ngModel" ngModel class="form-control" id="conditions">
         <option *ngFor="let condition of conditions" [value]="condition">
           {{ condition }}
         </option>
