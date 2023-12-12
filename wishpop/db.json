@@ -5,6 +5,12 @@
       "password": "$2a$10$cyytXlHZKC041ahxqVR08esLtl5GoQIRUNhbHf.7s1jsNFLkBwLFu",
       "nome": "Reprehenderit sit ",
       "id": 1
+    },
+    {
+      "email": "a.ventura239@icloud.com",
+      "password": "$2a$10$DXWOsVHSEjGFHvmsutZCheFbDZ5YFWaEcq0SwV.UerGBljlhCaA.W",
+      "nome": "Andrea",
+      "id": 2
     }
   ]
 }
