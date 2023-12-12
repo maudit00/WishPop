@@ -14,6 +14,7 @@ export class IntroComponent {
     adress: {
       state: '',
       city: '',
+      province: '',
       cap: 0,
       street: '',
       number: 0
@@ -35,16 +36,21 @@ export class IntroComponent {
   onSubmit(userForm: NgForm) {
     if (userForm.valid) {
 
-      this.user.adress.state = userForm.value.state;
+      this.user.adress.state = userForm.;
       this.user.adress.city = userForm.value.city;
+      this.user.adress.province = userForm.value.province;
       this.user.adress.cap = userForm.value.cap;
       this.user.adress.street = userForm.value.street;
       this.user.adress.number = userForm.value.number;
-
       this.user.favPayMethod = userForm.value.favPayMethod;
-      //chiamata ad user/id-user
-      //una chiamata POST http
-      this.authSvc.addInfoToUser(this.user)
+
+      this.authSvc.addInfoToUser(this.user).subscribe(res => {
+        console.log(res);
+
+      })
+
+
+
       console.log(this.user);
 
     } else {
