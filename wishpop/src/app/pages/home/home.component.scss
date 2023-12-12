@@ -9,15 +9,15 @@
   background-attachment: fixed;
   display: grid;
   align-items: center;
-  height: 400vh;
 }
 .container {
-  height: 100%;
-  width: 300rem;
+  height: 90vh;
+  width: 70vw;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   position: relative;
   background: inherit;
   margin-top: 20px;
+  margin-bottom : 20px;
   border-radius: 5px;
   overflow: hidden;
   z-index: 1;

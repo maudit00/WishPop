@@ -40,19 +40,25 @@
       "id": 5
     },
     {
-      "id": 6,
-      "email": "andrea.cruciani94@gmail.com",
-      "password": "$2a$10$naL7k1RakbOIi4JvJMFyGuc3umN3AIpW1JnPC8kPo7PlnavXjnPJG",
+      "email": "nysynof@mailinator.com",
+      "password": "$2a$10$gW5N2YUBykvRHOqzcy9awe4fo6potGVEH2awYVEYLyZVhRTX2lW6S",
+      "firstTime": true,
+      "id": 6
+    },
+    {
+      "id": 7,
+      "email": "qaxiryni@mailinator.com",
+      "password": "$2a$10$So9njSSdXu0hpP8c2eWpcuhn9AOoi6BCZmXCOQx/axH92JSJOzJYa",
       "firstTime": false,
       "adress": {
-        "state": "italia",
-        "city": " Civitanova Marche",
-        "province": "mc",
-        "cap": "64",
-        "street": "ciccio",
-        "number": "22"
+        "state": "Quas elit doloribus",
+        "city": "Dolorem labore ratio",
+        "province": "Amet earum id omni",
+        "cap": "Maiores debitis quia",
+        "street": "Nulla nulla magni ei",
+        "number": "9"
       },
-      "favPayMethod": "paypal"
+      "favPayMethod": "creditCard"
     }
   ],
   "products": [
@@ -136,19 +142,31 @@
       "cat": "",
       "cond": "E",
       "id": 9
+    },
+    {
+      "name": "Wyoming Tran",
+      "description": "Dolor voluptates qui",
+      "price": "145",
+      "image": "In iure tempora sit ",
+      "cat": "",
+      "cond": "E",
+      "id": 10
     }
   ],
   "categories": [
     {
-      "name": "auto",
+      "name": "videogame",
+      "img": "https://static.open.online/wp-content/uploads/2020/06/Videogiochi.jpg",
       "id": 1
     },
     {
       "name": "vestiti",
+      "img": "",
       "id": 2
     },
     {
       "name": "elettronica",
+      "img": "",
       "id": 3
     }
   ]
