@@ -38,6 +38,21 @@
       "password": "$2a$10$88nhLha9m5k/Hr.pDjVpfu5Gu6uEVAB2e2ZTIzCzUGfD/3Szgls.O",
       "firstTime": true,
       "id": 5
+    },
+    {
+      "id": 6,
+      "email": "Soren@99.com",
+      "password": "$2a$10$SSqXnmA.3N.lo4YuNKSZLOrGlUSzvwTkYxHPEvVr.4BRlbmxClbD6",
+      "firstTime": false,
+      "adress": {
+        "state": "wdwd",
+        "city": "dwwdw",
+        "province": "dwd",
+        "cap": "2336",
+        "street": "wdw",
+        "number": "223"
+      },
+      "favPayMethod": "paypal"
     }
   ],
   "products": [
