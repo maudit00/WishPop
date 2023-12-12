@@ -21,15 +21,15 @@
     {
       "id": 4,
       "email": "davide1193@gmail.com",
-      "password": "$2a$10$6yh1P7eCQB5eVP0cwcR4N.07A8wZwC/bGTSUuFGMW6otQE7zkU91a",
+      "password": "$2a$10$bdCvBr.mhLBGe6VFjIPoxe9KshPEixMOfE7omyqwCvB7FfiagRxt6",
       "firstTime": false,
       "adress": {
         "state": "Italia",
         "city": "Lanciano",
         "province": "Chieti",
         "cap": "66034",
-        "street": "Via Martiri 6 ottobre",
-        "number": "73/c"
+        "street": "Via dalla palle",
+        "number": "123"
       },
       "favPayMethod": "creditCard"
     }
