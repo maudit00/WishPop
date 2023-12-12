@@ -11,6 +11,18 @@
       "password": "$2a$10$UsoL.K4fwRiB.D8tl9d2pORW1JTVxwNkwNfxGh2q7xJOwIEvOuEkC",
       "nome": "Similique quis qui i",
       "id": 2
+    },
+    {
+      "email": "qaqetan@mailinator.com",
+      "password": "$2a$10$EvL0ws1hBDDM7yt2Ts7Cbu/9ajZzjHafNqrlyq.1B9HokqKNs0tby",
+      "nome": "Et autem molestiae e",
+      "id": 3
+    },
+    {
+      "email": "davide1193@gmail.com",
+      "password": "$2a$10$HFh06oEjQY17VFU6dk9bJuTujyY4MOfhyQo9dpR6dorW/IUqCuu/C",
+      "nome": "Davide",
+      "id": 4
     }
   ],
   "products": [
