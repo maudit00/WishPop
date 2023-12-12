@@ -27,6 +27,8 @@ export interface iTransaction {
 
 export interface iAddInfo {
   id:string;
+  email:string;
+  password:string;
   adress:iAddress;
   favPayMethod:string;
 }

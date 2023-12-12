@@ -4,42 +4,42 @@
     <!-- Stato -->
     <div class="mb-3">
       <label for="shippingState" class="form-label">Stato</label>
-      <input type="text" class="form-control" name="shippingState"  #state="ngModel" ngModel placeholder="Inserisci lo stato">
+      <input type="text" class="form-control" name="state"  #state="ngModel" ngModel placeholder="Inserisci lo stato">
     </div>
 
     <!-- Città -->
     <div class="mb-3">
       <label for="shippingCity" class="form-label">Città</label>
-      <input type="text" class="form-control" name="shippingCity"  #city="ngModel" ngModel placeholder="Inserisci la città">
+      <input type="text" class="form-control" name="city"  #city="ngModel" ngModel placeholder="Inserisci la città">
     </div>
 
     <!-- Indirizzo e Numero Civico -->
     <div class="mb-3">
       <label for="shippingAddress" class="form-label">Indirizzo</label>
-      <input type="text" class="form-control" name="shippingAddress"  #street="ngModel" ngModel placeholder="Inserisci l'indirizzo">
+      <input type="text" class="form-control" name="street"  #street="ngModel" ngModel placeholder="Inserisci l'indirizzo">
     </div>
 
     <div class="mb-3">
       <label for="shippingNumber" class="form-label">Numero Civico</label>
-      <input type="text" class="form-control" name="shippingNumber"  #number="ngModel" ngModel placeholder="Inserisci il numero civico">
+      <input type="text" class="form-control" name="number"  #number="ngModel" ngModel placeholder="Inserisci il numero civico">
     </div>
 
     <!-- Provincia -->
     <div class="mb-3">
       <label for="shippingProvince" class="form-label">Provincia</label>
-      <input type="text" class="form-control" name="shippingProvince"  #province="ngModel" ngModel placeholder="Inserisci la provincia">
+      <input type="text" class="form-control" name="province"  #province="ngModel" ngModel placeholder="Inserisci la provincia">
     </div>
 
     <!-- CAP -->
     <div class="mb-3">
       <label for="shippingPostalCode" class="form-label">CAP</label>
-      <input type="text" class="form-control" name="shippingPostalCode"  #cap="ngModel" ngModel placeholder="Inserisci il CAP">
+      <input type="text" class="form-control" name="cap"  #cap="ngModel" ngModel placeholder="Inserisci il CAP">
     </div>
 
     <!-- Metodo di Pagamento Preferito -->
     <div class="mb-3">
       <label for="paymentMethod" class="form-label">Metodo di pagamento preferito</label>
-      <select class="form-select" name="paymentMethod" #favPayMethod="ngModel" ngModel >
+      <select class="form-select" name="favPayMethod" #favPayMethod="ngModel" ngModel >
         <option selected>Scegli il metodo di pagamento...</option>
         <option value="creditCard">Carta di Credito</option>
         <option value="paypal">PayPal</option>
