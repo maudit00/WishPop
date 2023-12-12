@@ -1,6 +1,6 @@
 import { ProductService } from './../../../Services/product.service';
 import { Component, ViewChild } from '@angular/core';
-import { iAddProduct } from '../../../Models/i-product';
+import { iAddProduct, iCategory, iProduct } from '../../../Models/i-product';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -19,7 +19,7 @@ export class AddProductComponent {
 @ViewChild ('f', {static : true})
 
 f!:NgForm;
-categories:any[] = []
+categories:iCategory[] = []
 conditions:string[]= ['A','B','C','D','E','F']
 
 add(prod:iAddProduct){
@@ -27,7 +27,7 @@ add(prod:iAddProduct){
 }
 
 getCategories () {
-  this.productSvc.getCategories().subscribe(res=> res.forEach(cat=>this.categories.push(cat.name)))
+  this.productSvc.getCategories().subscribe(res=> res.forEach(cat=>this.categories.push(cat)))
 }
 
 }

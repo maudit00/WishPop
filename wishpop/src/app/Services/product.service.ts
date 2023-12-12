@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { iAddProduct, iProduct } from '../Models/i-product';
+import { iAddProduct, iCategory, iProduct } from '../Models/i-product';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
@@ -17,7 +17,7 @@ return this.http.post(`${environment.apiUrl}/products`,prod)
 }
 
 getCategories () {
-  return this.http.get<iProduct[]>(`${environment.apiUrl}/categories`)
+  return this.http.get<iCategory[]>(`${environment.apiUrl}/categories`)
 }
 
 }
