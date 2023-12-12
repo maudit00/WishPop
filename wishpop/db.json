@@ -38,6 +38,12 @@
       "password": "$2a$10$88nhLha9m5k/Hr.pDjVpfu5Gu6uEVAB2e2ZTIzCzUGfD/3Szgls.O",
       "firstTime": true,
       "id": 5
+    },
+    {
+      "email": "nysynof@mailinator.com",
+      "password": "$2a$10$gW5N2YUBykvRHOqzcy9awe4fo6potGVEH2awYVEYLyZVhRTX2lW6S",
+      "firstTime": true,
+      "id": 6
     }
   ],
   "products": [
@@ -121,19 +127,31 @@
       "cat": "",
       "cond": "E",
       "id": 9
+    },
+    {
+      "name": "Wyoming Tran",
+      "description": "Dolor voluptates qui",
+      "price": "145",
+      "image": "In iure tempora sit ",
+      "cat": "",
+      "cond": "E",
+      "id": 10
     }
   ],
   "categories": [
     {
-      "name": "auto",
+      "name": "videogame",
+      "img": "https://th.bing.com/th/id/OIP.B2BCUu1rP3zq-ubFsP0eQAHaEK?w=312&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
       "id": 1
     },
     {
       "name": "vestiti",
+      "img": "",
       "id": 2
     },
     {
       "name": "elettronica",
+      "img": "",
       "id": 3
     }
   ]

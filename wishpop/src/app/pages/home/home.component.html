@@ -1,22 +1,7 @@
 <div class="container-fluid">
   <div class="container">
     <h1 class="text-center">WishPop</h1>
-
-<div class="row">
-  <div class="card col-4" *ngFor="let p of prodArr">
-    <img class="card-img-top" [src]="p.image" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{p.name}}</h5>
-      <p class="card-text">{{p.description}}</p>
-      <p class="card-text">Prezzo : {{p.price | currency : 'eur'}}</p>
-    </div>
-  </div>
-</div>
-
-  </div>
-    <h2>Categorie</h2>
+    <h2 class="text-center">Categorie</h2>
 
     <app-card-categotia></app-card-categotia>
   </div>
-  <div class="container"></div>
-

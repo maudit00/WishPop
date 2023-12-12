@@ -1,59 +1,7 @@
-<div class="row">
-  <div class="col">
+  <div class="col-12 col-md-6 col-lg-4" *ngFor="let c of catArr" [style.background-image]="c.imgUrl">
     <div class="card">
       <div class="card-img">
-        <p class="text-center text-white">VideoGame</p>
+        <p class="text-center text-white">{{c.name}}</p>
       </div>
     </div>
   </div>
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="card">
-      <div class="card-img">
-        <p class="text-center text-white">VideoGame</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="card">
-      <div class="card-img">
-        <p class="text-center text-white">VideoGame</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="card">
-      <div class="card-img">
-        <p class="text-center text-white">VideoGame</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="card">
-      <div class="card-img">
-        <p class="text-center text-white">VideoGame</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="card">
-      <div class="card-img">
-        <p class="text-center text-white">VideoGame</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="card">
-      <div class="card-img">
-        <p class="text-center text-white">VideoGame</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="card">
-      <div class="card-img">
-        <p class="text-center text-white">VideoGame</p>
-      </div>
-    </div>
-  </div>
-</div>
-<router-outlet></router-outlet>

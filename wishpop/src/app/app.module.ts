@@ -14,12 +14,13 @@ import { NotificaComponent } from './notifica/notifica.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NotificaComponent,
+    NotificaComponent
   ],
   imports: [
     BrowserModule,
