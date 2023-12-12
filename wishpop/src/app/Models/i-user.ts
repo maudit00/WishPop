@@ -2,7 +2,7 @@ export interface iUser {
   id:string
   nome:string
   email:string
-  password:string
+  password:string | null
   address: iAddress
   favPayMethod : string
   balance:number;

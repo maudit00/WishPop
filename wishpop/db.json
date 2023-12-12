@@ -7,18 +7,19 @@
       "id": 1
     },
     {
-      "id": 2,
       "email": "a.ventura239@icloud.com",
-      "password": "$2a$10$7iL2OphAfr8j3sfFLU4waOSTK.cjQgJOJffJ4jSEoJxmC/qFHeeuW",
+      "password": "$2a$10$dofOYLIDFZFOoDEUb0vlmOXPzdYSAUPk.rVWnHghmJ5zD7VRdlOiO",
+      "nome": "Andrea",
+      "id": 2,
       "adress": {
         "state": "Reggio Emilia",
         "city": "Reggio nell'Emilia",
-        "province": "re",
-        "cap": "42122",
+        "province": "",
+        "cap": "a.ventura239@icloud.com",
         "street": "Via M. Melato",
         "number": "11"
       },
-      "favPayMethod": "paypal"
+      "favPayMethod": ""
     }
   ]
 }

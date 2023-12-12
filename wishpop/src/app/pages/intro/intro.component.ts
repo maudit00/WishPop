@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { iUser, iAddress, iTransaction, iAddInfo } from '../../Models/i-user';
 import { AuthService } from '../../Services/auth.service';
 import { Router } from '@angular/router';
+import { JwtHelperService } from '@auth0/angular-jwt';
 
 @Component({
   selector: 'app-intro',
@@ -27,6 +28,7 @@ export class IntroComponent {
 
   }
 
+  jwt: JwtHelperService = new JwtHelperService
 
   constructor(
     private authSvc: AuthService,
@@ -37,7 +39,7 @@ export class IntroComponent {
       user?.user.id;
      this.user.id = user!.user.id;
      this.user.email = user!.user.email;
-     this.user.password = user!.accessToken;
+
       }
     )
   }
@@ -45,6 +47,7 @@ export class IntroComponent {
   onSubmit(userForm: NgForm) {
     if (userForm.valid) {
 
+      this.user.password = userForm.value.confirmPassword;
       this.user.adress.state = userForm.value.state;
       this.user.adress.city = userForm.value.city;
       this.user.adress.province = userForm.value.province;
@@ -54,7 +57,7 @@ export class IntroComponent {
       this.user.favPayMethod = userForm.value.favPayMethod;
 
       this.authSvc.addInfoToUser(this.user).subscribe(res => {
-        this.router.navigate(['/auth/home'])
+        this.router.navigate(['/home'])
 
       })
 

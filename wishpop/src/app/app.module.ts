@@ -6,12 +6,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { IntroComponent } from './pages/intro/intro.component';
 import { FormsModule } from '@angular/forms';
+import { ProfileComponent } from './pages/dashboard/profile/profile.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     IntroComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

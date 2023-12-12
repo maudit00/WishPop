@@ -85,7 +85,7 @@ export class AuthService {
 
   addInfoToUser(info: iAddInfo){
     this.userInfoUrl = this.userInfoUrl + '/' + info.id
-    return this.http.put(this.userInfoUrl, info)
+    return this.http.patch(this.userInfoUrl, info)
   }
 
 }
