@@ -9,9 +9,11 @@ import { iCategory } from '../../../Models/i-product';
 })
 export class CardCategotiaComponent {
 catArr:iCategory[] = []
+
 constructor(private productService:ProductService){
   this.productService.getCategories().subscribe(categories => {
     this.catArr = categories;
+    console.log(categories);
   })
 }
 }
