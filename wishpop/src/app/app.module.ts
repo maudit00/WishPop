@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './Component/header/header.component';
 import { FooterComponent } from './Component/footer/footer.component';
+import { NotificaComponent } from './notifica/notifica.component';
 
 
 
@@ -15,6 +16,7 @@ import { FooterComponent } from './Component/footer/footer.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    NotificaComponent,
   ],
   imports: [
     BrowserModule,
