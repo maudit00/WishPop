@@ -5,10 +5,10 @@
     <input type="text" placeholder="" name="price" #price="ngModel" ngModel class="form-control" />
     <input type="text" placeholder="" name="image" #image="ngModel" ngModel class="form-control" />
     <div class="form-group">
-      <select *ngIf="categories" name="categories" #cat="ngModel" ngModel class="form-control">
+      <select name="cat" #cat="ngModel" ngModel class="form-control">
         <option  *ngFor="let c of categories" value="">{{c.name}}</option>
       </select>
-      <select name="conditions" #cond="ngModel" ngModel class="form-control" id="conditions">
+      <select name="cond" #cond="ngModel" ngModel class="form-control" id="conditions">
         <option *ngFor="let condition of conditions" [value]="condition">{{condition}}</option>
       </select>
     </div>
