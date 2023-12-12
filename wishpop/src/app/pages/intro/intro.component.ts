@@ -9,17 +9,20 @@ import { AuthService } from '../../Services/auth.service';
 })
 export class IntroComponent {
   [x: string]: any;
+
   user: iAddInfo = {
     id: '',
+    password: '',
+    email: '',
     adress: {
       state: '',
       city: '',
       cap: 0,
       street: '',
       number: 0
-      },
-    favPayMethod: ''
-    }
+    },
+    favPayMethod: '',
+  }
 
 
   constructor(private authSvc: AuthService){
@@ -28,6 +31,8 @@ export class IntroComponent {
     this.authSvc.user$.subscribe(user => {
       user?.user.id;
      this.user.id = user!.user.id
+     this.user.email = user!.user.email
+     this.user.password = user!.accessToken
       }
     )
   }
@@ -40,11 +45,10 @@ export class IntroComponent {
       this.user.adress.cap = userForm.value.cap;
       this.user.adress.street = userForm.value.street;
       this.user.adress.number = userForm.value.number;
-
-      this.user.favPayMethod = userForm.value.favPayMethod;
+      this.user.favPayMethod = userForm.value.paymentMethod;
       //chiamata ad user/id-user
       //una chiamata POST http
-      this.authSvc.addInfoToUser(this.user)
+      this.authSvc.addInfoToUser(this.user).subscribe(res => console.log(res))
       console.log(this.user);
 
     } else {

@@ -11,6 +11,16 @@
       "password": "$2a$10$DXWOsVHSEjGFHvmsutZCheFbDZ5YFWaEcq0SwV.UerGBljlhCaA.W",
       "nome": "Andrea",
       "id": 2
+    },
+    {
+      "id": 3,
+      "password": "$2a$10$HbXCk7JtqHpcqBERFszoQOEF.NlWq9eW5pYluUrexJUUtqbWwAWte",
+      "email": "davide1193@gmail.com",
+      "adress": {
+        "state": "Aliquid odio quam et",
+        "city": "Omnis quae temporibu",
+        "number": "464"
+      }
     }
   ]
 }
