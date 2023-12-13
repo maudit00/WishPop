@@ -4,13 +4,15 @@ import { DashboardComponent } from './dashboard.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { SharedModule } from '../../shared/shared.module';
 import { ProfileComponent } from './profile/profile.component';
+import { OrdersComponent } from './orders/orders.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
     AddProductComponent,
-    ProfileComponent
+    ProfileComponent,
+    OrdersComponent
   ],
   imports: [
     DashboardRoutingModule,
