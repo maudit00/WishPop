@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './Component/header/header.component';
 import { FooterComponent } from './Component/footer/footer.component';
 import { NotificaComponent } from './notifica/notifica.component';
+import { CardCategoryComponent } from './Component/card-category/card-category.component';
 
 
 
@@ -20,7 +21,8 @@ import { NotificaComponent } from './notifica/notifica.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NotificaComponent
+    NotificaComponent,
+    CardCategoryComponent
   ],
   imports: [
     BrowserModule,
