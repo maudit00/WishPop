@@ -21,5 +21,5 @@ export interface iAddProduct {
 export interface iCategory {
   id:number;
   name:string;
-  imgUrl:string;
+  color:string;
 }
