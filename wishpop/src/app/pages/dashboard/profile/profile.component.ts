@@ -40,4 +40,6 @@ export class ProfileComponent {
     feedback: 0,
     firstTime: false,
   };
+
+  save(user: iUser) {}
 }

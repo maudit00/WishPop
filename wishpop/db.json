@@ -76,6 +76,23 @@
         "number": "23"
       },
       "favPayMethod": "paypal"
+    },
+    {
+      "id": 9,
+      "nome": "lupo",
+      "cognome": "lupini",
+      "email": "andrea.luciani94@gmail.com",
+      "password": "$2a$10$keDla.PcVl1Nz04SjRnzEOoIgINAvmo2OM4hBwFoD6ZvKAqxveDp6",
+      "firstTime": false,
+      "adress": {
+        "state": "italia",
+        "city": "sallerno",
+        "province": "sa",
+        "cap": "76865",
+        "street": "sapmp",
+        "number": "67"
+      },
+      "favPayMethod": "paypal"
     }
   ],
   "products": [
