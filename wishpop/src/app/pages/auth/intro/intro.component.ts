@@ -18,7 +18,7 @@ export class IntroComponent {
     email: '',
     password: '',
     firstTime: true,
-    adress: {
+    address: {
       state: '',
       city: '',
       province: '',
@@ -47,22 +47,19 @@ export class IntroComponent {
 
   onSubmit(userForm: NgForm) {
     if (userForm.valid) {
-
       this.user.nome = userForm.value.nome;
       this.user.cognome = userForm.value.cognome;
-      this.user.adress.state = userForm.value.state;
-      this.user.adress.city = userForm.value.city;
-      this.user.adress.province = userForm.value.province;
-      this.user.adress.cap = userForm.value.cap;
-      this.user.adress.street = userForm.value.street;
-      this.user.adress.number = userForm.value.number;
+      this.user.address.state = userForm.value.state;
+      this.user.address.city = userForm.value.city;
+      this.user.address.province = userForm.value.province;
+      this.user.address.cap = userForm.value.cap;
+      this.user.address.street = userForm.value.street;
+      this.user.address.number = userForm.value.number;
       this.user.favPayMethod = userForm.value.favPayMethod;
       this.user.password = userForm.value.password;
       this.user.firstTime = false;
-
       this.authSvc.addInfoToUser(this.user).subscribe(res => {
         this.router.navigate(['/dashboard'])
-
       })
 
     } else {

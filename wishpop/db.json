@@ -93,6 +93,74 @@
         "number": "67"
       },
       "favPayMethod": "paypal"
+    },
+    {
+      "id": 10,
+      "nome": "filippo",
+      "cognome": "neri",
+      "email": "filippo@me.it",
+      "password": "$2a$10$WIBPdk7SR206Otesw8Vn0.wqFCUrTNZIre6HQ55OUopq4X9mi/zxG",
+      "firstTime": false,
+      "address": {
+        "state": "italia",
+        "city": "fossacesia",
+        "province": "ch",
+        "cap": "66030",
+        "street": "via del mare",
+        "number": "123"
+      },
+      "favPayMethod": "creditCard"
+    },
+    {
+      "id": 11,
+      "nome": "dio",
+      "cognome": "santo",
+      "email": "dio@me.it",
+      "password": "$2a$10$lUkrBASNxo8ayTzZ8g98keUlTekzl0ZXqA2XggfpVHA63LgNuBJOG",
+      "firstTime": false,
+      "address": {
+        "state": "cielo",
+        "city": "via delle nuvole",
+        "province": "kyoto",
+        "cap": "0",
+        "street": "1",
+        "number": "1000"
+      },
+      "favPayMethod": "creditCard"
+    },
+    {
+      "id": 12,
+      "nome": "madonna",
+      "cognome": "vergine",
+      "email": "madonna@c.it",
+      "password": "$2a$10$j1qZeRmDZGaShwpG3e/Gi.qHzypt8YtI3tZk.pBgNRbv9czYttRD.",
+      "firstTime": false,
+      "address": {
+        "state": "palestina",
+        "city": "via dal bue",
+        "province": "gaza",
+        "cap": "120",
+        "street": "2",
+        "number": "100"
+      },
+      "favPayMethod": "creditCard"
+    },
+    {
+      "id": 13,
+      "nome": "cristo",
+      "cognome": "re",
+      "email": "cristo@ciao.it",
+      "password": "$2a$10$dcy9m80Fgq85qT2B/A08zuKjn.8LtDGDu4fCo.3pGF1bN2.1LYcUe",
+      "firstTime": false,
+      "address": {
+        "state": "palestina",
+        "city": "via delle bombe",
+        "province": "gaza",
+        "cap": "13",
+        "street": "1",
+        "number": "12"
+      },
+      "favPayMethod": "creditCard"
     }
   ],
   "products": [
@@ -190,32 +258,32 @@
   "categories": [
     {
       "name": "Videogame",
-      "color":"#457abf",
+      "color": "#457abf",
       "id": 1
     },
     {
       "name": "Vestiti",
-      "color":"#8d52c4",
+      "color": "#8d52c4",
       "id": 2
     },
     {
       "name": "Elettronica",
-      "color":"#a4db5c",
+      "color": "#a4db5c",
       "id": 3
     },
     {
       "name": "Kids",
-      "color":"#457abf",
+      "color": "#457abf",
       "id": 4
     },
     {
       "name": "Sport",
-      "color":"#cf936b",
+      "color": "#cf936b",
       "id": 5
     },
     {
       "name": "Giardinaggio",
-      "color":"#9af075  ",
+      "color": "#9af075  ",
       "id": 6
     }
   ]

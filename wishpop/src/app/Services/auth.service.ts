@@ -5,10 +5,10 @@ import { iLogin } from '../Models/i-login';
 import { iRegister } from '../Models/register';
 import { iAccessData } from '../Models/i-access-data';
 
-import { BehaviorSubject, Observable, map, tap, throwError } from 'rxjs';
+import { BehaviorSubject, Observable, Subject, map, tap, throwError } from 'rxjs';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { environment } from '../../environments/environment';
-import { iAddInfo } from '../Models/i-user';
+import { iAddInfo, iUser } from '../Models/i-user';
 
 @Injectable({
   providedIn: 'root',
@@ -17,7 +17,8 @@ export class AuthService {
   jwtHelper: JwtHelperService = new JwtHelperService(); //ci permette di lavorare facilmente con i jwt
 
   authSubject = new BehaviorSubject<iAccessData | null>(null); //null è il valore di default, quindi si parte con utente non loggato
-
+  infoSubject = new Subject<iAddInfo | null>();
+  userInfo$= this.infoSubject.asObservable() //null è il valore di default, quindi si parte con
   user$ = this.authSubject.asObservable(); //contiene i dati dell'utente loggato oppure null
   isLoggedIn$ = this.user$.pipe(map((user) => !!user)); //fornisce true o false in base allo stato di autenticaziuone dell'utente
   //isLoggedIn$ = this.user$.pipe(map(user => Boolean(user)))
@@ -81,6 +82,16 @@ export class AuthService {
 
   addInfoToUser(info: iAddInfo) {
     this.userInfoUrl = this.userInfoUrl + '/' + info.id;
-    return this.http.put(this.userInfoUrl, info);
+    return this.http.put<iAddInfo>(this.userInfoUrl, info).pipe(tap((data) =>
+    {
+      this.infoSubject.next(data)
+      localStorage.setItem('userInfo', JSON.stringify(data))
+    }
+    ));
+  }
+
+  getUserInfo (id:string){
+    this.userInfoUrl = this.userInfoUrl + '/' + id;
+    return this.http.get<iUser>(this.userInfoUrl);
   }
 }

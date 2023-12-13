@@ -33,7 +33,7 @@ export interface iAddInfo {
   cognome:string;
   email:string;
   password:string;
-  adress:iAddress;
+  address:iAddress;
   favPayMethod:string;
   firstTime:boolean;
 }
