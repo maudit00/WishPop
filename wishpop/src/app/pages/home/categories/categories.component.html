@@ -1,1 +1,5 @@
-<p>categories works!</p>
+<div class="row">
+  <div class="col-12 col-md6 col-lg-4" *ngFor="let p of prodArr">
+    <app-card-product [product]="p"></app-card-product>
+  </div>
+</div>

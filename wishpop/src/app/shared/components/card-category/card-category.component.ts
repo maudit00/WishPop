@@ -1,3 +1,4 @@
+import { ProductService } from './../../../Services/product.service';
 import { Component, Input } from '@angular/core';
 import { iCategory } from '../../../Models/i-product';
 import { Router } from '@angular/router';
@@ -8,12 +9,12 @@ import { Router } from '@angular/router';
   styleUrl: './card-category.component.scss'
 })
 export class CardCategoryComponent {
-  constructor(private route:Router){}
+  constructor(private route:Router, private productService:ProductService){}
   @Input () cat!:iCategory
 
-  goTo (id:number){
-    this.route.navigate(['/home/categories',id])
-  }
 
+  setCategory(category:iCategory){
+    this.productService.catSearched = category.name
+  }
 
 }

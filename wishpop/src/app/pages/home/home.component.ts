@@ -10,7 +10,7 @@ import { iCategory, iProduct } from '../../Models/i-product';
 })
 export class HomeComponent {
   constructor(private productService:ProductService) {
-    this.getAllProducts()
+
     this.getAllCategories()
    }
 
@@ -20,9 +20,7 @@ catClicked:boolean=false;
 loadingContent:boolean=false;
 errorLoading:boolean=false;
 
-getAllProducts(){
-  this.productService.getProducts().subscribe(res => this.prodArr = res)
-}
+
 
 getAllCategories(){
   this.loadingContent = true
