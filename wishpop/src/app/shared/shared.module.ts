@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CardCategoryComponent } from './components/card-category/card-category.component';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -17,7 +18,8 @@ import { CardCategoryComponent } from './components/card-category/card-category.
     CommonModule,
     FormsModule,
     HttpClientModule,
-    CardCategoryComponent
+    CardCategoryComponent,
+    NgbDropdownModule
   ]
 })
 export class SharedModule { }

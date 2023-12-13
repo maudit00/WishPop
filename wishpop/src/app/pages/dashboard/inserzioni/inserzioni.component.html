@@ -8,29 +8,20 @@
       <p>Prezzo:</p>
       <p>O proposta d'acquisto</p>
       <p>Descrizione: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  </div>
-  <!--<div class="details-container col-3">
-      <button class="mt-5">Vendi un oggetto simile</button>
-      <select id="categorie">
-        <option value="categoria1">Categoria 1</option>
-        <option value="categoria2">Categoria 2</option>
-        <option value="categoria3">Categoria 3</option>
-
-    </select>
-
-  </div>-->
-
-  <div class="details-container col-3">
-    <div class="btn-group">
-        <button type="button" class="btn btn-primary mt-5">Azioni</button>
-        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Categoria 1</a>
-            <a class="dropdown-item" href="#">Categoria 2</a>
-            <a class="dropdown-item" href="#">Categoria 3</a>
-          </div>
-        </button>
-
     </div>
+    <div class="col-3">
+        <div ngbDropdown class="d-inline-block">
+          <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+            Azioni
+          </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem>Azione 1</button>
+          <button ngbDropdownItem>Azione 2</button>
+          <button ngbDropdownItem>Azione 3</button>
+        </div>
+      </div>
 </div>
+
+
+
 
