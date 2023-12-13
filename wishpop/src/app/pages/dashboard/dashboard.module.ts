@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { AddProductComponent } from './add-product/add-product.component';
-import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../../shared/shared.module';
+
 
 
 @NgModule({
@@ -14,6 +13,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     DashboardRoutingModule,
+    SharedModule
   ]
 })
 export class DashboardModule { }

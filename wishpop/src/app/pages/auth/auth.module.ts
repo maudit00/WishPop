@@ -4,6 +4,7 @@ import { AuthComponent } from './auth.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { IntroComponent } from './intro/intro.component';
+import { SharedModule } from '../../shared/shared.module';
 
 
 
@@ -16,6 +17,7 @@ import { IntroComponent } from './intro/intro.component';
   ],
   imports: [
     AuthRoutingModule,
+    SharedModule
   ]
 })
 export class AuthModule {}

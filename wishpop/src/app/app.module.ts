@@ -6,8 +6,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './Component/header/header.component';
 import { FooterComponent } from './Component/footer/footer.component';
 import { NotificaComponent } from './notifica/notifica.component';
-import { CardCategoryComponent } from './Component/card-category/card-category.component';
 import { SharedModule } from './shared/shared.module';
+import { NgbCollapse } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -21,13 +21,13 @@ import { SharedModule } from './shared/shared.module';
     HeaderComponent,
     FooterComponent,
     NotificaComponent,
-    CardCategoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
     NgbModule,
+    NgbCollapse
   ],
   providers: [],
   bootstrap: [AppComponent],

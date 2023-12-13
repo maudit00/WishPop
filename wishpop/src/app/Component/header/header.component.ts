@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthService } from '../../Services/auth.service';
 
 
@@ -10,6 +9,7 @@ import { AuthService } from '../../Services/auth.service';
 })
 export class HeaderComponent {
   logged:boolean = false;
+  isMenuCollapsed = true;
 
   constructor(private authService:AuthService){
     this.authService.isLoggedIn$.subscribe((data) => {
