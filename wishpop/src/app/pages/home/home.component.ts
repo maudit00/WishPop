@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ProductService } from '../../Services/product.service';
-import { iProduct } from '../../Models/i-product';
+import { iCategory, iProduct } from '../../Models/i-product';
 
 
 @Component({
@@ -10,13 +10,19 @@ import { iProduct } from '../../Models/i-product';
 })
 export class HomeComponent {
   constructor(private productService:ProductService) {
-    this.getAll()
+    this.getAllProducts()
+    this.getAllCategories()
+
    }
 prodArr:iProduct[]=[]
+catArr:iCategory[]=[]
 
-getAll(){
+getAllProducts(){
   this.productService.getProducts().subscribe(res => this.prodArr = res)
 }
 
+getAllCategories(){
+  this.productService.getCategories().subscribe(res => this.catArr = res)
+}
 
 }

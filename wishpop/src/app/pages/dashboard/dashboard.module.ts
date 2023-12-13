@@ -13,9 +13,7 @@ import { FormsModule } from '@angular/forms';
     AddProductComponent
   ],
   imports: [
-    CommonModule,
     DashboardRoutingModule,
-    FormsModule
   ]
 })
 export class DashboardModule { }

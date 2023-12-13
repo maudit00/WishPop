@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ProductService } from '../../Services/product.service';
+import { iCategory } from '../../Models/i-product';
 
 @Component({
   selector: 'app-card-category',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './card-category.component.scss'
 })
 export class CardCategoryComponent {
+
+@Input() cat!:iCategory
+
+constructor(private productService:ProductService){
+
+}
+
 
 }
