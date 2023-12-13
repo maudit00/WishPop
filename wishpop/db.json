@@ -155,19 +155,34 @@
   ],
   "categories": [
     {
-      "name": "videogame",
-      "img": "https://static.open.online/wp-content/uploads/2020/06/Videogiochi.jpg",
+      "name": "Videogame",
+      "color":"#457abf",
       "id": 1
     },
     {
-      "name": "vestiti",
-      "img": "",
+      "name": "Vestiti",
+      "color":"#8d52c4",
       "id": 2
     },
     {
-      "name": "elettronica",
-      "img": "",
+      "name": "Elettronica",
+      "color":"#a4db5c",
       "id": 3
+    },
+    {
+      "name": "Kids",
+      "color":"#457abf",
+      "id": 4
+    },
+    {
+      "name": "Sport",
+      "color":"#cf936b",
+      "id": 5
+    },
+    {
+      "name": "Giardinaggio",
+      "color":"#9af075  ",
+      "id": 6
     }
   ]
 }
