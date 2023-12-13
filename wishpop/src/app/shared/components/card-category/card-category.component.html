@@ -1,13 +1,11 @@
 <div class="ag-format-container ">
   <div class="ag-courses_box ">
     <div class="ag-courses_item ">
-      <a href="#" class="ag-courses-item_link">
-        <div class="ag-courses-item_bg"></div>
-
+      <a (click)="goTo(cat.id)" routerLinkActive="router-link-active"  class="ag-courses-item_link">
+        <div class="ag-courses-item_bg" [style.backgroundColor]="cat.color"></div>
         <div class="ag-courses-item_title">
           {{cat.name}}
         </div>
-
         <div class="ag-courses-item_date-box">
           Start:
           <span class="ag-courses-item_date">

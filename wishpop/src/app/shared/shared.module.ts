@@ -6,9 +6,10 @@ import { CardCategoryComponent } from './components/card-category/card-category.
 
 
 
+
 @NgModule({
   declarations: [
-    CardCategoryComponent
+    CardCategoryComponent,
   ],
   imports: [
 
@@ -17,7 +18,7 @@ import { CardCategoryComponent } from './components/card-category/card-category.
     CommonModule,
     FormsModule,
     HttpClientModule,
-    CardCategoryComponent
+    CardCategoryComponent,
   ]
 })
 export class SharedModule { }
