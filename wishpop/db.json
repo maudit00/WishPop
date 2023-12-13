@@ -59,6 +59,40 @@
         "number": "9"
       },
       "favPayMethod": "creditCard"
+    },
+    {
+      "id": 8,
+      "nome": "pippo",
+      "cognome": "pippa",
+      "email": "pippo@123.it",
+      "password": "$2a$10$KXvIXVgo6d7kbEknsM8M6.eokRXkO4cH1xxBYCD3HXN0fV5KnmILq",
+      "firstTime": false,
+      "adress": {
+        "state": "italia",
+        "city": "civt",
+        "province": "mc",
+        "cap": "62014",
+        "street": "iiiiii",
+        "number": "23"
+      },
+      "favPayMethod": "paypal"
+    },
+    {
+      "id": 9,
+      "nome": "lupo",
+      "cognome": "lupini",
+      "email": "andrea.luciani94@gmail.com",
+      "password": "$2a$10$keDla.PcVl1Nz04SjRnzEOoIgINAvmo2OM4hBwFoD6ZvKAqxveDp6",
+      "firstTime": false,
+      "adress": {
+        "state": "italia",
+        "city": "sallerno",
+        "province": "sa",
+        "cap": "76865",
+        "street": "sapmp",
+        "number": "67"
+      },
+      "favPayMethod": "paypal"
     }
   ],
   "products": [
