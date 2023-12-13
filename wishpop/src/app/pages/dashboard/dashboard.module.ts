@@ -5,12 +5,14 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { FormsModule } from '@angular/forms';
+import { OrdersComponent } from './orders/orders.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    AddProductComponent
+    AddProductComponent,
+    OrdersComponent
   ],
   imports: [
     CommonModule,
