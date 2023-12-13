@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { AuthService } from '../../Services/auth.service';
 
 
@@ -12,6 +11,7 @@ import { AuthService } from '../../Services/auth.service';
 export class HeaderComponent {
   isMenuCollapsed = true
   logged:boolean = false;
+
 
   constructor(private authService:AuthService){
     this.authService.isLoggedIn$.subscribe((data) => {

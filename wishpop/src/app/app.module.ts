@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './Component/header/header.component';
 import { FooterComponent } from './Component/footer/footer.component';
 import { NotificaComponent } from './notifica/notifica.component';
-import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { SharedModule } from './shared/shared.module';
+import { NgbCollapse } from '@ng-bootstrap/ng-bootstrap';
+
+
 
 
 
@@ -24,9 +26,9 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
+    SharedModule,
     NgbModule,
-    FormsModule
+    NgbCollapse
   ],
   providers: [],
   bootstrap: [AppComponent],

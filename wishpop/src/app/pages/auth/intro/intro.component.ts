@@ -37,9 +37,10 @@ export class IntroComponent {
 
     //prendere id da observable
     this.authSvc.user$.subscribe(user => {
-      user?.user.id;
-     this.user.id = user!.user.id;
-     this.user.email = user!.user.email;
+      if (!user) return
+      user.user.id;
+     this.user.id = user.user.id;
+     this.user.email =  user.user.email;
       }
     )
   }

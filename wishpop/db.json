@@ -38,6 +38,27 @@
       "password": "$2a$10$88nhLha9m5k/Hr.pDjVpfu5Gu6uEVAB2e2ZTIzCzUGfD/3Szgls.O",
       "firstTime": true,
       "id": 5
+    },
+    {
+      "email": "nysynof@mailinator.com",
+      "password": "$2a$10$gW5N2YUBykvRHOqzcy9awe4fo6potGVEH2awYVEYLyZVhRTX2lW6S",
+      "firstTime": true,
+      "id": 6
+    },
+    {
+      "id": 7,
+      "email": "qaxiryni@mailinator.com",
+      "password": "$2a$10$So9njSSdXu0hpP8c2eWpcuhn9AOoi6BCZmXCOQx/axH92JSJOzJYa",
+      "firstTime": false,
+      "adress": {
+        "state": "Quas elit doloribus",
+        "city": "Dolorem labore ratio",
+        "province": "Amet earum id omni",
+        "cap": "Maiores debitis quia",
+        "street": "Nulla nulla magni ei",
+        "number": "9"
+      },
+      "favPayMethod": "creditCard"
     }
   ],
   "products": [
@@ -121,19 +142,31 @@
       "cat": "",
       "cond": "E",
       "id": 9
+    },
+    {
+      "name": "Wyoming Tran",
+      "description": "Dolor voluptates qui",
+      "price": "145",
+      "image": "In iure tempora sit ",
+      "cat": "",
+      "cond": "E",
+      "id": 10
     }
   ],
   "categories": [
     {
-      "name": "auto",
+      "name": "videogame",
+      "img": "https://static.open.online/wp-content/uploads/2020/06/Videogiochi.jpg",
       "id": 1
     },
     {
       "name": "vestiti",
+      "img": "",
       "id": 2
     },
     {
       "name": "elettronica",
+      "img": "",
       "id": 3
     }
   ]
