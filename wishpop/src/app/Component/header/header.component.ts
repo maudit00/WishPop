@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { AuthService } from '../../Services/auth.service';
+
 
 
 @Component({
@@ -9,6 +10,7 @@ import { AuthService } from '../../Services/auth.service';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  isMenuCollapsed = true
   logged:boolean = false;
 
   constructor(private authService:AuthService){

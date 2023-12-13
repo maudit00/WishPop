@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './Component/header/header.component';
 import { FooterComponent } from './Component/footer/footer.component';
 import { NotificaComponent } from './notifica/notifica.component';
-
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -31,4 +31,6 @@ import { NotificaComponent } from './notifica/notifica.component';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+
+}
