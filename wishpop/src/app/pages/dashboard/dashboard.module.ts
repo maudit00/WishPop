@@ -5,6 +5,7 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { SharedModule } from '../../shared/shared.module';
 import { ProfileComponent } from './profile/profile.component';
 import { OrdersComponent } from './orders/orders.component';
+import { InserzioniComponent } from './inserzioni/inserzioni.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { OrdersComponent } from './orders/orders.component';
     DashboardComponent,
     AddProductComponent,
     ProfileComponent,
-    OrdersComponent
+    OrdersComponent,
+    InserzioniComponent
   ],
   imports: [
     DashboardRoutingModule,

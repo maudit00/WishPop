@@ -161,6 +161,23 @@
         "number": "12"
       },
       "favPayMethod": "creditCard"
+    },
+    {
+      "id": 14,
+      "nome": "Soren",
+      "cognome": "rrrr",
+      "email": "Soren@99.com",
+      "password": "$2a$10$9itxCMGGhPV3xTwSe3T/bOnFx8IFvZ2RSF83L02FC6.qlSG8LnOGW",
+      "firstTime": false,
+      "address": {
+        "state": "rrrr",
+        "city": "rrrr",
+        "province": "rrrr",
+        "cap": "4444",
+        "street": "rrrr",
+        "number": "3e3e"
+      },
+      "favPayMethod": "creditCard"
     }
   ],
   "products": [
