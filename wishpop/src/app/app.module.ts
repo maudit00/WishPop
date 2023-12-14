@@ -8,6 +8,7 @@ import { FooterComponent } from './Component/footer/footer.component';
 import { NotificaComponent } from './notifica/notifica.component';
 import { SharedModule } from './shared/shared.module';
 import { NgbCollapse } from '@ng-bootstrap/ng-bootstrap';
+import { CheckOutComponent } from './Component/check-out/check-out.component';
 
 
 
@@ -21,6 +22,7 @@ import { NgbCollapse } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     FooterComponent,
     NotificaComponent,
+    CheckOutComponent,
   ],
   imports: [
     BrowserModule,
