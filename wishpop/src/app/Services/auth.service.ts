@@ -4,34 +4,34 @@ import { HttpClient } from '@angular/common/http';
 import { iLogin } from '../Models/i-login';
 import { iRegister } from '../Models/register';
 import { iAccessData } from '../Models/i-access-data';
-
 import { BehaviorSubject, Observable, Subject, map, tap, throwError } from 'rxjs';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { environment } from '../../environments/environment';
 import { iAddInfo, iUser } from '../Models/i-user';
-import { IAuthData } from '../Models/i-auth-data';
+
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  jwtHelper: JwtHelperService = new JwtHelperService(); //ci permette di lavorare facilmente con i jwt
+  jwtHelper: JwtHelperService = new JwtHelperService();
+  authSubject = new BehaviorSubject<iAccessData | null>(null);
 
-  authSubject = new BehaviorSubject<iAccessData | null>(null); //null è il valore di default, quindi si parte con utente non loggato
   infoSubject = new Subject<iAddInfo | null>();
-  userInfo$= this.infoSubject.asObservable() //null è il valore di default, quindi si parte con
-  user$ = this.authSubject.asObservable(); //contiene i dati dell'utente loggato oppure null
-  isLoggedIn$ = this.user$.pipe(map((user) => !!user)); //fornisce true o false in base allo stato di autenticaziuone dell'utente
-  //isLoggedIn$ = this.user$.pipe(map(user => Boolean(user)))
+  userInfo$= this.infoSubject.asObservable()
+
+  user$ = this.authSubject.asObservable().pipe(map((accessData) => accessData?.user));
+  isLoggedIn$ = this.user$.pipe(map((user) => !!user));
+
 
   constructor(
-    private http: HttpClient, //per le chiamate http
-    private router: Router //per i redirect
+    private http: HttpClient,
+    private router: Router
   ) {
-    this.restoreUser(); //come prima cosa controllo se è già attiva una sessione, e la ripristino
+    this.restoreUser();
   }
 
-  //ng g environment
+
   registerUrl: string = environment.apiUrl + '/register';
   loginUrl: string = environment.apiUrl + '/login';
   userInfoUrl: string = environment.apiUrl + '/users';
@@ -44,41 +44,39 @@ export class AuthService {
     return this.http.post<iAccessData>(this.loginUrl, data).pipe(
       tap((data) => {
         this.authSubject.next(data);
-
         localStorage.setItem('accessData', JSON.stringify(data));
-
         this.autoLogout(data.accessToken);
       })
     );
   }
 
   autoLogout(jwt: string) {
-    const expDate = this.jwtHelper.getTokenExpirationDate(jwt) as Date; //recupero la data di scadenza del jwt
-    const expMs = expDate.getTime() - new Date().getTime(); //sottraggo i ms della data attuale da quelli della data del jwt
+    const expDate = this.jwtHelper.getTokenExpirationDate(jwt) as Date;
+    const expMs = expDate.getTime() - new Date().getTime();
 
     setTimeout(() => {
-      //avvio un timer che fa logout allo scadere del tempo
+
       this.logout();
     }, expMs);
   }
 
   logout() {
-    this.authSubject.next(null); //comunico al behaviorsubject che il valore da propagare è null
-    localStorage.removeItem('accessData'); //elimino i dati salvati in localstorage
-    this.router.navigate(['/auth/login']); //redirect al login
+    this.authSubject.next(null);
+    localStorage.removeItem('accessData');
+    this.router.navigate(['/auth/login']);
   }
 
-  //metodo che controlla al reload di pagina se l'utente è loggato e se il jwt è scaduto
+
   restoreUser() {
-    const userJson: string | null = localStorage.getItem('accessData'); //recupero i dati di accesso
-    if (!userJson) return; //se i dati non ci sono blocco la funzione
+    const userJson: string | null = localStorage.getItem('accessData');
+    if (!userJson) return;
 
-    const accessData: iAccessData = JSON.parse(userJson); //se viene eseguita questa riga significa che i dati ci sono, quindi converto la stringa(che conteneva un json) in oggetto
-    if (this.jwtHelper.isTokenExpired(accessData.accessToken)) return; //ora controllo se il token è scaduto, se lo è fermiamo la funzione
+    const accessData: iAccessData = JSON.parse(userJson);
+    if (this.jwtHelper.isTokenExpired(accessData.accessToken)) return;
 
-    //se nessun return viene eseguito proseguo
-    this.authSubject.next(accessData); //invio i dati dell'utente al behaviorsubject
-    this.autoLogout(accessData.accessToken); //riavvio il timer per la scadenza della sessione
+
+    this.authSubject.next(accessData);
+    this.autoLogout(accessData.accessToken);
   }
 
   addInfoToUser(info: iAddInfo) {
@@ -98,13 +96,20 @@ export class AuthService {
 
   updateBalance(balance:{}, id:string){
       const url = environment.apiUrl + '/users/' + id
-    return this.http.patch<iAccessData>(url, balance).pipe(tap((res) =>{
-      this.authSubject.next(res);
-      localStorage.setItem('accessData', JSON.stringify(res));
+    return this.http.patch<iUser>(url, balance).pipe(tap((data) => {
+      this.updateIAccessData(balance)
     }))
   }
 
-
+  updateIAccessData(user:Partial<iUser>){
+    const userJson: string | null = localStorage.getItem('accessData');
+    if (!userJson) return;
+    const accessData: iAccessData = JSON.parse(userJson);
+    let updatedUser = {...accessData.user,...user}
+    accessData.user = updatedUser;
+    this.authSubject.next(accessData);
+    localStorage.setItem('accessData', JSON.stringify(accessData));
+  }
 
 
 

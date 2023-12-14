@@ -32,7 +32,7 @@
         "number": "123"
       },
       "favPayMethod": "creditCard",
-      "balance": null
+      "balance": 158
     },
     {
       "email": "wiponali@mailinator.com",
@@ -128,7 +128,7 @@
         "number": "1000"
       },
       "favPayMethod": "creditCard",
-      "balance": 73
+      "balance": 265
     },
     {
       "id": 12,

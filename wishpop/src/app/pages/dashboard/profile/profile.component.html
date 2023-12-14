@@ -2,17 +2,17 @@
   <div class="container">
     <div class="text-center d-flex flex-column align-items-center">
       <p>nome</p>
-      <p>{{user.user.nome}}</p>
+      <p>{{user.nome}}</p>
       <p>cognome</p>
-      <p>{{ user.user.cognome }}</p>
+      <p>{{ user.cognome }}</p>
       <p>email</p>
-      <p>{{ user.user.email }}</p>
+      <p>{{ user.email }}</p>
       <p>address</p>
       <p>{{ address }}</p>
       <p>balance</p>
-      <p>{{ user.user.balance | currency : 'eur'}}</p>
+      <p>{{ user.balance | currency :'EUR'}}</p>
       <p>level</p>
-      <p>{{ user.user.level | uppercase }}</p>
+      <p>{{ user.level | uppercase }}</p>
     </div>
   </div>
 </div>

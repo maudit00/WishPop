@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AuthService } from '../../../Services/auth.service';
-import { iAddInfo } from '../../../Models/i-user';
+import { iAddInfo, iUser } from '../../../Models/i-user';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,26 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: []
 })
 export class IntroComponent {
-  [x: string]: any;
-  user: iAddInfo = {
-    id: '',
-    nome: '',
-    cognome: '',
-    email: '',
-    password: '',
-    firstTime: true,
-    address: {
-      state: '',
-      city: '',
-      province: '',
-      cap: 0,
-      street: '',
-      number: 0
-    },
-    favPayMethod: ''
-
-  }
-
+  user!:iUser;
 
   constructor(
     private authSvc: AuthService,
@@ -38,9 +19,9 @@ export class IntroComponent {
     //prendere id da observable
     this.authSvc.user$.subscribe(user => {
       if (!user) return
-      user.user.id;
-     this.user.id = user.user.id;
-     this.user.email =  user.user.email;
+      user.id;
+     this.user.id = user.id;
+     this.user.email =  user.email;
       }
     )
   }
