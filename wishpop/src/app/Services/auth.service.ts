@@ -68,9 +68,13 @@ export class AuthService {
     this.autoLogout(accessData.accessToken);
   }
 
-  getUserInfo(id: string) {
-    this.userInfoUrl = this.userInfoUrl + '/' + id;
-    return this.http.get<iUser>(this.userInfoUrl);
+  getUserInfo() {
+    this.user$.subscribe((user) => {
+      if (!user){
+        this.router.navigate(['/auth/login']);
+      }
+      return user
+    });
   }
 
   updatedUser(user:iUser){

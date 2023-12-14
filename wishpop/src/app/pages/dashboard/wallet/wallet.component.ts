@@ -42,5 +42,6 @@ export class WalletComponent {
     if (!this.user.in) this.user.in = []
     let updatedUser = {...this.user, balance : this.user.balance + amount, in : [...this.user.in ,this.transaction] }
     this.authService.updatedUser(updatedUser).subscribe(res => console.log(res))
+    this.router.navigate(['/dashboard'])
   }
 }

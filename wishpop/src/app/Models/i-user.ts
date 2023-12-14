@@ -14,7 +14,7 @@ export interface iUser {
   out : iTransaction[]
   feedback:number
   firstTime:boolean;
-  favorites:iProduct[]
+  wishList:iProduct[]
 }
 
 export interface iAddress {
