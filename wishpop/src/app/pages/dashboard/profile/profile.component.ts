@@ -82,5 +82,12 @@ export class ProfileComponent {
   joinAddress(address: iAddress): string {
     return (this.address = `${address.state} ${address.city} ${address.province} ${address.cap} ${address.street} ${address.number}`);
   }
-  editProfile() {}
+  editProfile() {
+    this.route.params.subscribe((params: any) => {
+      this.authSvc.getUserInfo(params).subscribe((res) => (this.user = res));
+    });
+  }
+  save() {
+    this.authSvc.editUser(this.user).subscribe((res) => (this.user = res));
+  }
 }
