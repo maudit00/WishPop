@@ -4,15 +4,16 @@ textarea::placeholder {
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-  color: rgb(80, 201, 175);
-}
-
 input,
 textarea,
 label {
   text-align: center;
+}
+
+.wish-link {
+  text-decoration: none;
+  color:rgb(168, 106, 197);
+  cursor: pointer;
 }
 
 /* Importing Bootstrap SCSS file. */
@@ -44,3 +45,4 @@ label {
     color: white;
   }
 }
+

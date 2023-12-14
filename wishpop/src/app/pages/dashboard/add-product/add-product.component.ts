@@ -4,6 +4,7 @@ import { iCategory, iProduct } from '../../../Models/i-product';
 import { NgForm } from '@angular/forms';
 import { AuthService } from '../../../Services/auth.service';
 import { iUser } from '../../../Models/i-user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-product',
@@ -13,10 +14,9 @@ import { iUser } from '../../../Models/i-user';
 
 
 export class AddProductComponent {
-  constructor(private productSvc:ProductService, private authService:AuthService) {
+  constructor(private productSvc:ProductService, private authService:AuthService, private router:Router) {
     this.getCategories()
     this.getUser()
-
   }
   user!:iUser;
 
@@ -29,6 +29,7 @@ conditions:string[]= ['A','B','C','D','E','F']
 add(prod:iProduct){
   prod.userId = this.user.id
   this.productSvc.addProduct(prod).subscribe(res=>{console.log(res)})
+  this.router.navigateByUrl('/dashboard/inserzioni')
 }
 
 getUser(){

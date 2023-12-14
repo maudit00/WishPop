@@ -347,6 +347,45 @@
           "id": 6
         }
       ]
+    },
+    {
+      "email": "madonna@ladra.it",
+      "password": "$2a$10$zz7paGL2paCfU0LuCNPkM.xOWbGJNJkFm4OTwpkmBRf1DrNIyc9be",
+      "firstTime": false,
+      "id": 19,
+      "nome": "Madonna",
+      "cognome": "Vergine",
+      "address": {
+        "state": "Distinctio Voluptat",
+        "province": "Nulla aliquam sit bl",
+        "city": "Quis quod ducimus a",
+        "street": "Ad tempora et labore",
+        "number": "6",
+        "cap": "Officia cillum simil"
+      },
+      "favPayMethod": "paypal",
+      "level": "Bronze",
+      "balance": 1000,
+      "in": [
+        {
+          "transaction": {
+            "amount": 1000,
+            "type": "Deposit",
+            "date": "2023-12-14T21:04:57.645Z"
+          }
+        }
+      ],
+      "wishList": [
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        }
+      ]
     }
   ],
   "products": [
@@ -532,6 +571,26 @@
       "cond": "C",
       "userId": 18,
       "id": 20
+    },
+    {
+      "name": "Brian Mccray",
+      "description": "Molestiae dolor quae",
+      "price": "911",
+      "image": "Veniam in rerum par",
+      "cat": "Giardinaggio",
+      "cond": "B",
+      "userId": 4,
+      "id": 21
+    },
+    {
+      "name": "Amanda Mccall",
+      "description": "Incidunt officiis e",
+      "price": "309",
+      "image": "Eveniet aut qui exp",
+      "cat": "Kids",
+      "cond": "C",
+      "userId": 19,
+      "id": 22
     }
   ],
   "categories": [

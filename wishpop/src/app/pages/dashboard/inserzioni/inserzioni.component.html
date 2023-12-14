@@ -1,13 +1,12 @@
-<div class="row px-3">
+<div class="row px-3" *ngFor="let p of prodArr">
   <div class="image-container col-3">
-      <img src="percorso_dell_immagine" alt="Immagine">
+      <img [src]="p.image" alt="Immagine">
   </div>
   <div class="info-container col-6">
-      <h2>Titolo</h2>
-      <p>Numero Ordine: #123456</p>
-      <p>Prezzo:</p>
-      <p>O proposta d'acquisto</p>
-      <p>Descrizione: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h2>{{p.name}}</h2>
+      <p>Prezzo: {{p.price | currency : "EUR"}}</p>
+      <p>Condizioni: {{p.conditions}}</p>
+      <p>Descrizione: {{p.description}}</p>
     </div>
     <div class="col-3">
         <div ngbDropdown class="d-inline-block">
@@ -15,13 +14,14 @@
             Azioni
           </button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button ngbDropdownItem>Azione 1</button>
-          <button ngbDropdownItem>Azione 2</button>
-          <button ngbDropdownItem>Azione 3</button>
+          <button ngbDropdownItem>Elimina</button>
+          <button ngbDropdownItem>Modifica inserzione</button>
         </div>
       </div>
 </div>
+</div>
 
-
-
-
+<div class="alert alert-warning" *ngIf="noRes">
+  <p class="text-center">Non hai ancora aggiunto un tuo prodotto</p>
+  <p class="text-center wish-link" [routerLink]="['/dashboard', 'addproduct']">Clicca qui per mettere la tua prima inserzione</p>
+</div>

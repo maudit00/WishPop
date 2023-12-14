@@ -4,10 +4,11 @@ import { HttpClient } from '@angular/common/http';
 import { iLogin } from '../Models/i-login';
 import { iRegister } from '../Models/register';
 import { iAccessData } from '../Models/i-access-data';
-import { BehaviorSubject, Observable, map, tap, throwError } from 'rxjs';
+import { BehaviorSubject, Observable, Subject, map, tap, throwError } from 'rxjs';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { environment } from '../../environments/environment';
 import { iUser } from '../Models/i-user';
+import { iProduct } from '../Models/i-product';
 
 
 @Injectable({
@@ -18,6 +19,10 @@ export class AuthService {
   authSubject = new BehaviorSubject<iAccessData | null>(null);
   user$ = this.authSubject.asObservable().pipe(map((accessData) => accessData?.user));
   isLoggedIn$ = this.user$.pipe(map((user) => !!user));
+  itemSubject = new Subject <iProduct | null>
+  item$ = this.itemSubject.asObservable()
+
+
   constructor(
     private http: HttpClient,
     private router: Router

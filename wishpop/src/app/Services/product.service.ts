@@ -36,5 +36,9 @@ getProductByCat(name:string){
   return this.http.get<iProduct[]>(`${this.prodUrl}?cat=${name}`)
 }
 
+getProductByUser(userId:string){
+return this.http.get<iProduct[]>(`${this.prodUrl}?userId=${userId}`)
+}
+
 
 }

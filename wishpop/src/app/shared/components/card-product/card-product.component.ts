@@ -37,6 +37,10 @@ export class CardProductComponent {
     this.authService.user$.subscribe(user => user ? this.user = user : null)
   }
 
+  setItemToCheckOut () {
+    this.authService.itemSubject.next(this.product)
+  }
+
   toggleWishList(prod:iProduct){
   if (!this.user) return
   if (this.user.wishList == undefined) this.user.wishList = []
