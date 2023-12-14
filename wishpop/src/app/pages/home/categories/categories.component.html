@@ -1,12 +1,12 @@
 <div class="row">
   <div class="alert alert-warning" *ngIf="noRes">
-  <p>Non ci sono risultati per la categoria {{catName}}</p>
+  <p class="text-center">Non ci sono risultati per la categoria {{catName}}</p>
   </div>
   <div class="alert alert-info" *ngIf="noRes">
-  <p>ti mostriamo tutti i nostri prodotti {{catName}}</p>
+  <p class="text-center">Guarda pure in altri prodotti presenti su WishPop</p>
   </div>
-  <div class="alert alert-success">
-    <p></p>
+  <div class="alert alert-success" *ngIf="!noRes">
+    <p class="text-center">Ecco i risultati per {{catName}}</p>
   </div>
   <div class="col-12 col-md6 col-lg-4" *ngFor="let p of prodArr">
     <app-card-product [product]="p"></app-card-product>
