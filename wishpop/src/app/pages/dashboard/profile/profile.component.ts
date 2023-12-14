@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { iAddress, iUser } from '../../../Models/i-user';
 import { AuthService } from '../../../Services/auth.service';
 import { iAccessData } from '../../../Models/i-access-data';
-
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -14,13 +14,8 @@ export class ProfileComponent {
     this.getUser()
   }
 
-
-  balance: number | undefined = 0;
-  level: string | undefined = '';
- address: string = '';
- transaction : number | undefined = 0;
-
- user!: iUser;
+  address: string = '';
+  user!: iUser;
 
   getUser(){
     this.authSvc.user$.subscribe(user => {
@@ -31,7 +26,7 @@ export class ProfileComponent {
     })
   }
 
-  joinAddress (address: iAddress):string{
-   return this.address = `${address.state} ${address.city} ${address.province} ${address.cap} ${address.street} ${address.number}`
+  joinAddress(address: iAddress): string {
+    return (this.address = `${address.state} ${address.city} ${address.province} ${address.cap} ${address.street} ${address.number}`);
   }
 }

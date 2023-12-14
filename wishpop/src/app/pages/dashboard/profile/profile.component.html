@@ -13,6 +13,8 @@
       <p>{{ user.balance | currency :'EUR'}}</p>
       <p>level</p>
       <p>{{ user.level | uppercase }}</p>
+      <button (click)="editProfile">Modifica</button>
+      <button (click)="save">salva modifiche</button>
     </div>
   </div>
 </div>

@@ -81,15 +81,15 @@ export class AuthService {
 
   addInfoToUser(info: iAddInfo) {
     this.userInfoUrl = this.userInfoUrl + '/' + info.id;
-    return this.http.put<iAccessData>(this.userInfoUrl, info).pipe(tap((data) =>
-    {
-      this.authSubject.next(data);
-      localStorage.setItem('accessData', JSON.stringify(data));
-    }
-    ));
+    return this.http.put<iAccessData>(this.userInfoUrl, info).pipe(
+      tap((data) => {
+        this.authSubject.next(data);
+        localStorage.setItem('accessData', JSON.stringify(data));
+      })
+    );
   }
 
-  getUserInfo (id:string){
+  getUserInfo(id: string) {
     this.userInfoUrl = this.userInfoUrl + '/' + id;
     return this.http.get<iUser>(this.userInfoUrl);
   }

@@ -1,25 +1,39 @@
-<div class="container">
-  <form #f="ngForm">
-    <input type="text" placeholder="Titolo del prodotto" name="name" #name="ngModel" ngModel class="form-control" />
-    <textarea type="text-area" placeholder="Inserisci una descrizione" name="description"
-      #descrconditionsiption="ngModel" ngModel class="form-control"></textarea>
-    <input type="text" placeholder="Inserisci il prezzo" name="price" #price="ngModel" ngModel class="form-control" />
-    <input type="text" placeholder="inserisci l'url per l'immagine" name="image" #image="ngModel" ngModel
-      class="form-control" />
-    <div class="form-group">
-      <select title="ff" name="cat" #cat="ngModel" ngModel class="form-control">
-        <option *ngFor="let c of categories" value="">{{ c.name }}</option>
-      </select>
-      <select title="ff" name="cond" #cond="ngModel" ngModel class="form-control" id="conditions">
-        <option *ngFor="let condition of conditions" [value]="condition">
-          {{ condition }}
-        </option>
-      </select>
+<div class="container-fluid">
+  <div class="container">
+    <h3 class="text-center">Aggiungi Prodotto</h3>
+    <div class="d-flex mt-4 justify-content-center  ">
+      <form #f="ngForm">
+        <p class=" p text-center mb-2">Nome Prodotto</p>
+        <input type="text" placeholder="Titolo del prodotto" name="name" #name="ngModel" ngModel class="form-control" />
+        <p class=" p text-center m-2">Descrizione Prodotto</p>
+
+        <textarea type="text-area" placeholder="Inserisci una descrizione" name="description"
+          #descrconditionsiption="ngModel" ngModel class="form-control"></textarea>
+        <p class=" p text-center m-2">Prezzo Prodotto</p>
+
+        <input type="text" placeholder="Inserisci il prezzo" name="price" #price="ngModel" ngModel
+          class="form-control" />
+        <p class=" p text-center m-2">Immagine Prodotto</p>
+
+        <input type="text" placeholder="inserisci l'url per l'immagine" name="image" #image="ngModel" ngModel
+          class="form-control" />
+        <p class=" p text-center m-2">Categoria</p>
+        <div class="form-group">
+          <select title="ff" name="cat" #cat="ngModel" ngModel class="form-control">
+            <option *ngFor="let c of categories" value="">{{ c.name }}</option>
+          </select>
+          <select title="ff" name="cond" #cond="ngModel" ngModel class="form-control" id="conditions">
+            <option *ngFor="let condition of conditions" [value]="condition">
+              {{ condition }}
+            </option>
+          </select>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="wbutton m-4" (click)="add(this.f.value)">
+            Aggiungi
+          </button>
+        </div>
+      </form>
     </div>
-    <div class="d-flex justify-content-center">
-      <button type="button" class="btn btn-info" (click)="add(this.f.value)">
-        Aggiungi
-      </button>
-    </div>
-  </form>
+  </div>
 </div>
