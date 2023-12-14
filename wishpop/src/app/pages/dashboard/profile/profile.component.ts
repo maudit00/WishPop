@@ -42,7 +42,8 @@ export class ProfileComponent {
      in: 0,
      out: 0
    },
-   feedback: 0
+   feedback: 0,
+   favorites: []
  }
 
   getUserInfo(){
@@ -60,6 +61,7 @@ export class ProfileComponent {
     })
    })
   }
+
   joinAddress (address: iAddress):string{
    return this.address = `${address.state} ${address.city} ${address.province} ${address.cap} ${address.street} ${address.number}`
   }

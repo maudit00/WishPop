@@ -18,7 +18,8 @@ import { LoaderComponent } from './components/loader/loader.component';
     LoaderComponent,
   ],
   imports: [
-    RouterModule
+    RouterModule,
+    CommonModule
   ],
   exports: [
     CommonModule,

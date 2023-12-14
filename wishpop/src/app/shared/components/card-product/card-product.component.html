@@ -4,6 +4,8 @@
       <h5 class="card-title">{{product.name}}</h5>
       <p class="card-text">{{product.description}}</p>
       <p class="card-text">Prezzo : {{product.price}}</p>
+      <button *ngIf="isLoggedIn">Compra</button>
+      <button *ngIf="isLoggedIn">Aggiungi alla WishList</button>
     </div>
   </div>
 

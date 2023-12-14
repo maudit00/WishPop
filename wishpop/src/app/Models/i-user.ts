@@ -1,3 +1,5 @@
+import { iProduct } from "./i-product"
+
 export interface iUser {
   id:string
   nome:string
@@ -11,6 +13,7 @@ export interface iUser {
   transaction:iTransaction
   feedback:number
   firstTime:boolean;
+  favorites:iProduct[]
 }
 
 export interface iAddress {
