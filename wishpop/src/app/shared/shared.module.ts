@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CardCategoryComponent } from './components/card-category/card-category.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { RouterModule } from '@angular/router';
+import { LoaderComponent } from './components/loader/loader.component';
 
 
 
@@ -14,6 +15,7 @@ import { RouterModule } from '@angular/router';
   declarations: [
     CardCategoryComponent,
     CardProductComponent,
+    LoaderComponent,
   ],
   imports: [
     RouterModule
@@ -24,7 +26,7 @@ import { RouterModule } from '@angular/router';
     HttpClientModule,
     CardCategoryComponent,
     CardProductComponent,
-
+    LoaderComponent
   ]
 })
 export class SharedModule { }

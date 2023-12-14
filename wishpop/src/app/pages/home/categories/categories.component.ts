@@ -9,10 +9,14 @@ import { iProduct } from '../../../Models/i-product';
 })
 export class CategoriesComponent {
 
-
+  loading:boolean = false;
+  noRes:boolean = false;
   prodArr:iProduct[] = []
+  catName:string=''
+
   constructor(private productService:ProductService) {
-    this.productService.catSearched != '' ? this.getProductByCat(this.productService.catSearched) : this.getAllProducts()
+    this.getProductByCat(this.productService.catSearched)
+    this.catName = this.productService.catSearched
   }
 
   getAllProducts(){
@@ -22,9 +26,10 @@ export class CategoriesComponent {
   }
 
   getProductByCat (name:string) {
-    this.productService.getProductByCat(name).subscribe(products => this.prodArr = products)
+    this.loading = true;
+    this.productService.getProductByCat(name).subscribe(products => {
+      products.length > 0? this.prodArr = products : (this.getAllProducts(), this.noRes = true)
+      this.loading = false
+    })
   }
-
-
-
 }
