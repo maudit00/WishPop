@@ -94,4 +94,13 @@ export class AuthService {
     this.userInfoUrl = this.userInfoUrl + '/' + id;
     return this.http.get<iUser>(this.userInfoUrl);
   }
+
+  addBalance(id:string, amount:number){
+    this.userInfoUrl = `${this.userInfoUrl}/id?=balance`;
+    return this.http.patch<iUser>(this.userInfoUrl, amount);
+  }
+
+
+
+
 }
