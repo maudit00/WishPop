@@ -15,36 +15,29 @@ export class IntroComponent {
   constructor(
     private authSvc: AuthService,
     private router:Router){
-
-    //prendere id da observable
-    this.authSvc.user$.subscribe(user => {
-      if (!user) return
-      user.id;
-     this.user.id = user.id;
-     this.user.email =  user.email;
-      }
-    )
+    this.getUser()
   }
 
   onSubmit(userForm: NgForm) {
     if (userForm.valid) {
-      this.user.nome = userForm.value.nome;
-      this.user.cognome = userForm.value.cognome;
-      this.user.address.state = userForm.value.state;
-      this.user.address.city = userForm.value.city;
-      this.user.address.province = userForm.value.province;
-      this.user.address.cap = userForm.value.cap;
-      this.user.address.street = userForm.value.street;
-      this.user.address.number = userForm.value.number;
-      this.user.favPayMethod = userForm.value.favPayMethod;
-      this.user.password = userForm.value.password;
-      this.user.firstTime = false;
-      this.authSvc.addInfoToUser(this.user).subscribe(res => {
-        this.router.navigate(['/dashboard'])
-      })
+     if (this.user.firstTime) {
+      this.user.level = 'Bronze'
+      this.user.firstTime = false
+      this.user.balance = 0
+    }
+    this.user = {...userForm.value, ...this.user}
+    console.log(this.user)
+    this.authSvc.updatedUser(this.user).subscribe(res => {
+      this.router.navigate(['/dashboard'])
+    })
 
-    } else {
+  }
+    else {
       console.error('Il form non è valido!');
     }
+  }
+
+  getUser(){
+    this.authSvc.user$.subscribe(user => user ? this.user = user : null)
   }
 }

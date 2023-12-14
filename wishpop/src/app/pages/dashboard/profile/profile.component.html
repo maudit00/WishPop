@@ -1,20 +1,44 @@
 <div class="container-fluid">
   <div class="container">
-    <div class="text-center d-flex flex-column align-items-center">
+    <div class="d-flex flex-column align-items-center text-center">
       <p>nome</p>
-      <p>{{user.nome}}</p>
+      <div>
+        <p *ngIf="!editMode">{{user.nome}}</p>
+        <input type="text" [(ngModel)]="user.nome" *ngIf="editMode">
+      </div>
       <p>cognome</p>
-      <p>{{ user.cognome }}</p>
+      <div>
+        <p *ngIf="!editMode">{{ user.cognome }}</p>
+        <input type="text" [(ngModel)]="user.cognome" *ngIf="editMode">
+      </div>
       <p>email</p>
-      <p>{{ user.email }}</p>
+      <div>
+        <p *ngIf="!editMode">{{ user.email }}</p>
+        <input type="text" [(ngModel)]="user.email" *ngIf="editMode">
+      </div>
       <p>address</p>
-      <p>{{ address }}</p>
+      <div>
+        <p *ngIf="!editMode"></p>
+        <div class="d-flex flex-wrap justify-content-evenly" *ngIf="editMode">
+          <input type="text" [(ngModel)]="user.address.state">
+          <input type="text" [(ngModel)]="user.address.province">
+          <input type="text" [(ngModel)]="user.address.city">
+          <input type="text" [(ngModel)]="user.address.cap">
+          <input type="text" [(ngModel)]="user.address.city" >
+        </div>
+      </div>
       <p>balance</p>
-      <p>{{ user.balance | currency :'EUR'}}</p>
+      <div>
+        <p *ngIf="!editMode">{{ user.balance | currency :'EUR'}}</p>
+      </div>
       <p>level</p>
-      <p>{{ user.level | uppercase }}</p>
-      <button (click)="editProfile">Modifica</button>
-      <button (click)="save">salva modifiche</button>
+      <div>
+        <p *ngIf="!editMode">{{ user.level | uppercase }}</p>
+      </div>
+
+        <button type="button" class="wbutton profile-button px-5" (click)="toggleEditMode()">Modifica</button>
+        <button type="button" class="wbutton profile-button px-5" *ngIf="editMode" (click)="editUser(user)">Salva modifiche</button>
+
     </div>
   </div>
 </div>

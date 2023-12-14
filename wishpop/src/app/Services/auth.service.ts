@@ -101,6 +101,13 @@ export class AuthService {
     }))
   }
 
+  updatedUser(user:iUser){
+    const url = environment.apiUrl + '/users/' + user.id
+        return this.http.patch<iUser>(url, user).pipe(tap((data) => {
+          this.updateIAccessData(user)
+        }))
+  }
+
   updateIAccessData(user:Partial<iUser>){
     const userJson: string | null = localStorage.getItem('accessData');
     if (!userJson) return;
