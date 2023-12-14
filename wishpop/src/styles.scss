@@ -1,4 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --main-bg-color: rgb(170, 233, 233);
+  --gradient-start: rgb(177, 214, 214);
+  --gradient-mid: rgb(195, 219, 189);
+  --gradient-end: rgb(207, 195, 168);
+  --copyright-bg: rgb(195, 219, 189);
+}
+
+.container-fluid {
+  background-color: var(--main-bg-color);
+  background-image: linear-gradient(352deg, var(--gradient-start) 0%, var(--gradient-mid) 47%, var(--gradient-end) 100%);
+}
+
+.copyright-container {
+  background-color: var(--copyright-bg);
+}
+
+
+
+
+
 input, textarea::placeholder{
   text-align: center;
 
@@ -34,3 +55,4 @@ input, textarea, label{
   color: white;
 }
 }
+
