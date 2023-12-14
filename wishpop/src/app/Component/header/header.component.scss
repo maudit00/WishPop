@@ -1,11 +1,19 @@
-
-.link{
+.link {
   text-align: center;
 }
-.link a:hover{
-  background-color: rgb(80, 160, 80)
+.link a:hover {
+  background-color: rgb(80, 160, 80);
 }
 
 .profile-icon {
   width: 50px;
+}
+.flexFoto {
+  justify-content: space-around;
+  gap: 33px;
+  align-items: baseline;
+}
+#gap {
+  justify-content: end;
+  gap: 20px;
 }
