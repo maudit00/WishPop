@@ -9,6 +9,7 @@ import { BehaviorSubject, Observable, Subject, map, tap, throwError } from 'rxjs
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { environment } from '../../environments/environment';
 import { iAddInfo, iUser } from '../Models/i-user';
+import { IAuthData } from '../Models/i-auth-data';
 
 @Injectable({
   providedIn: 'root',
@@ -95,10 +96,14 @@ export class AuthService {
     return this.http.get<iUser>(this.userInfoUrl);
   }
 
-  addBalance(id:string, amount:number){
-    this.userInfoUrl = `${this.userInfoUrl}/id?=balance`;
-    return this.http.patch<iUser>(this.userInfoUrl, amount);
+  updateBalance(balance:{}, id:string){
+      const url = environment.apiUrl + '/users/' + id
+    return this.http.patch<iAccessData>(url, balance).pipe(tap((res) =>{
+      this.authSubject.next(res);
+      localStorage.setItem('accessData', JSON.stringify(res));
+    }))
   }
+
 
 
 

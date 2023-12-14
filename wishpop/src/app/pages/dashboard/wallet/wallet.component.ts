@@ -1,6 +1,6 @@
-import { iUser } from '../../../Models/i-user';
 import { AuthService } from './../../../Services/auth.service';
 import { Component } from '@angular/core';
+import { iAccessData } from '../../../Models/i-access-data';
 
 @Component({
   selector: 'app-wallet',
@@ -10,26 +10,37 @@ import { Component } from '@angular/core';
 export class WalletComponent {
 
   constructor(private authService:AuthService){
-    this.getUserBalance();
+    this.getUser();
     this.addBalance();
   }
 
   userBalance!:number;
   id!:string;
+  user!:iAccessData | null;
 
-
-  getUserBalance(){
+  getUser(){
      this.authService.user$.subscribe(user => {
       if(!user) return
-      this.id  =  user.user.id
-      user.user.balance ? this.userBalance = user.user.balance : this.userBalance = 0 ;
+      this.user = user
     })
   }
 
-  addBalance(){
-      this.authService.addBalance(this.id, 5).subscribe(data=> console.log(data))
-  }
+  // addBalance(){
+  //   if (!this.user) return
+  //   this.authService.updateBalance(this.user).subscribe(res => {
+  //    this.userBalance = res.user.balance
+  //  })
+  // }
 
+  addBalance(){
+    if (!this.user) return
+    const newBalance = {
+      balance : this.user.user.balance + 100
+    }
+    this.authService.updateBalance(newBalance, this.user.user.id).subscribe(res => {
+      this.userBalance = res.user.balance
+    })
+  }
 
 
 }
