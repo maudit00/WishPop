@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { iAddProduct, iCategory, iProduct } from '../Models/i-product';
+import { iCategory, iProduct } from '../Models/i-product';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
@@ -23,7 +23,7 @@ getProducts(){
 }
 
 // METODO PER AGGIUNGERE I PRODOTTI
-addProduct (prod:iAddProduct){
+addProduct (prod:Partial<iProduct>){
 return this.http.post(this.prodUrl,prod)
 }
 
