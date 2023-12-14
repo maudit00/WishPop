@@ -1,6 +1,7 @@
 import { AuthService } from './../../../Services/auth.service';
 import { Component } from '@angular/core';
-import { iUser } from '../../../Models/i-user';
+import { iTransaction, iUser } from '../../../Models/i-user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-wallet',
@@ -9,7 +10,7 @@ import { iUser } from '../../../Models/i-user';
 })
 export class WalletComponent {
 
-  constructor(private authService:AuthService){
+  constructor(private authService:AuthService, private router:Router){
   this.getUser()
   }
 
@@ -17,6 +18,13 @@ export class WalletComponent {
   id!:string;
   user!:iUser;
   amount:number = 0
+  transaction:iTransaction = {
+    transaction:{
+      amount:0,
+      type:'',
+      date:new Date()
+    }
+  }
 
   getUser(){
      this.authService.user$.subscribe(user => {
@@ -26,18 +34,13 @@ export class WalletComponent {
     })
   }
 
-
-  addBalance(amount:number){
+  addBalance (amount:number){
     if (!this.user) return
-    const newBalance = {
-      balance : this.user.balance + amount
-    }
-    this.authService.updateBalance(newBalance, this.user.id).subscribe(res => {
-      this.user = res
-      this.amount = 0
-      console.log(res)
-    })
+    this.transaction.transaction.amount = amount
+    this.transaction.transaction.type = 'Deposit'
+    this.transaction.transaction.date = new Date()
+    if (!this.user.in) this.user.in = []
+    let updatedUser = {...this.user, balance : this.user.balance + amount, in : [...this.user.in ,this.transaction] }
+    this.authService.updatedUser(updatedUser).subscribe(res => console.log(res))
   }
-
-
 }

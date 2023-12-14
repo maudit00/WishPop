@@ -21,8 +21,7 @@ export class ProfileComponent {
     this.authSvc.user$.subscribe(user => {
       if(!user) return
       this.user = user
-      this.address = user.address
-      console.log(this.address)
+      console.log(user.address, this.user.address)
       console.log(this.user)
     })
   }

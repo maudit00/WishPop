@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AuthService } from '../../../Services/auth.service';
-import { iAddInfo, iUser } from '../../../Models/i-user';
+import { iUser } from '../../../Models/i-user';
 import { Router } from '@angular/router';
 
 @Component({
@@ -30,7 +30,6 @@ export class IntroComponent {
     this.authSvc.updatedUser(this.user).subscribe(res => {
       this.router.navigate(['/dashboard'])
     })
-
   }
     else {
       console.error('Il form non è valido!');

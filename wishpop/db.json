@@ -32,9 +32,19 @@
         "number": "123"
       },
       "favPayMethod": "creditCard",
-      "balance": 248,
+      "balance": 982,
       "nome": "Davide",
-      "cognome": "D'Amario"
+      "cognome": "D'Amario",
+      "transaction": {
+        "in": {
+          "amount": 44,
+          "type": "Ricarica"
+        },
+        "out": {
+          "amount": 0,
+          "type": ""
+        }
+      }
     },
     {
       "email": "wiponali@mailinator.com",
@@ -216,6 +226,77 @@
       "favPayMethod": "paypal",
       "level": "Bronze",
       "balance": 46
+    },
+    {
+      "email": "re@re.it",
+      "password": "$2a$10$49wzpgulmeMdEIoJHFeF6eeAdhaqbcTYBhcx1Uv2LmuHJsSvKD0Xm",
+      "firstTime": false,
+      "id": 17,
+      "nome": "Est esse porro qui e",
+      "cognome": "Ratione fugiat tempo",
+      "address": {
+        "state": "Ut distinctio Earum",
+        "province": "Esse quia incididun",
+        "city": "Qui eos exercitation",
+        "street": "Ullam quidem et fugi",
+        "number": "68",
+        "cap": "Harum dolor iusto in"
+      },
+      "favPayMethod": "bankTransfer",
+      "level": "Bronze",
+      "balance": 102,
+      "transaction": {
+        "in": {
+          "amount": 45,
+          "type": "Ricarica"
+        },
+        "out": {
+          "amount": 0,
+          "type": ""
+        }
+      }
+    },
+    {
+      "email": "wei@we.it",
+      "password": "$2a$10$jA0cDcuu7rYcuqIe0rxRT.bXiRjvMJIk2Vgw0HtM/MXiL1v1tBIeq",
+      "firstTime": false,
+      "id": 18,
+      "nome": "Pippo",
+      "cognome": "Franco",
+      "address": {
+        "state": "Italia",
+        "province": "Roma",
+        "city": "rm",
+        "street": "via dalla chiesa",
+        "number": "3",
+        "cap": "01000"
+      },
+      "favPayMethod": "paypal",
+      "level": "Bronze",
+      "balance": 454,
+      "in": [
+        {
+          "transaction": {
+            "amount": 43,
+            "type": "Deposit",
+            "date": "2023-12-14T16:10:22.770Z"
+          }
+        },
+        {
+          "transaction": {
+            "amount": 345,
+            "type": "Deposit",
+            "date": "2023-12-14T16:11:25.577Z"
+          }
+        },
+        {
+          "transaction": {
+            "amount": 345,
+            "type": "Deposit",
+            "date": "2023-12-14T16:11:25.577Z"
+          }
+        }
+      ]
     }
   ],
   "products": [

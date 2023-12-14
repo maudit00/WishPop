@@ -12,10 +12,6 @@ import { CheckOutComponent } from './Component/check-out/check-out.component';
 
 
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,

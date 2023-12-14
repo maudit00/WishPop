@@ -10,7 +10,8 @@ export interface iUser {
   favPayMethod : string
   balance:number;
   level:string;
-  transaction:iTransaction
+  in : iTransaction[]
+  out : iTransaction[]
   feedback:number
   firstTime:boolean;
   favorites:iProduct[]
@@ -26,17 +27,9 @@ export interface iAddress {
 }
 
 export interface iTransaction {
-  in:number;
-  out:number;
-}
-
-export interface iAddInfo {
-  id:string;
-  nome:string;
-  cognome:string;
-  email:string;
-  password:string;
-  address:iAddress;
-  favPayMethod:string;
-  firstTime:boolean;
+  transaction:{
+    amount:number
+    type:string
+    date:Date
+  }
 }

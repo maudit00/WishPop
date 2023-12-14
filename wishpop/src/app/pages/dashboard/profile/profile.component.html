@@ -18,13 +18,15 @@
       </div>
       <p>address</p>
       <div>
-        <p *ngIf="!editMode"></p>
+        <p *ngIf="!editMode">{{joinAddress(user.address)}}</p>
         <div class="d-flex flex-wrap justify-content-evenly" *ngIf="editMode">
           <input type="text" [(ngModel)]="user.address.state">
           <input type="text" [(ngModel)]="user.address.province">
           <input type="text" [(ngModel)]="user.address.city">
           <input type="text" [(ngModel)]="user.address.cap">
-          <input type="text" [(ngModel)]="user.address.city" >
+          <input type="text" [(ngModel)]="user.address.street">
+          <input type="text" [(ngModel)]="user.address.number">
+
         </div>
       </div>
       <p>balance</p>

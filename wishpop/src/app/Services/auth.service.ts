@@ -4,10 +4,10 @@ import { HttpClient } from '@angular/common/http';
 import { iLogin } from '../Models/i-login';
 import { iRegister } from '../Models/register';
 import { iAccessData } from '../Models/i-access-data';
-import { BehaviorSubject, Observable, Subject, map, tap, throwError } from 'rxjs';
+import { BehaviorSubject, Observable, map, tap, throwError } from 'rxjs';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { environment } from '../../environments/environment';
-import { iAddInfo, iUser } from '../Models/i-user';
+import { iUser } from '../Models/i-user';
 
 
 @Injectable({
@@ -16,14 +16,8 @@ import { iAddInfo, iUser } from '../Models/i-user';
 export class AuthService {
   jwtHelper: JwtHelperService = new JwtHelperService();
   authSubject = new BehaviorSubject<iAccessData | null>(null);
-
-  infoSubject = new Subject<iAddInfo | null>();
-  userInfo$= this.infoSubject.asObservable()
-
   user$ = this.authSubject.asObservable().pipe(map((accessData) => accessData?.user));
   isLoggedIn$ = this.user$.pipe(map((user) => !!user));
-
-
   constructor(
     private http: HttpClient,
     private router: Router
@@ -53,9 +47,7 @@ export class AuthService {
   autoLogout(jwt: string) {
     const expDate = this.jwtHelper.getTokenExpirationDate(jwt) as Date;
     const expMs = expDate.getTime() - new Date().getTime();
-
     setTimeout(() => {
-
       this.logout();
     }, expMs);
   }
@@ -70,35 +62,15 @@ export class AuthService {
   restoreUser() {
     const userJson: string | null = localStorage.getItem('accessData');
     if (!userJson) return;
-
     const accessData: iAccessData = JSON.parse(userJson);
     if (this.jwtHelper.isTokenExpired(accessData.accessToken)) return;
-
-
     this.authSubject.next(accessData);
     this.autoLogout(accessData.accessToken);
-  }
-
-  addInfoToUser(info: iAddInfo) {
-    this.userInfoUrl = this.userInfoUrl + '/' + info.id;
-    return this.http.put<iAccessData>(this.userInfoUrl, info).pipe(
-      tap((data) => {
-        this.authSubject.next(data);
-        localStorage.setItem('accessData', JSON.stringify(data));
-      })
-    );
   }
 
   getUserInfo(id: string) {
     this.userInfoUrl = this.userInfoUrl + '/' + id;
     return this.http.get<iUser>(this.userInfoUrl);
-  }
-
-  updateBalance(balance:{}, id:string){
-      const url = environment.apiUrl + '/users/' + id
-    return this.http.patch<iUser>(url, balance).pipe(tap((data) => {
-      this.updateIAccessData(balance)
-    }))
   }
 
   updatedUser(user:iUser){
@@ -117,7 +89,5 @@ export class AuthService {
     this.authSubject.next(accessData);
     localStorage.setItem('accessData', JSON.stringify(accessData));
   }
-
-
 
 }
