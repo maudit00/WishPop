@@ -89,10 +89,10 @@ export class AuthService {
 
   addInfoToUser(info: iAddInfo) {
     this.userInfoUrl = this.userInfoUrl + '/' + info.id;
-    return this.http.put<iAddInfo>(this.userInfoUrl, info).pipe(
+    return this.http.put<iAccessData>(this.userInfoUrl, info).pipe(
       tap((data) => {
-        this.infoSubject.next(data);
-        localStorage.setItem('userInfo', JSON.stringify(data));
+        this.authSubject.next(data);
+        localStorage.setItem('accessData', JSON.stringify(data));
       })
     );
   }

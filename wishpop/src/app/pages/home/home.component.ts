@@ -17,18 +17,18 @@ export class HomeComponent {
 prodArr:iProduct[]=[]
 catArr:iCategory[]=[]
 catClicked:boolean=false;
-loadingContent:boolean=false;
+loading:boolean=false;
 errorLoading:boolean=false;
 
 
 
 getAllCategories(){
-  this.loadingContent = true
+  this.loading = true
   this.productService.getCategories().subscribe(res => {
     this.catArr = res
-    this.loadingContent = false
+    this.loading = false
   }, err => {
-    this.loadingContent = false
+    this.loading = false
     this.errorLoading = true
     console.log(err)
   })

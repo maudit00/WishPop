@@ -1,14 +1,13 @@
 .ag-courses_item {
-  border-radius: 28px;
+  border-radius: 50px;
 }
 .ag-courses-item_link {
   display: block;
   padding: 30px 20px;
   background-color: #0d7441fb;
-
   overflow: hidden;
-
   position: relative;
+  border-radius: 50px;
 }
 .ag-courses-item_link:hover,
 .ag-courses-item_link:hover .ag-courses-item_date {

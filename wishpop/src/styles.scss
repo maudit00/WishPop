@@ -1,20 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
-input, textarea::placeholder{
+input,
+textarea::placeholder {
   text-align: center;
-
 }
 
-a{
+a {
   text-decoration: none;
-  color:rgb(80, 201, 175)
+  color: rgb(80, 201, 175);
 }
 
-input, textarea, label{
-  text-align: center
+input,
+textarea,
+label {
+  text-align: center;
 }
 
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
 
 .wbutton {
   border: none;
@@ -25,12 +27,16 @@ input, textarea, label{
   transition-delay: 0.2ms;
   transition-duration: 0.2s;
   cursor: pointer;
-  &.rosso:hover{
+  &.rosso:hover {
     background-color: rgb(223, 85, 85);
     color: rgb(252, 252, 252);
   }
-  &:hover{
-  background-color: rgb(80, 160, 80);
-  color: white;
-}
+  &:hover {
+    background-color: rgb(80, 160, 80);
+    color: white;
+  }
+  &.card-button:hover{
+    background-color: rgb(80, 160, 160);
+    color: white;
+  }
 }
