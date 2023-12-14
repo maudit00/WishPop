@@ -31,7 +31,8 @@
         "street": "Via dalla palle",
         "number": "123"
       },
-      "favPayMethod": "creditCard"
+      "favPayMethod": "creditCard",
+      "balance": null
     },
     {
       "email": "wiponali@mailinator.com",
@@ -126,7 +127,8 @@
         "street": "1",
         "number": "1000"
       },
-      "favPayMethod": "creditCard"
+      "favPayMethod": "creditCard",
+      "balance": 73
     },
     {
       "id": 12,

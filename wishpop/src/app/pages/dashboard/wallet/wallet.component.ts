@@ -11,17 +11,18 @@ export class WalletComponent {
 
   constructor(private authService:AuthService){
     this.getUser();
-    this.addBalance();
   }
 
   userBalance!:number;
   id!:string;
   user!:iAccessData | null;
+  amount:number = 0
 
   getUser(){
      this.authService.user$.subscribe(user => {
       if(!user) return
       this.user = user
+      console.log(this.user)
     })
   }
 
@@ -32,13 +33,15 @@ export class WalletComponent {
   //  })
   // }
 
-  addBalance(){
+  addBalance(amount:number){
     if (!this.user) return
     const newBalance = {
-      balance : this.user.user.balance + 100
+      balance : this.user.user.balance + amount
     }
     this.authService.updateBalance(newBalance, this.user.user.id).subscribe(res => {
-      this.userBalance = res.user.balance
+      this.user = res
+      this.amount = 0
+      console.log(res)
     })
   }
 

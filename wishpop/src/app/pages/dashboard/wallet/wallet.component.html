@@ -8,9 +8,9 @@
           <option value="">Contanti Saluti</option>
         </select>
         <label class="form-label mt-3">Importo</label>
-        <input class="form-control" type="text">
+        <input class="form-control" type="number" [(ngModel)]="amount">
         <div>
-        <button class="btn btn-success mt-3"> Ricarica</button>
+        <button class="btn btn-success mt-3" (click)="addBalance(amount)"> Ricarica</button>
         </div>
 </div>
 
