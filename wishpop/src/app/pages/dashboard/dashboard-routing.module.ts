@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { OrdersComponent } from './orders/orders.component';
 import { WalletComponent } from './wallet/wallet.component';
+import { InserzioniComponent } from './inserzioni/inserzioni.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
    path: 'addproduct',
    component: AddProductComponent
+  },
+  {
+    path: 'inserzioni',
+    component: InserzioniComponent
   },
   {
     path: 'orders',

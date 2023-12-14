@@ -6,6 +6,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { ProfileComponent } from './profile/profile.component';
 import { OrdersComponent } from './orders/orders.component';
 import { WalletComponent } from './wallet/wallet.component';
+import { InserzioniComponent } from './inserzioni/inserzioni.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { WalletComponent } from './wallet/wallet.component';
     AddProductComponent,
     ProfileComponent,
     OrdersComponent,
-    WalletComponent
+    WalletComponent,
+    InserzioniComponent
   ],
   imports: [
     DashboardRoutingModule,

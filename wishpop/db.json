@@ -166,18 +166,18 @@
     },
     {
       "id": 14,
-      "nome": "Suscipit inventore q",
-      "cognome": "Ipsum sit sunt aut",
-      "email": "davide@me.it",
-      "password": "$2a$10$r0GlAA4tkTd0Lh8eNZF3u.QhsZNAnYsmFjyuWTC47l5M/pC647YBG",
+      "nome": "Soren",
+      "cognome": "rrrr",
+      "email": "Soren@99.com",
+      "password": "$2a$10$9itxCMGGhPV3xTwSe3T/bOnFx8IFvZ2RSF83L02FC6.qlSG8LnOGW",
       "firstTime": false,
       "address": {
-        "state": "Eos laborum dolore ",
-        "city": "Adipisci cupidatat u",
-        "province": "Sequi cillum ipsa n",
-        "cap": "Eveniet rerum incid",
-        "street": "Elit minus expedita",
-        "number": "843"
+        "state": "rrrr",
+        "city": "rrrr",
+        "province": "rrrr",
+        "cap": "4444",
+        "street": "rrrr",
+        "number": "3e3e"
       },
       "favPayMethod": "creditCard"
     }
@@ -272,6 +272,15 @@
       "cat": "",
       "cond": "E",
       "id": 10
+    },
+    {
+      "name": "",
+      "description": "",
+      "price": "",
+      "image": "",
+      "cat": "",
+      "cond": "",
+      "id": 11
     }
   ],
   "categories": [

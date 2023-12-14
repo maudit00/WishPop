@@ -6,8 +6,7 @@ import { CardCategoryComponent } from './components/card-category/card-category.
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { RouterModule } from '@angular/router';
 import { LoaderComponent } from './components/loader/loader.component';
-
-
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -27,7 +26,8 @@ import { LoaderComponent } from './components/loader/loader.component';
     HttpClientModule,
     CardCategoryComponent,
     CardProductComponent,
-    LoaderComponent
+    LoaderComponent,
+    NgbDropdownModule
   ]
 })
 export class SharedModule { }
