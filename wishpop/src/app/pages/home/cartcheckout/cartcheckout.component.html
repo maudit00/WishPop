@@ -15,6 +15,7 @@
           <div>
             <h6 class="my-0">{{product.name}}</h6>
             <small class="text-muted">Brief description</small>
+            <button type="button" class="wbutton rosso mt-2" (click)="removeItem(product)">Rimuovi</button>
           </div>
           <span class="text-muted">{{product.price | currency : "EUR"}}</span>
         </li>

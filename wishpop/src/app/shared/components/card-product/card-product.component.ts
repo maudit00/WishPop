@@ -32,12 +32,6 @@ export class CardProductComponent {
   }
 
 
-  getSellerName (id:string){
-    this.authService.getUserName(id).subscribe(user => {
-      this.user = user
-    })
-  }
-
   toggleWishList(prod:iProduct){
   if (!this.user) return
   if (this.user.wishList == undefined) this.user.wishList = []
@@ -56,5 +50,7 @@ export class CardProductComponent {
       this.productService.setProduct(product)
     })
   }
+
+
 
  }

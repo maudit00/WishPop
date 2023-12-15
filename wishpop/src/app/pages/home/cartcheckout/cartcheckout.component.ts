@@ -63,4 +63,13 @@ export class CartcheckoutComponent {
    return this.user.cart.reduce((c, p) => c + Number(p.price), 0)
   }
 
+  removeItem (product:iProduct){
+    let updatedUser = {...this.user, cart : this.user.cart.filter(p => p.id!= product.id) }
+    this.authService.updatedUser(updatedUser).subscribe(res => {
+      console.log(res)
+      this.total = this.totalprice()
+    })
+
+  }
+
 }
