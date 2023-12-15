@@ -22,6 +22,7 @@
           <select title="ff" name="cat" #cat="ngModel" ngModel class="form-control">
             <option *ngFor="let c of categories" [value]="c.name">{{ c.name }}</option>
           </select>
+          <p class=" p text-center m-2">Condizioni</p>
           <select title="ff" name="cond" #cond="ngModel" ngModel class="form-control" id="conditions">
             <option *ngFor="let condition of conditions" [value]="condition">
               {{ condition }}

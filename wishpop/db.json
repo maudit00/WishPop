@@ -455,18 +455,7 @@
           }
         }
       ],
-      "wishList": [
-        {
-          "name": "Demetrius Blankenship",
-          "description": "Nam in magna iste ut",
-          "price": "812",
-          "image": "Laudantium quaerat ",
-          "cat": "Videogame",
-          "cond": "A",
-          "userId": 18,
-          "id": 18
-        }
-      ],
+      "wishList": [],
       "cart": [
         {
           "name": "Demetrius Blankenship",
@@ -477,6 +466,15 @@
           "cond": "A",
           "userId": 18,
           "id": 18
+        },
+        {
+          "name": "Alexis Wiggins",
+          "description": "Perspiciatis deseru",
+          "price": "476",
+          "image": "Ea est adipisci dolo",
+          "cat": "",
+          "cond": "C",
+          "id": 6
         }
       ]
     },

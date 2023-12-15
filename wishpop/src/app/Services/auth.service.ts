@@ -81,6 +81,11 @@ export class AuthService {
     });
   }
 
+  getUserName (id:string){
+    this.http.get<iUser>(this.userInfoUrl + '/' + id)
+    }
+
+
   updatedUser(user:iUser){
     const url = environment.apiUrl + '/users/' + user.id
         return this.http.patch<iUser>(url, user).pipe(tap((data) => {
