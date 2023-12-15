@@ -1,5 +1,5 @@
 .container-fluid {
-  background-color: rgb(170, 233, 233);
+  background-color: rgb(48, 48, 48);
 }
 .container {
   height: 100%;
@@ -19,12 +19,23 @@
   left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: inset 0 0 2000px rgba(246, 245, 245, 0.5);
+  box-shadow: inset 0 0 2000px rgba(18, 17, 17, 0.5);
   filter: blur(1px);
   margin: -20px;
   z-index: -1;
-  a{
-  text-decoration: none;
-  color:rgb(80, 201, 175)
+  a {
+    text-decoration: none;
+    color: rgb(80, 201, 175);
+  }
 }
+.link a {
+  color: black;
+  font-size: large;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.link a:hover {
+  color: silver;
 }

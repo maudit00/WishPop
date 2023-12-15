@@ -1,18 +1,21 @@
 <div class="container-fluid">
 
-<div class="d-flex justify-content-evenly flex-wrap">
-    <div class="">
-    <a routerLink="orders">Ordini</a>
+  <div class="d-flex justify-content-evenly flex-wrap">
+    <div class="link">
+      <a routerLink="orders">Ordini</a>
     </div>
-    <div class="">
-    <a routerLink="addproduct">Vendi Prodotto
-    </a>
+    <div class="link">
+      <a routerLink="addproduct">Vendi Prodotto
+      </a>
     </div>
-    <div class="">
-    <a routerLink="inserzioni">Le mie inserzioni</a>
+    <div class="link">
+      <a routerLink="wallet">Wish List</a>
     </div>
-    <div class="">
-    <a routerLink="wallet">Wallet</a>
+    <div class="link">
+      <a routerLink="inserzioni">Le mie inserzioni</a>
+    </div>
+    <div class="link">
+      <a routerLink="wallet">Wallet</a>
     </div>
     <div class="">
     <a routerLink="wishlist">Wishlist</a>
@@ -23,12 +26,12 @@
     </div>
     <app-profile></app-profile>
   </div>
-<div class="d-flex justify-content-center">
-  <button type="button" class="wbutton rosso mb-4" (click)="logout()">Logout</button>
-</div>
+  <div class="d-flex justify-content-center">
+    <button type="button" class="wbutton rosso mb-4 mt-4" (click)="logout()">Logout</button>
+  </div>
 
 
 
 
 
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>

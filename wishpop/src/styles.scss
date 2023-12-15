@@ -26,7 +26,7 @@ label {
 
 .wish-link {
   text-decoration: none;
-  color:rgb(168, 106, 197);
+  color: rgb(168, 106, 197);
   cursor: pointer;
 }
 
@@ -50,11 +50,11 @@ label {
     background-color: rgb(80, 160, 80);
     color: white;
   }
-  &.card-button:hover{
+  &.card-button:hover {
     background-color: rgb(80, 160, 160);
     color: white;
   }
-  &.profile-button:hover{
+  &.profile-button:hover {
     background-color: rgb(168, 106, 197);
     color: white;
   }
@@ -62,8 +62,8 @@ label {
     background-color: rgb(80, 160, 160);
     color: white;
   }
-  // &.selected:hover{
-  //   ba
-  // }
+  &.modifica:hover {
+    background-color: yellow;
+    color: darkgray;
+  }
 }
-
