@@ -78,7 +78,7 @@
       "nome": "pippo",
       "cognome": "pippa",
       "email": "pippo@123.it",
-      "password": "$2a$10$KXvIXVgo6d7kbEknsM8M6.eokRXkO4cH1xxBYCD3HXN0fV5KnmILq",
+      "password": "$2a$10$r/fZTWFHzeLnwp88KZBRB.QEL0vlr8l7cuD0OQUTaoshROicfc1ta",
       "firstTime": false,
       "adress": {
         "state": "italia",
@@ -386,6 +386,25 @@
           "id": 7
         }
       ]
+    },
+    {
+      "email": "mr.rossi@gmail.com",
+      "password": "$2a$10$lHWYbZw.WxI06Ss9LYhQBeUkZlNgEhkHDWcFhjukyXsLp72J9LGIO",
+      "firstTime": false,
+      "id": 20,
+      "nome": "lupo",
+      "cognome": "lupini",
+      "address": {
+        "state": "italia",
+        "province": "sa",
+        "city": "sallerno",
+        "street": "sapmp",
+        "number": "67",
+        "cap": "76865"
+      },
+      "favPayMethod": "paypal",
+      "level": "Bronze",
+      "balance": 0
     }
   ],
   "products": [
