@@ -1,27 +1,28 @@
 <div class="row px-3" *ngFor="let p of prodArr">
   <div class="image-container col-3">
-      <img [src]="p.image" alt="Immagine">
+    <img [src]="p.image" alt="Immagine" class="img-fluid">
   </div>
   <div class="info-container col-6">
-      <h2>{{p.name}}</h2>
-      <p>Prezzo: {{p.price | currency : "EUR"}}</p>
-      <p>Condizioni: {{p.conditions}}</p>
-      <p>Descrizione: {{p.description}}</p>
-    </div>
-    <div class="col-3">
-        <div ngbDropdown class="d-inline-block">
-          <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
-            Azioni
-          </button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button ngbDropdownItem>Elimina</button>
-          <button ngbDropdownItem>Modifica inserzione</button>
-        </div>
+    <h2>{{p.name}}</h2>
+    <p>Prezzo: {{p.price | currency : "EUR"}}</p>
+    <p>Condizioni: {{p.conditions}}</p>
+    <p>Descrizione: {{p.description}}</p>
+  </div>
+  <div class="col-3">
+    <div ngbDropdown class="d-inline-block">
+      <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+        Azioni
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem>Elimina</button>
+        <button ngbDropdownItem>Modifica inserzione</button>
       </div>
-</div>
+    </div>
+  </div>
 </div>
 
 <div class="alert alert-warning" *ngIf="noRes">
   <p class="text-center">Non hai ancora aggiunto un tuo prodotto</p>
-  <p class="text-center wish-link" [routerLink]="['/dashboard', 'addproduct']">Clicca qui per mettere la tua prima inserzione</p>
+  <p class="text-center wish-link" [routerLink]="['/dashboard', 'addproduct']">Clicca qui per mettere la tua prima
+    inserzione</p>
 </div>
