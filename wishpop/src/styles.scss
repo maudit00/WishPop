@@ -44,5 +44,12 @@ label {
     background-color: rgb(168, 106, 197);
     color: white;
   }
+  &.selected{
+    background-color: rgb(80, 160, 160);
+    color: white;
+  }
+  // &.selected:hover{
+  //   ba
+  // }
 }
 

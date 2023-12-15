@@ -3,6 +3,7 @@ import { AuthService } from '../../../Services/auth.service';
 import { iUser } from '../../../Models/i-user';
 import { iProduct } from '../../../Models/i-product';
 import { ProductService } from '../../../Services/product.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-checkout',
@@ -11,8 +12,12 @@ import { ProductService } from '../../../Services/product.service';
 })
 export class CheckoutComponent {
 
-  constructor(private authService:AuthService, private productService:ProductService) {
-    this.productService.product$.subscribe(res => this.product = res)
+  constructor(private authService:AuthService, private productService:ProductService, private active:ActivatedRoute) {
+    this.active.params.subscribe(params => {
+      this.productService.getProductById(params['id']).subscribe(res => {
+        res ? this.product = res : null
+      })
+    })
     this.getUser()
   }
 

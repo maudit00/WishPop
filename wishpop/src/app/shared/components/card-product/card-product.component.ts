@@ -40,6 +40,7 @@ export class CardProductComponent {
 
   setItem (product: iProduct){
     this.productService.setProduct(product)
+    this.router.navigate(['/home/checkout'])
    }
 
 

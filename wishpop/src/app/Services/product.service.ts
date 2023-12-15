@@ -43,6 +43,10 @@ getProductByUser(userId:string){
 return this.http.get<iProduct[]>(`${this.prodUrl}?userId=${userId}`)
 }
 
+getProductById(id:number){
+return this.http.get<iProduct>(`${this.prodUrl}/${id}`)
+}
+
 setProduct(product:iProduct){
   this.productSubject.next(product)
 }
