@@ -13,11 +13,11 @@
                   alt="Avatar" />
               </button>
               <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="link">
-                <a routerLink="" ngbDropdownItem>Il mio profilo</a>
-                <a routerLink="" ngbDropdownItem>I miei ordini</a>
-                <a routerLink="" ngbDropdownItem>I miei articoli</a>
-                <a routerLink="" ngbDropdownItem>Impostazioni</a>
-                <a routerLink="" ngbDropdownItem>Logout</a>
+                <a routerLink="/dashboard/profile" ngbDropdownItem>Il mio profilo</a>
+                <a routerLink="/dashboard/orders" ngbDropdownItem>I miei ordini</a>
+                <a routerLink="/dashboard/inserzioni" ngbDropdownItem>I miei articoli</a>
+                <a routerLink="/dashboard" ngbDropdownItem>Impostazioni</a>
+                <a (click)="logout()" ngbDropdownItem>Logout</a>
               </div>
 
 
@@ -41,9 +41,6 @@
             </li>
             <li class="nav-item" *ngIf="!logged">
               <a class="nav-link" routerLink="/auth">Accedi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/dashboard/addproduct">Add Product</a>
             </li>
             <li class="nav-item" *ngIf="logged">
               <a class="nav-link" routerLink="/dashboard">Dashboard</a>
