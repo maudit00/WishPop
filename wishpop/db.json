@@ -44,7 +44,28 @@
           "amount": 0,
           "type": ""
         }
-      }
+      },
+      "wishList": [
+        {
+          "name": "Rebekah Pugh",
+          "description": "Adipisci qui explica",
+          "price": "898",
+          "image": "In laudantium ratio",
+          "categories": "Recusandae In nemo ",
+          "conditions": "Nulla occaecat eos ",
+          "id": 2
+        },
+        {
+          "name": "Brian Mccray",
+          "description": "Molestiae dolor quae",
+          "price": "911",
+          "image": "Veniam in rerum par",
+          "cat": "Giardinaggio",
+          "cond": "B",
+          "userId": 4,
+          "id": 21
+        }
+      ]
     },
     {
       "email": "wiponali@mailinator.com",

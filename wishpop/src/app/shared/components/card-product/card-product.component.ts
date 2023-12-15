@@ -28,7 +28,7 @@ export class CardProductComponent {
 
 
   isWished (prod: iProduct){
-   if (this.user.wishList && this.user.wishList.includes(prod)){
+   if (this.user.wishList && this.user.wishList.some(p => p.id == prod.id)){
     return true;
   }
   return false

@@ -9,6 +9,6 @@
     <button class="wbutton card-button" *ngIf="isLoggedIn"   [routerLink]="['/home','checkout',product.id]">Compra</button>
     <button class="wbutton card-button" *ngIf="isLoggedIn" (click)="setItem(product)">🛒</button>
     <button class="wbutton card-button" *ngIf="isLoggedIn && !isWished(product)" (click)="toggleWishList(product)">✰</button>
-    <button class="wbutton selected" *ngIf="isLoggedIn && isWished(product)" (click)="toggleWishList(product)">Rimuovi dalla WishList</button>
+    <button class="wbutton selected" *ngIf="isLoggedIn && isWished(product)" (click)="toggleWishList(product)">✰</button>
   </div>
 </div>

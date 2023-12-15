@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../../Services/auth.service';
-import { iUser } from '../../../Models/i-user';
+import { iAddress, iUser } from '../../../Models/i-user';
 import { iProduct } from '../../../Models/i-product';
 import { ProductService } from '../../../Services/product.service';
 import { ActivatedRoute } from '@angular/router';
@@ -29,6 +29,10 @@ export class CheckoutComponent {
   }
   getUser(){
     this.authService.user$.subscribe((user) => user? this.user = user : null)
+  }
+
+  joinAddress(address: iAddress){
+    return  `${address.state}, ${address.city}, ${address.province}, (${address.cap}) ${address.street}, ${address.number}`
   }
 
 }
