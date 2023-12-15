@@ -7,14 +7,22 @@
   --copyright-bg: rgb(195, 219, 189);
 }
 
-
-
+@import url("https://fonts.googleapis.com/css2?family=Afacad&family=Jost:ital@1&family=Playfair+Display:wght@700&display=swap");
+.playtitle {
+  font-family: "Playfair Display", serif;
+}
+.jostsott {
+  font-family: "Jost", sans-serif;
+}
+.t.cont {
+  font-family: "Afacad", sans-serif;
+}
 .copyright-container {
   background-color: var(--copyright-bg);
 }
 
-
-input, textarea::placeholder{
+input,
+textarea::placeholder {
   text-align: center;
 }
 
@@ -58,7 +66,7 @@ label {
     background-color: rgb(168, 106, 197);
     color: white;
   }
-  &.selected{
+  &.selected {
     background-color: rgb(80, 160, 160);
     color: white;
   }
