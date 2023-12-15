@@ -1,7 +1,9 @@
+import { ProductService } from './../../../Services/product.service';
 import { Component, Input } from '@angular/core';
 import { iProduct } from '../../../Models/i-product';
 import { AuthService } from '../../../Services/auth.service';
 import { iUser } from '../../../Models/i-user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-product',
@@ -14,10 +16,9 @@ export class CardProductComponent {
   wished: boolean = false;
 
   @Input () product!: iProduct;
-  constructor(private authService:AuthService) {
+  constructor(private authService:AuthService,private productService:ProductService, private router:Router) {
     this.isLogged()
     this.getUser()
-    console.log(this.user)
   }
 
 
@@ -37,9 +38,10 @@ export class CardProductComponent {
     this.authService.user$.subscribe(user => user ? this.user = user : null)
   }
 
-  setItemToCheckOut () {
-    this.authService.itemSubject.next(this.product)
-  }
+  setItem (product: iProduct){
+    this.productService.setProduct(product)
+   }
+
 
   toggleWishList(prod:iProduct){
   if (!this.user) return

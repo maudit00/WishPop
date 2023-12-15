@@ -7,6 +7,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { OrdersComponent } from './orders/orders.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { InserzioniComponent } from './inserzioni/inserzioni.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { InserzioniComponent } from './inserzioni/inserzioni.component';
     ProfileComponent,
     OrdersComponent,
     WalletComponent,
-    InserzioniComponent
+    InserzioniComponent,
+    WishlistComponent
   ],
   imports: [
     DashboardRoutingModule,

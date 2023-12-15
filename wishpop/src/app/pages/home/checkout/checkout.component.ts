@@ -1,7 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { AuthService } from '../../../Services/auth.service';
 import { iUser } from '../../../Models/i-user';
 import { iProduct } from '../../../Models/i-product';
+import { ProductService } from '../../../Services/product.service';
 
 @Component({
   selector: 'app-checkout',
@@ -10,20 +11,19 @@ import { iProduct } from '../../../Models/i-product';
 })
 export class CheckoutComponent {
 
-  constructor(private authService:AuthService) {
+  constructor(private authService:AuthService, private productService:ProductService) {
+    this.productService.product$.subscribe(res => this.product = res)
     this.getUser()
-    this.getProduct()
-    console.log(this.user)
   }
 
   user!:iUser;
   product!:iProduct;
 
+  getProduct(){
+    this.productService.product$.subscribe(product => this.product = product)
+  }
   getUser(){
     this.authService.user$.subscribe((user) => user? this.user = user : null)
-  }
-  getProduct () {
-    this.authService.item$.subscribe((product) => product? this.product = product : null)
   }
 
 }

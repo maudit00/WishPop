@@ -19,8 +19,7 @@ export class AuthService {
   authSubject = new BehaviorSubject<iAccessData | null>(null);
   user$ = this.authSubject.asObservable().pipe(map((accessData) => accessData?.user));
   isLoggedIn$ = this.user$.pipe(map((user) => !!user));
-  itemSubject = new Subject <iProduct | null>
-  item$ = this.itemSubject.asObservable()
+
 
 
   constructor(

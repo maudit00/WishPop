@@ -5,32 +5,37 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { OrdersComponent } from './orders/orders.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { InserzioniComponent } from './inserzioni/inserzioni.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 const routes: Routes = [
   {
-   path: '',
-   component: DashboardComponent
+    path: '',
+    component: DashboardComponent,
   },
   {
-   path: 'addproduct',
-   component: AddProductComponent
+    path: 'addproduct',
+    component: AddProductComponent,
   },
   {
     path: 'inserzioni',
-    component: InserzioniComponent
+    component: InserzioniComponent,
   },
   {
     path: 'orders',
-    component: OrdersComponent
+    component: OrdersComponent,
   },
   {
     path: 'wallet',
-    component: WalletComponent
+    component: WalletComponent,
+  },
+  {
+    path: 'wishlist',
+    component: WishlistComponent
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class DashboardRoutingModule { }

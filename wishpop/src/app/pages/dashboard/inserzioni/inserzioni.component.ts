@@ -34,4 +34,8 @@ export class InserzioniComponent {
       }
     })
   }
+
+  delete(){
+
+  }
 }
