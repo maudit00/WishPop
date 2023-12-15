@@ -15,6 +15,8 @@ export interface iUser {
   feedback:number
   firstTime:boolean;
   wishList:iProduct[]
+  cart:iProduct[]
+  image:string;
 }
 
 export interface iAddress {

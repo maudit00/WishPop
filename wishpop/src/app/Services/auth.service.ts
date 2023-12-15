@@ -19,8 +19,7 @@ export class AuthService {
   authSubject = new BehaviorSubject<iAccessData | null>(null);
   user$ = this.authSubject.asObservable().pipe(map((accessData) => accessData?.user));
   isLoggedIn$ = this.user$.pipe(map((user) => !!user));
-  itemSubject = new Subject <iProduct | null>
-  item$ = this.itemSubject.asObservable()
+
 
 
   constructor(
@@ -82,6 +81,11 @@ export class AuthService {
     });
   }
 
+  getUserName (id:string){
+    this.http.get<iUser>(this.userInfoUrl + '/' + id)
+    }
+
+
   updatedUser(user:iUser){
     const url = environment.apiUrl + '/users/' + user.id
         return this.http.patch<iUser>(url, user).pipe(tap((data) => {
@@ -98,5 +102,6 @@ export class AuthService {
     this.authSubject.next(accessData);
     localStorage.setItem('accessData', JSON.stringify(accessData));
   }
+
 
 }

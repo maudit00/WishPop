@@ -26,7 +26,6 @@ export class IntroComponent {
       this.user.balance = 0
     }
     this.user = {...userForm.value, ...this.user}
-    console.log(this.user)
     this.authSvc.updatedUser(this.user).subscribe(res => {
       this.router.navigate(['/dashboard'])
     })

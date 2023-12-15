@@ -14,12 +14,12 @@
         Azioni
       </button>
       <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-        <button ngbDropdownItem>Elimina</button>
-        <button ngbDropdownItem>Modifica inserzione</button>
+        <button ngbDropdownItem (click)="remove(p)">Elimina</button>
       </div>
     </div>
   </div>
 </div>
+
 
 <div class="alert alert-warning" *ngIf="noRes">
   <p class="text-center">Non hai ancora aggiunto un tuo prodotto</p>

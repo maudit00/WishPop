@@ -8,17 +8,19 @@
         </select>
 </div>
 
-<div class="row px-3">
-  <div class="image-container col-3">
-      <img src="percorso_dell_immagine" alt="Immagine">
+<div class="alert alert-warning" *ngIf="orders.length == 0">
+  <p class="text-center">Non ci sono ordini al momento</p>
+  <p class="text-center wish-link" routerLink="/home">Sfoglia i prodotti per aggiungerne al carrello e procedi all'acquisto</p>
+</div>
+
+<div class="row px-3" *ngFor="let order of orders, let i = index">
+  <div class=" col-3">
+      <p>{{i + 1}}</p>
   </div>
   <div class="info-container col-6">
-      <h2>Titolo</h2>
-      <p>Numero Ordine: #123456</p>
-      <p>Descrizione: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h2>{{order.transaction.amount | currency : 'EUR'}}</h2>
   </div>
   <div class="details-container col-3">
-      <p>Data</p>
-      <p>Category</p>
+      <p>Data {{order.transaction.date | date}}</p>
   </div>
 </div>

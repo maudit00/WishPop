@@ -1,13 +1,16 @@
-<div class="card">
-  <img class="card-img-top" [src]="product.image" alt="Card image cap">
-  <div class="card-body">
+<div class=" card mt-3 border border-info-subtle">
+  <img class="card-img-top " [src]="product.image" alt="Card image cap">
+  <div class="card-body  ">
     <h5 class="card-title">{{product.name}}</h5>
+    <h6>Descrizione Prodotto:</h6>
     <p class="card-text">{{product.description}}</p>
-    <p class="card-text">Prezzo : {{product.price}}</p>
-  </div>
-  <div class="d-flex justify-content-center gap-3 px-4 mb-3">
-    <button class="wbutton card-button" *ngIf="isLoggedIn" (click)="setItemToCheckOut()">Compra</button>
-    <button class="wbutton card-button" *ngIf="isLoggedIn && !isWished(product)" (click)="toggleWishList(product)">Aggiungi alla WishList</button>
-    <button class="wbutton card-button" *ngIf="isLoggedIn && isWished(product)" (click)="toggleWishList(product)">Rimuovi alla WishList</button>
+    <p class="card-text fw-bold fs-5">Prezzo : {{product.price | currency : "EUR"}} </p>
+
+    <div class="d-flex justify-content-center gap-3 px-4 mb-3">
+      <button class="wbutton card-button" *ngIf="isLoggedIn"   [routerLink]="['/home','checkout',product.id]">Compra</button>
+      <button class="wbutton card-button" *ngIf="isLoggedIn" (click)="buy(product)">🛒</button>
+      <button class="wbutton card-button" *ngIf="isLoggedIn && !isWished(product)" (click)="toggleWishList(product)">✰</button>
+      <button class="wbutton selected" *ngIf="isLoggedIn && isWished(product)" (click)="toggleWishList(product)">✰</button>
+    </div>
   </div>
 </div>

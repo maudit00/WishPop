@@ -1,7 +1,9 @@
+import { ProductService } from './../../../Services/product.service';
 import { Component, Input } from '@angular/core';
 import { iProduct } from '../../../Models/i-product';
 import { AuthService } from '../../../Services/auth.service';
 import { iUser } from '../../../Models/i-user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-product',
@@ -14,32 +16,21 @@ export class CardProductComponent {
   wished: boolean = false;
 
   @Input () product!: iProduct;
-  constructor(private authService:AuthService) {
-    this.isLogged()
-    this.getUser()
-    console.log(this.user)
-  }
-
-
-  isLogged(){
-    this.authService.isLoggedIn$.subscribe(res => this.isLoggedIn = res)
+  constructor(private authService:AuthService,private productService:ProductService, private router:Router) {
+      this.authService.user$.subscribe(user => {
+        this.isLoggedIn = true
+        user ? this.user = user : null
+      })
   }
 
 
   isWished (prod: iProduct){
-   if (this.user.wishList && this.user.wishList.includes(prod)){
+   if (this.user.wishList && this.user.wishList.some(p => p.id == prod.id)){
     return true;
   }
   return false
   }
 
-  getUser(){
-    this.authService.user$.subscribe(user => user ? this.user = user : null)
-  }
-
-  setItemToCheckOut () {
-    this.authService.itemSubject.next(this.product)
-  }
 
   toggleWishList(prod:iProduct){
   if (!this.user) return
@@ -49,6 +40,17 @@ export class CardProductComponent {
   } else {
     this.user.wishList = this.user.wishList.filter(p => p.id!= prod.id)
   }
-  this.authService.updatedUser(this.user).subscribe(res => console.log(res))
+  this.authService.updatedUser(this.user).subscribe(res => res)
   }
-}
+
+  buy(product:iProduct){
+    if (this.user.cart == undefined) this.user.cart = []
+    this.user.cart.push(product)
+    this.authService.updatedUser(this.user).subscribe(res =>{
+      this.productService.setProduct(product)
+    })
+  }
+
+
+
+ }

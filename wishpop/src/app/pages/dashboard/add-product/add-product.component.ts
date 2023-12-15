@@ -28,7 +28,7 @@ conditions:string[]= ['A','B','C','D','E','F']
 
 add(prod:iProduct){
   prod.userId = this.user.id
-  this.productSvc.addProduct(prod).subscribe(res=>{console.log(res)})
+  this.productSvc.addProduct(prod).subscribe(res => res)
   this.router.navigateByUrl('/dashboard/inserzioni')
 }
 

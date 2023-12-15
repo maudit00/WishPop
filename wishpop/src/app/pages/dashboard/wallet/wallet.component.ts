@@ -30,7 +30,6 @@ export class WalletComponent {
      this.authService.user$.subscribe(user => {
       if(!user) return
       this.user = user
-      console.log(this.user)
     })
   }
 
@@ -41,7 +40,7 @@ export class WalletComponent {
     this.transaction.transaction.date = new Date()
     if (!this.user.in) this.user.in = []
     let updatedUser = {...this.user, balance : this.user.balance + amount, in : [...this.user.in ,this.transaction] }
-    this.authService.updatedUser(updatedUser).subscribe(res => console.log(res))
+    this.authService.updatedUser(updatedUser).subscribe(res => res)
     this.router.navigate(['/dashboard'])
   }
 }

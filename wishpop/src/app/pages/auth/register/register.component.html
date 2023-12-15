@@ -15,7 +15,6 @@
       <label class="text-center" for="password">Password</label>
       <input [(ngModel)]="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" type="password" class="form-control" placeholder="Conferma Password">
       <div class="form-alert text-center" *ngIf="!comparePassword()">Le password non corrispondono</div>
-      {{confirmPassword}}{{registerData.password}}
     </div>
 
     <button class="wbutton" (click)="save()">Registrami</button>

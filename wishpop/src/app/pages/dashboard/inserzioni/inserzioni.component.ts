@@ -14,7 +14,6 @@ export class InserzioniComponent {
   constructor(private authService:AuthService, private prodService :ProductService) {
     this.getUser()
     this.getProducts()
-    console.log(this.noRes)
    }
   user!:iUser;
   prodArr: iProduct[] = [];
@@ -34,4 +33,15 @@ export class InserzioniComponent {
       }
     })
   }
-}
+
+  remove(product:iProduct){
+    if (this.user.id == product.userId){
+      this.prodService.deleteProduct(product.id).subscribe(res => {
+        this.getProducts()
+        this.prodArr = this.prodArr.filter(p => p.id!= product.id)
+      })
+    }
+
+    }
+  }
+

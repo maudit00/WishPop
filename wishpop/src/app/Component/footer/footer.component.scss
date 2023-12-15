@@ -19,10 +19,10 @@ footer {
   }
 
 
-  /* Stili per far comparire la h6 e il link sulla stessa riga */
-.copyright-container {
-  display: flex;
-}
+.copyright-container{
+    background-color: var(--copyright-bg)
+  }
+
 
 
 

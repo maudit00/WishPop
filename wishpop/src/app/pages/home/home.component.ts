@@ -10,7 +10,7 @@ import { iCategory, iProduct } from '../../Models/i-product';
 })
 export class HomeComponent {
   constructor(private productService:ProductService) {
-
+    this.productService.product$.subscribe(product => product)
     this.getAllCategories()
    }
 
