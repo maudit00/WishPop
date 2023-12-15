@@ -455,7 +455,18 @@
           }
         }
       ],
-      "wishList": [],
+      "wishList": [
+        {
+          "name": "Stephen Boyer",
+          "description": "Quibusdam do labore ",
+          "price": "286",
+          "image": "Minima deserunt ut l",
+          "cat": "Videogame",
+          "cond": "B",
+          "userId": 6,
+          "id": 22
+        }
+      ],
       "cart": []
     },
     {
@@ -633,36 +644,6 @@
       "id": 17
     },
     {
-      "name": "Demetrius Blankenship",
-      "description": "Nam in magna iste ut",
-      "price": "812",
-      "image": "Laudantium quaerat ",
-      "cat": "Videogame",
-      "cond": "A",
-      "userId": 18,
-      "id": 18
-    },
-    {
-      "name": "Demetrius Blankenship",
-      "description": "Nam in magna iste ut",
-      "price": "812",
-      "image": "Laudantium quaerat ",
-      "cat": "Videogame",
-      "cond": "D",
-      "userId": 18,
-      "id": 19
-    },
-    {
-      "name": "Sharon Leblanc",
-      "description": "Rerum aut consectetu",
-      "price": "943",
-      "image": "Saepe sed maiores fa",
-      "cat": "Giardinaggio",
-      "cond": "C",
-      "userId": 18,
-      "id": 20
-    },
-    {
       "name": "Brian Mccray",
       "description": "Molestiae dolor quae",
       "price": "911",
@@ -673,13 +654,13 @@
       "id": 21
     },
     {
-      "name": "Amanda Mccall",
-      "description": "Incidunt officiis e",
-      "price": "309",
-      "image": "Eveniet aut qui exp",
-      "cat": "Kids",
-      "cond": "C",
-      "userId": 19,
+      "name": "Stephen Boyer",
+      "description": "Quibusdam do labore ",
+      "price": "286",
+      "image": "Minima deserunt ut l",
+      "cat": "Videogame",
+      "cond": "B",
+      "userId": 6,
       "id": 22
     }
   ],

@@ -51,6 +51,10 @@ setProduct(product:iProduct){
   this.productSubject.next(product)
 }
 
+deleteProduct(id:number){
+  return this.http.delete(`${this.prodUrl}/${id}`)
+}
+
 
 
 }

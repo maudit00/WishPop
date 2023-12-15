@@ -34,7 +34,14 @@ export class InserzioniComponent {
     })
   }
 
-  delete(){
+  remove(product:iProduct){
+    if (this.user.id == product.userId){
+      this.prodService.deleteProduct(product.id).subscribe(res => {
+        this.getProducts()
+        this.prodArr = this.prodArr.filter(p => p.id!= product.id)
+      })
+    }
 
+    }
   }
-}
+
