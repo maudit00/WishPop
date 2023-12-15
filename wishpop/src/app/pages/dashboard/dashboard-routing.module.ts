@@ -6,6 +6,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { InserzioniComponent } from './inserzioni/inserzioni.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
     path: 'wishlist',
     component: WishlistComponent
   },
+  {
+    path: 'profile',
+    component: ProfileComponent
+  }
 ];
 
 @NgModule({
