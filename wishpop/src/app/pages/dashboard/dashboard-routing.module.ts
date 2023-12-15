@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { OrdersComponent } from './orders/orders.component';
 import { InserzioniComponent } from './inserzioni/inserzioni.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
@@ -21,7 +22,13 @@ const routes: Routes = [
   {
     path: 'orders',
     component: OrdersComponent
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent
+
   }
+
 ];
 
 @NgModule({
