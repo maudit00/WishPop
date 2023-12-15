@@ -5,9 +5,10 @@ import { SharedModule } from '../../shared/shared.module';
 import { CategoriesComponent } from './categories/categories.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CartcheckoutComponent } from './cartcheckout/cartcheckout.component';
+import { SecretComponent } from './secret/secret.component';
 
 @NgModule({
-  declarations: [HomeComponent, CategoriesComponent, CheckoutComponent, CartcheckoutComponent],
+  declarations: [HomeComponent, CategoriesComponent, CheckoutComponent, CartcheckoutComponent, SecretComponent],
   imports: [HomeRoutingModule, SharedModule]
 })
 export class HomeModule {}
