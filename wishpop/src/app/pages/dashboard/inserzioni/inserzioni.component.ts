@@ -14,7 +14,6 @@ export class InserzioniComponent {
   constructor(private authService:AuthService, private prodService :ProductService) {
     this.getUser()
     this.getProducts()
-    console.log(this.noRes)
    }
   user!:iUser;
   prodArr: iProduct[] = [];

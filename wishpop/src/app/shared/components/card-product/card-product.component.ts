@@ -42,14 +42,13 @@ export class CardProductComponent {
   } else {
     this.user.wishList = this.user.wishList.filter(p => p.id!= prod.id)
   }
-  this.authService.updatedUser(this.user).subscribe(res => console.log(res))
+  this.authService.updatedUser(this.user).subscribe(res => res)
   }
 
   buy(product:iProduct){
     if (this.user.cart == undefined) this.user.cart = []
     this.user.cart.push(product)
     this.authService.updatedUser(this.user).subscribe(res =>{
-      console.log(res)
       this.productService.setProduct(product)
     })
   }

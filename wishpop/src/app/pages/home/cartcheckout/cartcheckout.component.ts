@@ -31,7 +31,6 @@ export class CartcheckoutComponent {
   paypal:boolean = false
 
   onChange(e: any) {
-    console.log(e.target.value)
     this.payment = e.target.value
     if (e.target.value == 'paypal') this.paypal = true
     else this.paypal = false
@@ -56,7 +55,7 @@ export class CartcheckoutComponent {
     this.transaction.transaction.date = new Date()
     if (!this.user.out) this.user.out = []
     let updatedUser = { ...this.user, balance: this.user.balance - total, out: [...this.user.out, this.transaction] }
-    this.authService.updatedUser(updatedUser).subscribe(res => console.log(res))
+    this.authService.updatedUser(updatedUser).subscribe(res => res)
     this.router.navigate(['/dashboard'])
   }
 
