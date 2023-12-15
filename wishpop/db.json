@@ -35,7 +35,7 @@
       },
       "favPayMethod": "creditCard",
       "level": "Bronze",
-      "balance": -2.0660660660660659e+21,
+      "balance": -2.0660660660660659e21,
       "cart": [
         {
           "name": "Renee Aguirre",
@@ -741,6 +741,8 @@
       "name": "Giardinaggio",
       "color": "#9af075  ",
       "id": 6
-    }
+    },
+    { "name": "Igene", "color": "d6ccac", "id": "7" },
+    { "name": "Articoli degli animali", "color": "9ae3fb", "id": "7" }
   ]
 }
