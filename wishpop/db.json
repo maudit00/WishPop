@@ -145,7 +145,7 @@
       "firstTime": false,
       "id": 5,
       "nome": "Perspiciatis aut im",
-      "cognome": "Unde sunt aliquam do",
+      "cognome": "Pasquini",
       "address": {
         "state": "Ea et quae optio al",
         "province": "Dolor rerum id volup",
@@ -425,6 +425,58 @@
           "categories": "Quas voluptate obcae",
           "conditions": "Consequat Ratione a",
           "id": 4
+        }
+      ]
+    },
+    {
+      "email": "davide1193@gmail.com",
+      "password": "$2a$10$w6nfZBjHfIk/wDCY85OTiuPo3oyRGqmgj7Wkd9q8yTTlMWXuQcgm.",
+      "firstTime": false,
+      "id": 6,
+      "nome": "Davide",
+      "cognome": "D'Amario",
+      "address": {
+        "state": "Italia",
+        "province": "Ch",
+        "city": "Lanciano",
+        "street": "Via martiri 6 ottobre ",
+        "number": "73/c",
+        "cap": "66034"
+      },
+      "favPayMethod": "creditCard",
+      "level": "Bronze",
+      "balance": 25,
+      "in": [
+        {
+          "transaction": {
+            "amount": 25,
+            "type": "Deposit",
+            "date": "2023-12-15T12:01:01.036Z"
+          }
+        }
+      ],
+      "wishList": [
+        {
+          "name": "Demetrius Blankenship",
+          "description": "Nam in magna iste ut",
+          "price": "812",
+          "image": "Laudantium quaerat ",
+          "cat": "Videogame",
+          "cond": "A",
+          "userId": 18,
+          "id": 18
+        }
+      ],
+      "cart": [
+        {
+          "name": "Demetrius Blankenship",
+          "description": "Nam in magna iste ut",
+          "price": "812",
+          "image": "Laudantium quaerat ",
+          "cat": "Videogame",
+          "cond": "A",
+          "userId": 18,
+          "id": 18
         }
       ]
     }
