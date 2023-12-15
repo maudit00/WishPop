@@ -1,109 +1,56 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a id="wishpop" class="navbar-brand" routerLink="">WishPop </a>
+<nav class="navbar navbar-expand-lg navbar-light mb-3">
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="">Home</a>
-      </li>
-      <li class="nav-item" *ngIf="!logged">
-        <a class="nav-link" routerLink="/auth">Accedi</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/dashboard/addproduct">Add Product</a>
-      </li>
-      <li class="nav-item" *ngIf="logged">
-        <a class="nav-link" routerLink="/dashboard">Dashboard</a>
-      </li>
+  <div id="gap" class="d-flex flex-row justify-content-end align-items-baseline">
+    <a class="navbar-brand" [routerLink]="'.'">WishPop</a>
 
-    </ul> -->
-<!-- </div>
-  <div class="d-flex justify-content-end">
-    <div class="col">
-      <div ngbDropdown class="d-inline-block">
-        <button type="button" class="btn " id="dropdownBasic1" ngbDropdownToggle>
-          <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle profile-icon" alt="Avatar" />
-        </button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="link">
-          <a routerLink="" ngbDropdownItem>Il mio profilo</a>
-          <a routerLink="" ngbDropdownItem>I miei ordini</a>
-          <a routerLink="" ngbDropdownItem>I miei articoli</a>
-          <a routerLink="" ngbDropdownItem>Impostazioni</a>
-          <a routerLink="" ngbDropdownItem>Logout</a>
-        </div>
+    <div class="d-flex justify-content-end align-items-baseline">
+      <div class="col d-flex ">
 
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="link">
-          <a routerLink="" ngbDropdownItem></a>
-          <a routerLink="" ngbDropdownItem></a>
-          <a routerLink="" ngbDropdownItem></a>
-          <a routerLink="" ngbDropdownItem></a>
-          <a routerLink="" ngbDropdownItem></a>
+        <div ngbDropdown class="dropdown d-flex align-items-baseline">
+          <div id="flexFoto" class="d-flex flex-row">
+            <button type="button" class="btn " id="dropdownBasic1" ngbDropdownToggle>
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle profile-icon"
+                alt="Avatar" />
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="link">
+              <a routerLink="" ngbDropdownItem>Il mio profilo</a>
+              <a routerLink="" ngbDropdownItem>I miei ordini</a>
+              <a routerLink="" ngbDropdownItem>I miei articoli</a>
+              <a routerLink="" ngbDropdownItem>Impostazioni</a>
+              <a routerLink="" ngbDropdownItem>Logout</a>
+            </div>
 
+
+          </div>
+          <a class="navbar-brand" routerLink=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg></a>
         </div>
       </div>
-      <a class="navbar-brand" routerLink=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-          fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-          <path
-            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-        </svg></a>
+    </div>
+    <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
+    <!-- Step 2: Add the ngbCollapse directive to the element below. -->
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="">Home</a>
+          </li>
+          <li class="nav-item" *ngIf="!logged">
+            <a class="nav-link" routerLink="/auth">Accedi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/dashboard/addproduct">Add Product</a>
+          </li>
+          <li class="nav-item" *ngIf="logged">
+            <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+          </li>
+
+        </ul>
+      </div>
+      </div>
 
     </div>
-  </div> -->
-
-<!-- </nav> -->
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary mb-3">
-  <div class="container-fluid">
-    <div id="gap" class="d-flex flex-row justify-content-end align-items-baseline">
-      <a class="navbar-brand" [routerLink]="'.'">WishPop</a>
-
-      <div class="d-flex justify-content-end align-items-baseline">
-        <div class="col d-flex ">
-
-          <div ngbDropdown class="dropdown d-flex align-items-baseline">
-            <div id="flexFoto" class="d-flex flex-row">
-              <button type="button" class="btn " id="dropdownBasic1" ngbDropdownToggle>
-                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle profile-icon"
-                  alt="Avatar" />
-              </button>
-              <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="link">
-                <a routerLink="" ngbDropdownItem>Il mio profilo</a>
-                <a routerLink="" ngbDropdownItem>I miei ordini</a>
-                <a routerLink="" ngbDropdownItem>I miei articoli</a>
-                <a routerLink="" ngbDropdownItem>Impostazioni</a>
-                <a routerLink="" ngbDropdownItem>Logout</a>
-              </div>
-
-
-            </div>
-            <a class="navbar-brand" routerLink=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                <path
-                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-              </svg></a>
-          </div>
-        </div>
-      </div>
-      <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
-      <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
-      <!-- Step 2: Add the ngbCollapse directive to the element below. -->
-      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" routerLink="">Home</a>
-                </li>
-                <li class="nav-item" *ngIf="!logged">
-                  <a class="nav-link" routerLink="/auth">Accedi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" routerLink="/dashboard/addproduct">Add Product</a>
-                </li>
-                <li class="nav-item" *ngIf="logged">
-                  <a class="nav-link" routerLink="/dashboard">Dashboard</a>
-                </li>
-
-              </ul>
-            </div>
-      </div>
