@@ -1,9 +1,9 @@
 .container-fluid {
   background-image: linear-gradient(
     352deg,
-    var (--gradient-start) 0%,
-    var (--gradient-mid) 47%,
-    var (--gradient-end) 100%,
+    rgb(177, 214, 214) 0%,
+    rgb(195, 219, 189) 47%,
+    rgb(207, 195, 168) 100%
   );
   background-size: cover;
   background-attachment: fixed;
