@@ -19,384 +19,177 @@
       "id": 3
     },
     {
-      "id": 4,
-      "email": "davide1193@gmail.com",
-      "password": "$2a$10$bdCvBr.mhLBGe6VFjIPoxe9KshPEixMOfE7omyqwCvB7FfiagRxt6",
+      "email": "davide@it.it",
+      "password": "$2a$10$DgfjUQAVwDeLPJIjH126aezeXq64x2pV5Uw/FPtLpMGdr66xSFMTC",
       "firstTime": false,
-      "adress": {
-        "state": "Italia",
-        "city": "Lanciano",
-        "province": "Chieti",
-        "cap": "66034",
-        "street": "Via dalla palle",
-        "number": "123"
-      },
-      "favPayMethod": "creditCard",
-      "balance": 982,
+      "id": 4,
       "nome": "Davide",
       "cognome": "D'Amario",
-      "transaction": {
-        "in": {
-          "amount": 44,
-          "type": "Ricarica"
-        },
-        "out": {
-          "amount": 0,
-          "type": ""
-        }
-      },
-      "wishList": [
-        {
-          "name": "Rebekah Pugh",
-          "description": "Adipisci qui explica",
-          "price": "898",
-          "image": "In laudantium ratio",
-          "categories": "Recusandae In nemo ",
-          "conditions": "Nulla occaecat eos ",
-          "id": 2
-        },
-        {
-          "name": "Brian Mccray",
-          "description": "Molestiae dolor quae",
-          "price": "911",
-          "image": "Veniam in rerum par",
-          "cat": "Giardinaggio",
-          "cond": "B",
-          "userId": 4,
-          "id": 21
-        }
-      ]
-    },
-    {
-      "email": "wiponali@mailinator.com",
-      "password": "$2a$10$88nhLha9m5k/Hr.pDjVpfu5Gu6uEVAB2e2ZTIzCzUGfD/3Szgls.O",
-      "firstTime": true,
-      "id": 5
-    },
-    {
-      "email": "nysynof@mailinator.com",
-      "password": "$2a$10$gW5N2YUBykvRHOqzcy9awe4fo6potGVEH2awYVEYLyZVhRTX2lW6S",
-      "firstTime": true,
-      "id": 6
-    },
-    {
-      "id": 7,
-      "email": "qaxiryni@mailinator.com",
-      "password": "$2a$10$So9njSSdXu0hpP8c2eWpcuhn9AOoi6BCZmXCOQx/axH92JSJOzJYa",
-      "firstTime": false,
-      "adress": {
-        "state": "Quas elit doloribus",
-        "city": "Dolorem labore ratio",
-        "province": "Amet earum id omni",
-        "cap": "Maiores debitis quia",
-        "street": "Nulla nulla magni ei",
-        "number": "9"
-      },
-      "favPayMethod": "creditCard"
-    },
-    {
-      "id": 8,
-      "nome": "pippo",
-      "cognome": "pippa",
-      "email": "pippo@123.it",
-      "password": "$2a$10$KXvIXVgo6d7kbEknsM8M6.eokRXkO4cH1xxBYCD3HXN0fV5KnmILq",
-      "firstTime": false,
-      "adress": {
-        "state": "italia",
-        "city": "civt",
-        "province": "mc",
-        "cap": "62014",
-        "street": "iiiiii",
-        "number": "23"
-      },
-      "favPayMethod": "paypal"
-    },
-    {
-      "id": 9,
-      "nome": "lupo",
-      "cognome": "lupini",
-      "email": "andrea.luciani94@gmail.com",
-      "password": "$2a$10$keDla.PcVl1Nz04SjRnzEOoIgINAvmo2OM4hBwFoD6ZvKAqxveDp6",
-      "firstTime": false,
-      "adress": {
-        "state": "italia",
-        "city": "sallerno",
-        "province": "sa",
-        "cap": "76865",
-        "street": "sapmp",
-        "number": "67"
-      },
-      "favPayMethod": "paypal"
-    },
-    {
-      "id": 10,
-      "nome": "filippo",
-      "cognome": "neri",
-      "email": "filippo@me.it",
-      "password": "$2a$10$WIBPdk7SR206Otesw8Vn0.wqFCUrTNZIre6HQ55OUopq4X9mi/zxG",
-      "firstTime": false,
-      "address": {
-        "state": "italia",
-        "city": "fossacesia",
-        "province": "ch",
-        "cap": "66030",
-        "street": "via del mare",
-        "number": "123"
-      },
-      "favPayMethod": "creditCard"
-    },
-    {
-      "id": 11,
-      "nome": "IlSignore",
-      "cognome": "santissimo",
-      "email": "dio@me.it",
-      "password": "$2a$10$OQzWgz.8tqxtq7mP/KTCc.XO0rHnNEYiHMn1Oe9YamFZpZcbv0LtG",
-      "firstTime": false,
-      "address": {
-        "state": "cielo",
-        "city": "via delle nuvole",
-        "province": "kyoto",
-        "cap": "0",
-        "street": "1",
-        "number": "1000"
-      },
-      "favPayMethod": "creditCard",
-      "balance": 265
-    },
-    {
-      "id": 12,
-      "nome": "madonna",
-      "cognome": "vergine",
-      "email": "madonna@c.it",
-      "password": "$2a$10$j1qZeRmDZGaShwpG3e/Gi.qHzypt8YtI3tZk.pBgNRbv9czYttRD.",
-      "firstTime": false,
-      "address": {
-        "state": "palestina",
-        "city": "via dal bue",
-        "province": "gaza",
-        "cap": "120",
-        "street": "2",
-        "number": "100"
-      },
-      "favPayMethod": "creditCard"
-    },
-    {
-      "id": 13,
-      "nome": "cristo",
-      "cognome": "re",
-      "email": "cristo@ciao.it",
-      "password": "$2a$10$dcy9m80Fgq85qT2B/A08zuKjn.8LtDGDu4fCo.3pGF1bN2.1LYcUe",
-      "firstTime": false,
-      "address": {
-        "state": "palestina",
-        "city": "via delle bombe",
-        "province": "gaza",
-        "cap": "13",
-        "street": "1",
-        "number": "12"
-      },
-      "favPayMethod": "creditCard"
-    },
-    {
-      "id": 14,
-      "nome": "Soren",
-      "cognome": "rrrr",
-      "email": "Soren@99.com",
-      "password": "$2a$10$9itxCMGGhPV3xTwSe3T/bOnFx8IFvZ2RSF83L02FC6.qlSG8LnOGW",
-      "firstTime": false,
-      "address": {
-        "state": "rrrr",
-        "city": "rrrr",
-        "province": "rrrr",
-        "cap": "4444",
-        "street": "rrrr",
-        "number": "3e3e"
-      },
-      "favPayMethod": "creditCard"
-    },
-    {
-      "email": "we@we.it",
-      "password": "$2a$10$uSfSAEluaQUtttn4xz1BjOZTUbK0dcsKmUlpnU8QH0XWSuIZZySsq",
-      "firstTime": false,
-      "id": 15,
-      "nome": "Aut minim consectetu",
-      "cognome": "Earum quas nihil aut",
-      "state": "Dolor aut adipisicin",
-      "province": "Nostrum aute maxime ",
-      "city": "Et ex qui sed volupt",
-      "street": "Pariatur Enim nihil",
-      "number": "394",
-      "cap": "Et sunt optio odio ",
-      "favPayMethod": "bankTransfer",
-      "level": "Bronze",
-      "balance": null
-    },
-    {
-      "email": "wei@wee.it",
-      "password": "$2a$10$qqfQsfwdwFgUS0QHOEy35euYJKw.R.9Dxg4BRKjrlbxqCtC0w/5GG",
-      "firstTime": false,
-      "id": 16,
-      "nome": "Duis qui obcaecati o",
-      "cognome": "Doloremque quis in d",
-      "state": "Laudantium sit susc",
-      "province": "Consequatur Corpori",
-      "city": "Omnis quos molestias",
-      "street": "Amet et aut fuga D",
-      "number": "263",
-      "cap": "Aut sed nisi earum u",
-      "favPayMethod": "paypal",
-      "level": "Bronze",
-      "balance": 46
-    },
-    {
-      "email": "re@re.it",
-      "password": "$2a$10$49wzpgulmeMdEIoJHFeF6eeAdhaqbcTYBhcx1Uv2LmuHJsSvKD0Xm",
-      "firstTime": false,
-      "id": 17,
-      "nome": "Est esse porro qui e",
-      "cognome": "Ratione fugiat tempo",
-      "address": {
-        "state": "Ut distinctio Earum",
-        "province": "Esse quia incididun",
-        "city": "Qui eos exercitation",
-        "street": "Ullam quidem et fugi",
-        "number": "68",
-        "cap": "Harum dolor iusto in"
-      },
-      "favPayMethod": "bankTransfer",
-      "level": "Bronze",
-      "balance": 102,
-      "transaction": {
-        "in": {
-          "amount": 45,
-          "type": "Ricarica"
-        },
-        "out": {
-          "amount": 0,
-          "type": ""
-        }
-      }
-    },
-    {
-      "email": "wei@we.it",
-      "password": "$2a$10$jA0cDcuu7rYcuqIe0rxRT.bXiRjvMJIk2Vgw0HtM/MXiL1v1tBIeq",
-      "firstTime": false,
-      "id": 18,
-      "nome": "Pippo",
-      "cognome": "Franco",
       "address": {
         "state": "Italia",
-        "province": "Roma",
-        "city": "rm",
-        "street": "via dalla chiesa",
-        "number": "3",
-        "cap": "01000"
+        "province": "CH",
+        "city": "Lanciano",
+        "street": "Via vai",
+        "number": "123",
+        "cap": "66045"
       },
-      "favPayMethod": "paypal",
+      "favPayMethod": "creditCard",
       "level": "Bronze",
-      "balance": 552,
-      "in": [
+      "balance": -2.0660660660660659e+21,
+      "cart": [
         {
-          "transaction": {
-            "amount": 43,
-            "type": "Deposit",
-            "date": "2023-12-14T16:10:22.770Z"
-          }
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
         },
         {
-          "transaction": {
-            "amount": 345,
-            "type": "Deposit",
-            "date": "2023-12-14T16:11:25.577Z"
-          }
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
         },
         {
-          "transaction": {
-            "amount": 345,
-            "type": "Deposit",
-            "date": "2023-12-14T16:11:25.577Z"
-          }
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
         },
         {
-          "transaction": {
-            "amount": 30,
-            "type": "Deposit",
-            "date": "2023-12-14T16:50:30.067Z"
-          }
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
         },
         {
-          "transaction": {
-            "amount": 34,
-            "type": "Deposit",
-            "date": "2023-12-14T16:51:04.014Z"
-          }
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
         },
         {
-          "transaction": {
-            "amount": 34,
-            "type": "Deposit",
-            "date": "2023-12-14T16:54:12.931Z"
-          }
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
+        },
+        {
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
         }
       ],
-      "wishList": [
+      "out": [
         {
-          "name": "Alexis Wiggins",
-          "description": "Perspiciatis deseru",
-          "price": "476",
-          "image": "Ea est adipisci dolo",
-          "cat": "",
-          "cond": "C",
-          "id": 5
+          "transaction": {
+            "amount": "0688688688688688688688",
+            "type": "Purchase",
+            "date": "2023-12-15T10:50:27.375Z"
+          }
         },
         {
-          "name": "Ferris Espinoza",
-          "description": "Ea recusandae Volup",
-          "price": "859",
-          "image": "Enim atque dd arc",
-          "cat": "",
-          "cond": "E",
-          "id": 9
+          "transaction": {
+            "amount": "0688688688688688688688",
+            "type": "Purchase",
+            "date": "2023-12-15T10:55:03.413Z"
+          }
         },
         {
-          "name": "Alexis Wiggins",
-          "description": "Perspiciatis deseru",
-          "price": "476",
-          "image": "Ea est adipisci dolo",
-          "cat": "",
-          "cond": "C",
-          "id": 6
+          "transaction": {
+            "amount": 4816,
+            "type": "Purchase",
+            "date": "2023-12-15T10:56:01.793Z"
+          }
+        },
+        {
+          "transaction": {
+            "amount": "0688688688688688688688",
+            "type": "Purchase",
+            "date": "2023-12-15T10:58:08.690Z"
+          }
+        },
+        {
+          "transaction": {
+            "amount": 4816,
+            "type": "Purchase",
+            "date": "2023-12-15T10:58:40.050Z"
+          }
         }
       ]
     },
     {
-      "email": "madonna@ladra.it",
-      "password": "$2a$10$zz7paGL2paCfU0LuCNPkM.xOWbGJNJkFm4OTwpkmBRf1DrNIyc9be",
+      "email": "rabakav@mailinator.com",
+      "password": "$2a$10$3R1YlbltJ.ouG3wKFEF1OeZip4jQWPz4mUU69Q0koEi.WCBvodOK.",
       "firstTime": false,
-      "id": 19,
-      "nome": "Madonna",
-      "cognome": "Vergine",
+      "id": 5,
+      "nome": "Perspiciatis aut im",
+      "cognome": "Unde sunt aliquam do",
       "address": {
-        "state": "Distinctio Voluptat",
-        "province": "Nulla aliquam sit bl",
-        "city": "Quis quod ducimus a",
-        "street": "Ad tempora et labore",
-        "number": "6",
-        "cap": "Officia cillum simil"
+        "state": "Ea et quae optio al",
+        "province": "Dolor rerum id volup",
+        "city": "Culpa molestiae pra",
+        "street": "Omnis consequat Ad ",
+        "number": "139",
+        "cap": "Minima voluptate qui"
       },
-      "favPayMethod": "paypal",
+      "favPayMethod": "bankTransfer",
       "level": "Bronze",
-      "balance": 1000,
+      "balance": -929,
       "in": [
         {
           "transaction": {
-            "amount": 1000,
+            "amount": 50,
             "type": "Deposit",
-            "date": "2023-12-14T21:04:57.645Z"
+            "date": "2023-12-15T10:59:46.147Z"
           }
         }
       ],
-      "wishList": [
+      "out": [
+        {
+          "transaction": {
+            "amount": 0,
+            "type": "Purchase",
+            "date": "2023-12-15T11:00:04.305Z"
+          }
+        },
+        {
+          "transaction": {
+            "amount": "5",
+            "type": "Purchase",
+            "date": "2023-12-15T11:05:09.277Z"
+          }
+        },
+        {
+          "transaction": {
+            "amount": 974,
+            "type": "Purchase",
+            "date": "2023-12-15T11:43:01.963Z"
+          }
+        }
+      ],
+      "cart": [
         {
           "name": "Accendino",
           "description": "piccolo e utile",
@@ -405,6 +198,233 @@
           "cat": "Kids",
           "cond": "B",
           "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Ferris Espinoza",
+          "description": "Ea recusandae Volup",
+          "price": "859",
+          "image": "Enim atque ipsum arc",
+          "cat": "Kids",
+          "cond": "E",
+          "id": 8
+        }
+      ],
+      "wishList": [
+        {
+          "name": "Ferris Espinoza",
+          "description": "Ea recusandae Volup",
+          "price": "859",
+          "image": "Enim atque ipsum arc",
+          "cat": "Kids",
+          "cond": "E",
+          "id": 8
+        },
+        {
+          "name": "Isabella Stewart",
+          "description": "Quam proident optio",
+          "price": "970",
+          "image": "Veniam tempor solut",
+          "categories": "Quas voluptate obcae",
+          "conditions": "Consequat Ratione a",
+          "id": 4
         }
       ]
     }

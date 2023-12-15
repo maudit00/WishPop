@@ -1,6 +1,5 @@
 <div class="container">
   <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" [src]='product.image || "" ' alt="" width="72" height="72">
     <h2>Procedi con l'acquisto</h2>
     <p class="lead">Ciao {{user.nome}} {{user.cognome}} controlla che tutti i tuoi dati siano corretti prima di procedere all'acquisto</p>
   </div>
@@ -12,7 +11,7 @@
         <span class="badge badge-secondary badge-pill">3</span>
       </h4>
       <ul class="list-group mb-3">
-        <li class="list-group-item d-flex justify-content-between lh-condensed">
+        <li class="list-group-item d-flex justify-content-between lh-condensed" *ngFor="let product of cart">
           <div>
             <h6 class="my-0">{{product.name}}</h6>
             <small class="text-muted">Brief description</small>

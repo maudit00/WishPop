@@ -17,13 +17,10 @@ export class CardProductComponent {
 
   @Input () product!: iProduct;
   constructor(private authService:AuthService,private productService:ProductService, private router:Router) {
-    this.isLogged()
-    this.getUser()
-  }
-
-
-  isLogged(){
-    this.authService.isLoggedIn$.subscribe(res => this.isLoggedIn = res)
+      this.authService.user$.subscribe(user => {
+        this.isLoggedIn = true
+        user ? this.user = user : null
+      })
   }
 
 
@@ -34,14 +31,7 @@ export class CardProductComponent {
   return false
   }
 
-  getUser(){
-    this.authService.user$.subscribe(user => user ? this.user = user : null)
-  }
 
-  setItem (product: iProduct){
-    this.productService.setProduct(product)
-    this.router.navigate(['/home/checkout'])
-   }
 
 
   toggleWishList(prod:iProduct){
@@ -54,4 +44,14 @@ export class CardProductComponent {
   }
   this.authService.updatedUser(this.user).subscribe(res => console.log(res))
   }
-}
+
+  buy(product:iProduct){
+    if (this.user.cart == undefined) this.user.cart = []
+    this.user.cart.push(product)
+    this.authService.updatedUser(this.user).subscribe(res =>{
+      console.log(res)
+      this.productService.setProduct(product)
+    })
+  }
+
+ }

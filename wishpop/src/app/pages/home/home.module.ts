@@ -4,9 +4,10 @@ import { HomeComponent } from './home.component';
 import { SharedModule } from '../../shared/shared.module';
 import { CategoriesComponent } from './categories/categories.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { CartcheckoutComponent } from './cartcheckout/cartcheckout.component';
 
 @NgModule({
-  declarations: [HomeComponent, CategoriesComponent, CheckoutComponent],
+  declarations: [HomeComponent, CategoriesComponent, CheckoutComponent, CartcheckoutComponent],
   imports: [HomeRoutingModule, SharedModule]
 })
 export class HomeModule {}
