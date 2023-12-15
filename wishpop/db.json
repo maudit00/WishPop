@@ -445,7 +445,7 @@
       },
       "favPayMethod": "creditCard",
       "level": "Bronze",
-      "balance": 25,
+      "balance": 1525,
       "in": [
         {
           "transaction": {
@@ -453,18 +453,25 @@
             "type": "Deposit",
             "date": "2023-12-15T12:01:01.036Z"
           }
+        },
+        {
+          "transaction": {
+            "amount": 1500,
+            "type": "Deposit",
+            "date": "2023-12-15T13:50:24.274Z"
+          }
         }
       ],
       "wishList": [
         {
-          "name": "Stephen Boyer",
-          "description": "Quibusdam do labore ",
-          "price": "286",
-          "image": "Minima deserunt ut l",
+          "name": "The Legend of Zelda: Tears of the Kingdom - Videogioco Nintendo - Ed. Italiana - Versione su scheda",
+          "description": "Il seguito di The Legend of Zelda: Breath of the Wild\nUn epico viaggio attraverso Hyrule e i suoi cieli ti attende\nCrea la tua avventura in un mondo dove potrai lasciare libero sfogo all'immaginazione",
+          "price": "60",
+          "image": "https://m.media-amazon.com/images/I/81eHh0BNU0L._AC_SY445_.jpg",
           "cat": "Videogame",
-          "cond": "B",
-          "userId": 6,
-          "id": 22
+          "cond": "A",
+          "userId": 20,
+          "id": 26
         }
       ],
       "cart": []
