@@ -40,3 +40,17 @@
 .jostsott {
   font-family: "Jost", sans-serif;
 }
+.xbutton {
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+  width: 50%;
+  align-self: center;
+  transition-delay: 0.2ms;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+&:hover {
+  background-color: rgb(80, 160, 80);
+  color: white;
+}
