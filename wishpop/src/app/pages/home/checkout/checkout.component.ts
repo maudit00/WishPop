@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { AuthService } from '../../../Services/auth.service';
-import { iAddress, iUser } from '../../../Models/i-user';
+import { iAddress, iTransaction, iUser } from '../../../Models/i-user';
 import { iProduct } from '../../../Models/i-product';
 import { ProductService } from '../../../Services/product.service';
 import { ActivatedRoute } from '@angular/router';
@@ -21,9 +21,19 @@ export class CheckoutComponent {
     this.getUser()
   }
 
+
   user!:iUser;
   product!:iProduct;
+  paypal:boolean = false;
+  payment:string = ''
+  transaction!:iTransaction
 
+  onChange(e:any){
+    console.log(e.target.value)
+    this.payment = e.target.value
+    if (e.target.value == 'paypal') this.paypal = true
+    else this.paypal = false
+  }
   getProduct(){
     this.productService.product$.subscribe(product => this.product = product)
   }
@@ -34,5 +44,10 @@ export class CheckoutComponent {
   joinAddress(address: iAddress){
     return  `${address.state}, ${address.city}, ${address.province}, (${address.cap}) ${address.street}, ${address.number}`
   }
+
+  buy(){
+
+  }
+
 
 }
