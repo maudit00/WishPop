@@ -1,0 +1,17 @@
+<div class="container my-4 text-center">
+  <p class="display-4">My Wallet</p>
+      <p class="fs-5 mt-4">Fondi Disponibili: <Span>500 €</Span></p>
+      <label class="form-label mt-3">Metodo di Pagamento</label>
+        <select class="form-select">
+          <option value="" selected disabled>Select an option</option>
+          <option value="">Credit Card</option>
+          <option value="">Contanti Saluti</option>
+        </select>
+        <label class="form-label mt-3">Importo</label>
+        <input class="form-control" type="number" [(ngModel)]="amount">
+        <div>
+        <button class="btn btn-success mt-3" (click)="addBalance(amount)"> Ricarica</button>
+        </div>
+</div>
+
+

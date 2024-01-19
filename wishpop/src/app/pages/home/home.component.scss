@@ -11,13 +11,13 @@
   align-items: center;
 }
 .container {
-  height: 90vh;
+  height: 100%;
   width: 70vw;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   position: relative;
   background: inherit;
   margin-top: 20px;
-  margin-bottom : 20px;
+  margin-bottom: 20px;
   border-radius: 5px;
   overflow: hidden;
   z-index: 1;
@@ -34,4 +34,20 @@
   filter: blur(1px);
   margin: -20px;
   z-index: -1;
+}
+
+#text {
+  margin-top: 40px;
+}
+.gif {
+  width: 50%;
+  margin-left: 70px;
+  height: 200px;
+}
+
+.playtitle {
+  font-family: "Playfair Display", serif;
+}
+.jostsott {
+  font-family: "Jost", sans-serif;
 }

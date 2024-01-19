@@ -1,20 +1,12 @@
 <div class="container-fluid">
   <div class="container">
-    <h5 class="text-center">Accedi</h5>
+    <h5 class="playtitle text-center">Accedi</h5>
     <form #f="ngForm" class="form">
-      <label for="email" class="text-center">Inserisci la tua mail</label>
-      <input type="email" name="email" ngModel placeholder="email" />
-      <label for="password" class="text-center"
-        >Inserisci la tua password</label
-      >
-      <input
-        type="password"
-        name="password"
-        ngModel
-        placeholder="immetti la password"
-      />
-      <hr />
-      <button (click)="send()" class="wbutton" [disabled]="f.dirty && f.invalid" type="button">
+      <label for="email" class="jostsott text-center">Inserisci la tua mail</label>
+      <input type="email" name="email" ngModel placeholder="email" class="t.cont" />
+      <label for="password" class="jostsott text-center">Inserisci la tua password</label>
+      <input type="password" name="password" ngModel placeholder="immetti la password" class="t.cont" />
+      <button (click)="send()" class="wbutton mt-5" [disabled]="f.dirty && f.invalid" type="button">
         Accedi
       </button>
     </form>

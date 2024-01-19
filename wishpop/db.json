@@ -19,46 +19,481 @@
       "id": 3
     },
     {
+      "email": "davide@it.it",
+      "password": "$2a$10$DgfjUQAVwDeLPJIjH126aezeXq64x2pV5Uw/FPtLpMGdr66xSFMTC",
+      "firstTime": false,
       "id": 4,
-      "email": "davide1193@gmail.com",
-      "password": "$2a$10$bdCvBr.mhLBGe6VFjIPoxe9KshPEixMOfE7omyqwCvB7FfiagRxt6",
-      "firstTime": false,
-      "adress": {
+      "nome": "Davide",
+      "cognome": "D'Amario",
+      "address": {
         "state": "Italia",
+        "province": "CH",
         "city": "Lanciano",
-        "province": "Chieti",
-        "cap": "66034",
-        "street": "Via dalla palle",
-        "number": "123"
+        "street": "Via vai",
+        "number": "123",
+        "cap": "66045"
       },
-      "favPayMethod": "creditCard"
+      "favPayMethod": "creditCard",
+      "level": "Bronze",
+      "balance": -2.0660660660660659e21,
+      "cart": [
+        {
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
+        },
+        {
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
+        },
+        {
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
+        },
+        {
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
+        },
+        {
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
+        },
+        {
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
+        },
+        {
+          "name": "Renee Aguirre",
+          "description": "Ad quisquam ullamco ",
+          "price": "688",
+          "image": "Beatae aliquid corru",
+          "cat": "",
+          "cond": "F",
+          "id": 13
+        }
+      ],
+      "out": [
+        {
+          "transaction": {
+            "amount": "0688688688688688688688",
+            "type": "Purchase",
+            "date": "2023-12-15T10:50:27.375Z"
+          }
+        },
+        {
+          "transaction": {
+            "amount": "0688688688688688688688",
+            "type": "Purchase",
+            "date": "2023-12-15T10:55:03.413Z"
+          }
+        },
+        {
+          "transaction": {
+            "amount": 4816,
+            "type": "Purchase",
+            "date": "2023-12-15T10:56:01.793Z"
+          }
+        },
+        {
+          "transaction": {
+            "amount": "0688688688688688688688",
+            "type": "Purchase",
+            "date": "2023-12-15T10:58:08.690Z"
+          }
+        },
+        {
+          "transaction": {
+            "amount": 4816,
+            "type": "Purchase",
+            "date": "2023-12-15T10:58:40.050Z"
+          }
+        }
+      ]
     },
     {
-      "email": "wiponali@mailinator.com",
-      "password": "$2a$10$88nhLha9m5k/Hr.pDjVpfu5Gu6uEVAB2e2ZTIzCzUGfD/3Szgls.O",
-      "firstTime": true,
-      "id": 5
-    },
-    {
-      "email": "nysynof@mailinator.com",
-      "password": "$2a$10$gW5N2YUBykvRHOqzcy9awe4fo6potGVEH2awYVEYLyZVhRTX2lW6S",
-      "firstTime": true,
-      "id": 6
-    },
-    {
-      "id": 7,
-      "email": "qaxiryni@mailinator.com",
-      "password": "$2a$10$So9njSSdXu0hpP8c2eWpcuhn9AOoi6BCZmXCOQx/axH92JSJOzJYa",
+      "email": "rabakav@mailinator.com",
+      "password": "$2a$10$3R1YlbltJ.ouG3wKFEF1OeZip4jQWPz4mUU69Q0koEi.WCBvodOK.",
       "firstTime": false,
-      "adress": {
-        "state": "Quas elit doloribus",
-        "city": "Dolorem labore ratio",
-        "province": "Amet earum id omni",
-        "cap": "Maiores debitis quia",
-        "street": "Nulla nulla magni ei",
-        "number": "9"
+      "id": 5,
+      "nome": "Perspiciatis aut im",
+      "cognome": "Pasquini",
+      "address": {
+        "state": "Ea et quae optio al",
+        "province": "Dolor rerum id volup",
+        "city": "Culpa molestiae pra",
+        "street": "Omnis consequat Ad ",
+        "number": "139",
+        "cap": "Minima voluptate qui"
       },
-      "favPayMethod": "creditCard"
+      "favPayMethod": "bankTransfer",
+      "level": "Bronze",
+      "balance": -929,
+      "in": [
+        {
+          "transaction": {
+            "amount": 50,
+            "type": "Deposit",
+            "date": "2023-12-15T10:59:46.147Z"
+          }
+        }
+      ],
+      "out": [
+        {
+          "transaction": {
+            "amount": 0,
+            "type": "Purchase",
+            "date": "2023-12-15T11:00:04.305Z"
+          }
+        },
+        {
+          "transaction": {
+            "amount": "5",
+            "type": "Purchase",
+            "date": "2023-12-15T11:05:09.277Z"
+          }
+        },
+        {
+          "transaction": {
+            "amount": 974,
+            "type": "Purchase",
+            "date": "2023-12-15T11:43:01.963Z"
+          }
+        }
+      ],
+      "cart": [
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Accendino",
+          "description": "piccolo e utile",
+          "price": "5",
+          "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
+          "cat": "Kids",
+          "cond": "B",
+          "id": 7
+        },
+        {
+          "name": "Ferris Espinoza",
+          "description": "Ea recusandae Volup",
+          "price": "859",
+          "image": "Enim atque ipsum arc",
+          "cat": "Kids",
+          "cond": "E",
+          "id": 8
+        }
+      ],
+      "wishList": [
+        {
+          "name": "Ferris Espinoza",
+          "description": "Ea recusandae Volup",
+          "price": "859",
+          "image": "Enim atque ipsum arc",
+          "cat": "Kids",
+          "cond": "E",
+          "id": 8
+        },
+        {
+          "name": "Isabella Stewart",
+          "description": "Quam proident optio",
+          "price": "970",
+          "image": "Veniam tempor solut",
+          "categories": "Quas voluptate obcae",
+          "conditions": "Consequat Ratione a",
+          "id": 4
+        }
+      ]
+    },
+    {
+      "email": "davide1193@gmail.com",
+      "password": "$2a$10$w6nfZBjHfIk/wDCY85OTiuPo3oyRGqmgj7Wkd9q8yTTlMWXuQcgm.",
+      "firstTime": false,
+      "id": 6,
+      "nome": "Davide",
+      "cognome": "D'Amario",
+      "address": {
+        "state": "Italia",
+        "province": "Ch",
+        "city": "Lanciano",
+        "street": "Via martiri 6 ottobre ",
+        "number": "73/c",
+        "cap": "66034"
+      },
+      "favPayMethod": "creditCard",
+      "level": "Bronze",
+      "balance": 1525,
+      "in": [
+        {
+          "transaction": {
+            "amount": 25,
+            "type": "Deposit",
+            "date": "2023-12-15T12:01:01.036Z"
+          }
+        },
+        {
+          "transaction": {
+            "amount": 1500,
+            "type": "Deposit",
+            "date": "2023-12-15T13:50:24.274Z"
+          }
+        }
+      ],
+      "wishList": [
+        {
+          "name": "The Legend of Zelda: Tears of the Kingdom - Videogioco Nintendo - Ed. Italiana - Versione su scheda",
+          "description": "Il seguito di The Legend of Zelda: Breath of the Wild\nUn epico viaggio attraverso Hyrule e i suoi cieli ti attende\nCrea la tua avventura in un mondo dove potrai lasciare libero sfogo all'immaginazione",
+          "price": "60",
+          "image": "https://m.media-amazon.com/images/I/81eHh0BNU0L._AC_SY445_.jpg",
+          "cat": "Videogame",
+          "cond": "A",
+          "userId": 20,
+          "id": 26
+        }
+      ],
+      "cart": []
+    },
+    {
+      "email": "mr.rossi@gmail.com",
+      "password": "$2a$10$lHWYbZw.WxI06Ss9LYhQBeUkZlNgEhkHDWcFhjukyXsLp72J9LGIO",
+      "firstTime": false,
+      "id": 20,
+      "nome": "lupo",
+      "cognome": "lupini",
+      "address": {
+        "state": "italia",
+        "province": "sa",
+        "city": "sallerno",
+        "street": "sapmp",
+        "number": "67",
+        "cap": "76865"
+      },
+      "favPayMethod": "paypal",
+      "level": "Bronze",
+      "balance": 0
     }
   ],
   "products": [
@@ -121,7 +556,7 @@
       "description": "piccolo e utile",
       "price": "5",
       "image": "https://primopromo.it/331609-large_default/bic-j26-accendino.jpg",
-      "cat": "",
+      "cat": "Kids",
       "cond": "B",
       "id": 7
     },
@@ -130,7 +565,7 @@
       "description": "Ea recusandae Volup",
       "price": "859",
       "image": "Enim atque ipsum arc",
-      "cat": "",
+      "cat": "Kids",
       "cond": "E",
       "id": 8
     },
@@ -151,23 +586,163 @@
       "cat": "",
       "cond": "E",
       "id": 10
+    },
+    {
+      "name": "",
+      "description": "",
+      "price": "",
+      "image": "",
+      "cat": "",
+      "cond": "",
+      "id": 11
+    },
+    {
+      "name": "Skyler Ellis",
+      "description": "Aut quia voluptas qu",
+      "price": "644",
+      "image": "Sit ex exercitation",
+      "cat": "",
+      "cond": "C",
+      "id": 12
+    },
+    {
+      "name": "Renee Aguirre",
+      "description": "Ad quisquam ullamco ",
+      "price": "688",
+      "image": "Beatae aliquid corru",
+      "cat": "",
+      "cond": "F",
+      "id": 13
+    },
+    {
+      "name": "Serena Henson",
+      "description": "Irure lorem magna la",
+      "price": "979",
+      "image": "Natus fugit nisi op",
+      "cat": "[object Object]",
+      "cond": "B",
+      "id": 14
+    },
+    {
+      "name": "Hall Carney",
+      "description": "Dolore voluptates si",
+      "price": "561",
+      "image": "Ea reiciendis velit ",
+      "cat": "[object Object]",
+      "cond": "B",
+      "id": 15
+    },
+    {
+      "name": "Renee Saunders",
+      "description": "Fugit distinctio R",
+      "price": "444",
+      "image": "Ipsam qui expedita o",
+      "cat": "Videogame",
+      "cond": "B",
+      "id": 16
+    },
+    {
+      "name": "Finn Parsons",
+      "description": "Voluptate in molliti",
+      "price": "740",
+      "image": "Aliquip ut qui quo u",
+      "cat": "Kids",
+      "cond": "A",
+      "id": 17
+    },
+    {
+      "name": "Brian Mccray",
+      "description": "Molestiae dolor quae",
+      "price": "911",
+      "image": "Veniam in rerum par",
+      "cat": "Giardinaggio",
+      "cond": "B",
+      "userId": 4,
+      "id": 21
+    },
+    {
+      "name": "Ciuccio  in silicone",
+      "description": "Gommotto in silicone colorato blu per neonati da 16 ai 36 mesi in su con tettina attiva che garantisce morbidezza e delicatezza per non disturbare il bambino neppure durante la nanna.",
+      "price": "10",
+      "image": "https://immagini.qualescegliere.it/articoli/2017/03/ciuccio.png",
+      "cat": "Kids",
+      "cond": "C",
+      "userId": 20,
+      "id": 23
+    },
+    {
+      "name": "bavaglino in silicone",
+      "description": "【TASCA ROBUSTA】 - I nostri bavaglini impermeabili sono dotati di una tasca profonda e robusta che cattura qualsiasi cibo o liquido randagio.\n【PIÙ CONVENIENTI 】- I nostri bavaglini neonato in silicone riutilizzabili in confezione da 3 ti faranno passare le giornate al miglior prezzo economico. Con una vasta gamma di colori alla moda, sei sicuro di trovarne uno che si abbini all'outfit del giorno dei bambini.\n【100% SILICONE MORBIDO】 - I nostri bavaglino silicone con tasca leggeri sono realizzati al 100% in silicone morbido e ti aiuteranno a ridurre il bucato.\n【CHIUSURA REGOLABILE】 - La tracolla offre quattro diverse dimensioni ed è adatta a bambini dai 6 mesi ai 6 anni.",
+      "price": "12",
+      "image": "https://m.media-amazon.com/images/I/61Klj0p-U6L._AC_SY450_.jpg",
+      "cat": "Kids",
+      "cond": "C",
+      "userId": 20,
+      "id": 24
+    },
+    {
+      "name": " Scienza e Gioco Lab - Planetario Luminoso - Gioco Educativo per Esploratori Astronomi da 8 Anni in Su, Proiezione delle Costellazioni in Camera, Made in Italy",
+      "description": "ESPLORA L'ASTRONOMIA: Ideale per giovani astronomi dai 8 anni in su per un'avventura educativa tra le stelle.\nEMISFERI STELLARI: Ruota la sfera celeste per un viaggio affascinante attraverso le costellazioni di entrambi gli emisferi.\nCREATIVITÀ COSMICA: Un'esperienza che stimola l'immaginazione e la creatività aprendo le porte all'universo dell'astronomia.\nCOSTELLAZIONI IN CAMERA: Questo moderno planetario che proietta tutte le costellazioni sul soffitto o sulle pareti della tua camera conoscere l’astronomia non è mai stato così semplice e divertente.\nAPPRENDIMENTO DIVERTENTE: Un modo coinvolgente per introdurre i bambini all'astronomia migliorando la loro conoscenza scientifica e la curiosità per lo spazio.\nSVILUPPO COGNITIVO: Questo planetario aiuta a sviluppare la comprensione spaziale e il pensiero critico nei giovani esploratori offrendo un'esperienza educativa completa.\nSICUREZZA: un'esperienza di apprendimento sicura e senza rischi per i bambini dai 8 anni in su.",
+      "price": "30",
+      "image": "https://m.media-amazon.com/images/I/91E1PUgPzuL._AC_SX450_.jpg",
+      "cat": "Kids",
+      "cond": "F",
+      "userId": 20,
+      "id": 25
+    },
+    {
+      "name": "The Legend of Zelda: Tears of the Kingdom - Videogioco Nintendo - Ed. Italiana - Versione su scheda",
+      "description": "Il seguito di The Legend of Zelda: Breath of the Wild\nUn epico viaggio attraverso Hyrule e i suoi cieli ti attende\nCrea la tua avventura in un mondo dove potrai lasciare libero sfogo all'immaginazione",
+      "price": "60",
+      "image": "https://m.media-amazon.com/images/I/81eHh0BNU0L._AC_SY445_.jpg",
+      "cat": "Videogame",
+      "cond": "A",
+      "userId": 20,
+      "id": 26
+    },
+    {
+      "name": "Hogwarts Legacy - PS5",
+      "description": "Hogwarts Legacy è un coinvolgente gioco di ruolo d'azione open world, ambientato nel magico universo dei libri di Harry Potter.\nIl mondo magico ti attende. Esplora liberamente Hogwarts, Hogsmeade, la Foresta Proibita e il Mondo Esterno circostante.\nImpara incantesimi, distilla pozioni, coltiva piante e prenditi cura di animali magici mentre intraprendi un'incredibile avventura.",
+      "price": "60",
+      "image": "https://m.media-amazon.com/images/I/61yaFmIU1nL._AC_SY445_.jpg",
+      "cat": "Videogame",
+      "cond": "B",
+      "userId": 20,
+      "id": 27
     }
   ],
   "categories": [
     {
-      "name": "videogame",
-      "img": "https://static.open.online/wp-content/uploads/2020/06/Videogiochi.jpg",
+      "name": "Videogame",
+      "color": "#457abf",
       "id": 1
     },
     {
-      "name": "vestiti",
-      "img": "",
+      "name": "Vestiti",
+      "color": "#8d52c4",
       "id": 2
     },
     {
-      "name": "elettronica",
-      "img": "",
+      "name": "Elettronica",
+      "color": "#a4db5c",
       "id": 3
-    }
+    },
+    {
+      "name": "Kids",
+      "color": "#457abf",
+      "id": 4
+    },
+    {
+      "name": "Sport",
+      "color": "#cf936b",
+      "id": 5
+    },
+    {
+      "name": "Giardinaggio",
+      "color": "#9af075  ",
+      "id": 6
+    },
+    { "name": "Igene", "color": "d6ccac", "id": "7" },
+    { "name": "Articoli degli animali", "color": "9ae3fb", "id": "7" }
   ]
 }

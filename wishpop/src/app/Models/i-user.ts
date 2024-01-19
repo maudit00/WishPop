@@ -1,3 +1,5 @@
+import { iProduct } from "./i-product"
+
 export interface iUser {
   id:string
   nome:string
@@ -8,9 +10,13 @@ export interface iUser {
   favPayMethod : string
   balance:number;
   level:string;
-  transaction:iTransaction
+  in : iTransaction[]
+  out : iTransaction[]
   feedback:number
   firstTime:boolean;
+  wishList:iProduct[]
+  cart:iProduct[]
+  image:string;
 }
 
 export interface iAddress {
@@ -23,17 +29,9 @@ export interface iAddress {
 }
 
 export interface iTransaction {
-  in:number;
-  out:number;
-}
-
-export interface iAddInfo {
-  id:string;
-  nome:string;
-  cognome:string;
-  email:string;
-  password:string;
-  adress:iAddress;
-  favPayMethod:string;
-  firstTime:boolean;
+  transaction:{
+    amount:number
+    type:string
+    date:Date
+  }
 }

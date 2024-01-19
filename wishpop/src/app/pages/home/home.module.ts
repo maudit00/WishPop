@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { SharedModule } from '../../shared/shared.module';
-
+import { CategoriesComponent } from './categories/categories.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { CartcheckoutComponent } from './cartcheckout/cartcheckout.component';
+import { SecretComponent } from './secret/secret.component';
 
 @NgModule({
-  declarations: [HomeComponent],
-  imports: [HomeRoutingModule, SharedModule],
+  declarations: [HomeComponent, CategoriesComponent, CheckoutComponent, CartcheckoutComponent, SecretComponent],
+  imports: [HomeRoutingModule, SharedModule]
 })
 export class HomeModule {}

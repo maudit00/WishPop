@@ -2,20 +2,45 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { OrdersComponent } from './orders/orders.component';
+import { WalletComponent } from './wallet/wallet.component';
+import { InserzioniComponent } from './inserzioni/inserzioni.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
-   path: '',
-   component: DashboardComponent
+    path: '',
+    component: DashboardComponent,
   },
   {
-   path: 'addproduct',
-   component: AddProductComponent
+    path: 'addproduct',
+    component: AddProductComponent,
+  },
+  {
+    path: 'inserzioni',
+    component: InserzioniComponent,
+  },
+  {
+    path: 'orders',
+    component: OrdersComponent,
+  },
+  {
+    path: 'wallet',
+    component: WalletComponent,
+  },
+  {
+    path: 'wishlist',
+    component: WishlistComponent
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class DashboardRoutingModule { }

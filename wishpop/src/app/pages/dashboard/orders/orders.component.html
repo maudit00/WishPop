@@ -1,0 +1,20 @@
+<div class="container my-4 text-center">
+  <p class="display-4">My Orders</p>
+</div>
+
+<div class="alert alert-warning" *ngIf="orders.length == 0">
+  <p class="text-center">Non ci sono ordini al momento</p>
+  <p class="text-center wish-link" routerLink="/home">Sfoglia i prodotti per aggiungerne al carrello e procedi all'acquisto</p>
+</div>
+
+<div class="row px-3" *ngFor="let order of orders, let i = index">
+  <div class=" col-3">
+      <p>{{i + 1}}</p>
+  </div>
+  <div class="info-container col-6">
+      <h2>{{order.transaction.amount | currency : 'EUR'}}</h2>
+  </div>
+  <div class="details-container col-3">
+      <p>Data {{order.transaction.date | date}}</p>
+  </div>
+</div>

@@ -1,3 +1,30 @@
-#social a{
-  padding: 5px;
+/* Riduzione dell'altezza del footer */
+footer {
+
+  padding-top: 0.1%; /* Modifica il padding superiore */
+  padding-bottom: 0.1rem; /* Modifica il padding inferiore */
+
+  /* Altezza dei singoli elementi */
+  .border-bottom {
+    padding-bottom: 1rem; /* Modifica il padding inferiore della sezione con la classe 'border-bottom' */
+  }
+
+  /* Modifica delle dimensioni dei link nel footer */
+  a, h6, p{
+    font-size: 0.8rem; /* Modifica la dimensione del testo dei link */
+  }
+
+  .copyright{
+    font-size: 0.9rem;
+  }
+
+
+.copyright-container{
+    background-color: var(--copyright-bg)
+  }
+
+
+
+
+
 }

@@ -13,15 +13,13 @@ import { NgbCollapse } from '@ng-bootstrap/ng-bootstrap';
 
 
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     NotificaComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
-input, textarea::placeholder{
-  text-align: center
+:root {
+  --main-bg-color: rgb(170, 233, 233);
+  --gradient-start: rgb(177, 214, 214);
+  --gradient-mid: rgb(195, 219, 189);
+  --gradient-end: rgb(207, 195, 168);
+  --copyright-bg: rgb(195, 219, 189);
+
 }
 
-input, textarea, label{
-  text-align: center
+@import url("https://fonts.googleapis.com/css2?family=Afacad&family=Jost:ital@1&family=Playfair+Display:wght@700&display=swap");
+.playtitle {
+  font-family: "Playfair Display", serif;
+}
+.jostsott {
+  font-family: "Jost", sans-serif;
+}
+.t.cont {
+  font-family: "Afacad", sans-serif;
+}
+.copyright-container {
+  background-color: var(--copyright-bg);
+}
+
+input,
+textarea::placeholder {
+  text-align: center;
+}
+
+input,
+textarea,
+label {
+  text-align: center;
+}
+
+.wish-link {
+  text-decoration: none;
+  color: rgb(168, 106, 197);
+  cursor: pointer;
 }
 
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
 
 .wbutton {
   border: none;
@@ -19,12 +51,28 @@ input, textarea, label{
   transition-delay: 0.2ms;
   transition-duration: 0.2s;
   cursor: pointer;
-  &.rosso:hover{
+  &.rosso:hover {
     background-color: rgb(223, 85, 85);
     color: rgb(252, 252, 252);
   }
-  &:hover{
-  background-color: rgb(80, 160, 80);
-  color: white;
-}
+  &:hover {
+    background-color: rgb(80, 160, 80);
+    color: white;
+  }
+  &.card-button:hover {
+    background-color: rgb(80, 160, 160);
+    color: white;
+  }
+  &.profile-button:hover {
+    background-color: rgb(168, 106, 197);
+    color: white;
+  }
+  &.selected {
+    background-color: rgb(80, 160, 160);
+    color: white;
+  }
+  &.modifica:hover {
+    background-color: yellow;
+    color: black;
+  }
 }

@@ -10,19 +10,32 @@ import { iCategory, iProduct } from '../../Models/i-product';
 })
 export class HomeComponent {
   constructor(private productService:ProductService) {
-    this.getAllProducts()
+    this.productService.product$.subscribe(product => product)
     this.getAllCategories()
-
    }
+
 prodArr:iProduct[]=[]
 catArr:iCategory[]=[]
+catClicked:boolean=false;
+loading:boolean=false;
+errorLoading:boolean=false;
 
-getAllProducts(){
-  this.productService.getProducts().subscribe(res => this.prodArr = res)
-}
+
 
 getAllCategories(){
-  this.productService.getCategories().subscribe(res => this.catArr = res)
+  this.loading = true
+  this.productService.getCategories().subscribe(res => {
+    this.catArr = res
+    this.loading = false
+  }, err => {
+    this.loading = false
+    this.errorLoading = true
+    console.log(err)
+  })
+}
+
+toggleCatClicked (){
+  this.catClicked=!this.catClicked
 }
 
 }

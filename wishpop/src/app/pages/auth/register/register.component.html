@@ -1,24 +1,25 @@
-
 <div class="container-fluid">
   <div class="container">
-  <h5 class="text-center my-5">Registrati</h5>
-  <form class="form">
-    <div class="d-flex flex-column align-items-center mb-3">
-      <label class="text-center" for="email">Email</label>
-      <input name="email" [(ngModel)]="registerData.email" type="email" class="form-control" placeholder="Email">
-    </div>
-    <div class="d-flex flex-column align-items-center mb-3">
-      <label class="text-center" for="password">Password</label>
-      <input name="password" [(ngModel)]="registerData.password" type="password" class="form-control" placeholder="Password">
-    </div>
-    <div class="d-flex flex-column align-items-center mb-3">
-      <label class="text-center" for="password">Password</label>
-      <input [(ngModel)]="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" type="password" class="form-control" placeholder="Conferma Password">
-      <div class="form-alert text-center" *ngIf="!comparePassword()">Le password non corrispondono</div>
-      {{confirmPassword}}{{registerData.password}}
-    </div>
+    <h5 class="playtitle text-center my-5">Registrati</h5>
+    <form class="form">
+      <div class="d-flex flex-column align-items-center mb-3">
+        <label class="jostsott text-center" for="email">Email</label>
+        <input name="email" [(ngModel)]="registerData.email" type="email" class="t.cont form-control"
+          placeholder="Email">
+      </div>
+      <div class="d-flex flex-column align-items-center mb-3">
+        <label class="jostsott text-center" for="password">Password</label>
+        <input name="password" [(ngModel)]="registerData.password" type="password" class="t.cont form-control"
+          placeholder="Password">
+      </div>
+      <div class="d-flex flex-column align-items-center mb-3">
+        <label class="jostsott text-center" for="password">Password</label>
+        <input [(ngModel)]="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" type="password"
+          class="t.cont form-control" placeholder="Conferma Password">
+        <div class="form-alert text-center" *ngIf="!comparePassword()">Le password non corrispondono</div>
+      </div>
 
-    <button class="wbutton" (click)="save()">Registrami</button>
-  </form>
-</div>
+      <button class="wbutton" (click)="save()">Registrami</button>
+    </form>
+  </div>
 </div>

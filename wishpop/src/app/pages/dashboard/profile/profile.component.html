@@ -1,0 +1,54 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="d-flex flex-column align-items-center text-center">
+
+      <p class="brd">Nome</p>
+      <div>
+        <p *ngIf="!editMode" class="brd2">{{user.nome}}</p>
+        <input type="text" [(ngModel)]="user.nome" *ngIf="editMode" title="c">
+      </div>
+      <p class="brd">Cognome</p>
+      <div>
+        <p *ngIf="!editMode" class="brd2">{{ user.cognome }}</p>
+        <input type="text" [(ngModel)]="user.cognome" *ngIf="editMode" title="c">
+      </div>
+      <p class="brd">Email</p>
+      <div>
+        <p *ngIf="!editMode" class="brd2">{{ user.email }}</p>
+        <input type="text" [(ngModel)]="user.email" *ngIf="editMode" title="c">
+      </div>
+      <p *ngIf="!editMode" class="brd">Address</p>
+      <div>
+        <p *ngIf="!editMode" class="brd2">{{joinAddress(user.address)}}</p>
+        <div id="flex" class="d-flex flex-row flex-wrap  justify-content-evenly text-center" *ngIf="editMode">
+          <div class="brd">Stato</div>
+          <input type="text" [(ngModel)]="user.address.state" placeholder="nazione" class="brd2">
+          <div class="brd">Provincia</div>
+          <input type="text" [(ngModel)]="user.address.province" placeholder="provincia" class="brd2">
+          <div class="brd">Città</div>
+          <input type="text" [(ngModel)]="user.address.city" placeholder="citta" class="brd2">
+          <div class="brd">Cap</div>
+          <input type="text" [(ngModel)]="user.address.cap" placeholder="cap" class="brd2">
+          <div class="brd">Via</div>
+          <input type="text" [(ngModel)]="user.address.street" placeholder="strreet" class="brd2">
+          <div class="brd">Nr° civico</div>
+          <input type="text" [(ngModel)]="user.address.number " placeholder="number" class="brd2">
+
+        </div>
+      </div>
+      <p *ngIf="!editMode" class="brd">Balance</p>
+      <div>
+        <p *ngIf="!editMode" class="brd2">{{ user.balance | currency :'EUR'}}</p>
+      </div>
+      <p *ngIf="!editMode" class="brd">Level</p>
+      <div>
+        <p *ngIf="!editMode" class="brd2">{{ user.level | uppercase }}</p>
+      </div>
+
+      <button type="button" class="wbutton modifica px-5 mb-3" (click)="toggleEditMode()">Modifica</button>
+      <button type="button" class="wbutton modifica px-5" *ngIf="editMode" (click)="editUser(user)">Salva
+        modifiche</button>
+
+    </div>
+  </div>
+</div>

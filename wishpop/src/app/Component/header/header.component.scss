@@ -1,13 +1,36 @@
-
 .link{
   text-align: center;
 
 }
-.link a:hover{
-  background-color: rgb(80, 160, 80)
+.link a:hover {
+  background-color: rgb(80, 160, 80);
 }
 
 .profile-icon {
   width: 50px;
 }
 
+.flexFoto {
+  justify-content: space-around;
+  gap: 33px;
+  align-items: baseline;
+}
+#gap {
+  justify-content: end;
+  gap: 20px;
+}
+#logo2 {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.nav-wish-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gradient-mid);
+  stroke: 1px solid black;
+}
+
+.floatante {
+  color : white;
+}

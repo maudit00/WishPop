@@ -1,5 +1,12 @@
-<div class="round-card" [style.background-color]="cat.color">
-  <div>
-    <p class="cat-title">{{cat.name}}</p>
+<div class="ag-format-container">
+  <div class="ag-courses_box">
+    <div class="ag-courses_item " [routerLink]="['/home','categories']" (click)="setCategory(cat)">
+      <a  routerLinkActive="router-link-active"  class="ag-courses-item_link">
+        <div class="ag-courses-item_bg" [style.backgroundColor]="cat.color"></div>
+        <div class="ag-courses-item_title">
+          {{cat.name}}
+        </div>
+      </a>
+    </div>
   </div>
 </div>
